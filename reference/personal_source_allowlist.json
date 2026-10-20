@@ -1247,6 +1247,30 @@
     {
       "source": "tests/test_personal_cinematic_delivery.py",
       "destination": "tests/test_personal_cinematic_delivery.py"
+    },
+    {
+      "source": "docs/media/aliens.jpg",
+      "destination": "docs/media/aliens.jpg"
+    },
+    {
+      "source": "docs/media/banner.jpg",
+      "destination": "docs/media/banner.jpg"
+    },
+    {
+      "source": "docs/media/canyon-zoom.jpg",
+      "destination": "docs/media/canyon-zoom.jpg"
+    },
+    {
+      "source": "docs/media/fourarms-zoom.jpg",
+      "destination": "docs/media/fourarms-zoom.jpg"
+    },
+    {
+      "source": "docs/media/teaser.webp",
+      "destination": "docs/media/teaser.webp"
+    },
+    {
+      "source": "docs/media/wipe-canyon.webp",
+      "destination": "docs/media/wipe-canyon.webp"
     }
   ]
 }

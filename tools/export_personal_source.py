@@ -21,6 +21,8 @@ from tools.personal_build import BuildError, outside_repo, write_json
 
 ALLOWLIST = ROOT / "reference/personal_source_allowlist.json"
 ALLOWED_SUFFIXES = {'.py', '.c', '.cpp', '.h', '.m', '.mm', '.inc', '.cmake', '.in', '.txt', '.md', '.json', '.lock'}
+# README images only: bounded binary files under one folder, never game data formats.
+MEDIA_ROOT, MEDIA_SUFFIXES = PurePosixPath('docs/media'), {'.jpg', '.png', '.webp'}
 SECRET_PATTERNS = [rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
     rb'\bgh[pousr]_[A-Za-z0-9]{30,}\b', rb'\bAKIA[0-9A-Z]{16}\b',
     rb'\bxox[baprs]-[0-9A-Za-z-]{20,}\b', rb'\bAIza[0-9A-Za-z_-]{35}\b']
@@ -32,9 +34,23 @@ def safe_relative(name):
     path = PurePosixPath(name)
     if path.is_absolute() or '..' in path.parts or any(part.startswith('.') and part != '__init__.py' for part in path.parts):
         raise BuildError("Hidden, absolute or traversing export path")
-    if path.suffix not in ALLOWED_SUFFIXES and str(path) != 'LICENSE':
+    if path.suffix not in ALLOWED_SUFFIXES and str(path) != 'LICENSE' and not is_media(path):
         raise BuildError("Non-source export extension")
     return path
+
+
+def is_media(path):
+    return path.parent == MEDIA_ROOT and path.suffix in MEDIA_SUFFIXES
+
+
+def inspect_media(path, max_bytes=2 * 1024**2):
+    if path.is_symlink() or not path.is_file() or path.stat().st_size > max_bytes:
+        raise BuildError(f"Linked, missing or oversized media: {path.name}")
+    data = path.read_bytes()
+    signatures = {'.jpg': (b'\xff\xd8\xff',), '.png': (b'\x89PNG\r\n\x1a\n',), '.webp': (b'RIFF',)}
+    if not data.startswith(signatures[path.suffix]) or (path.suffix == '.webp' and data[8:12] != b'WEBP'):
+        raise BuildError(f"Media content does not match its extension: {path.name}")
+    return {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
 
 
 def inspect_file(path, *, scan_text=True, max_bytes=2 * 1024**2):
@@ -87,7 +103,7 @@ def export(destination):
         # pattern strings. Its other text is still checked below after removing
         # only those exact pattern definitions, not arbitrary line exclusions.
         scan = source_name != 'tools/export_personal_source.py'
-        evidence = inspect_file(source, scan_text=scan)
+        evidence = inspect_media(source) if is_media(PurePosixPath(source_name)) else inspect_file(source, scan_text=scan)
         if not scan:
             text = source.read_bytes().replace(b"b'/Users/'", b"b'REDACTED_PATTERN'")
             if b'/Users/' in text or any(re.search(p, text) for p in SECRET_PATTERNS):
@@ -107,7 +123,7 @@ def export(destination):
         'allowlist_sha256': digest_file(ALLOWLIST),
         'files': {relative: evidence for _, relative, evidence in planned},
         'checks': {'explicit_allowlist_only': True, 'git_history_included': False,
-            'utf8_source_only': True, 'bounded_private_path_and_credential_patterns': 'no matches'},
+            'utf8_source_only_outside_docs_media': True, 'bounded_private_path_and_credential_patterns': 'no matches'},
         'remaining_review': ['full provenance and dependency notices',
             'game-specific source derivation and authored reconstruction inputs', 'publication authority']}
     write_json(destination / 'EXPORT-RECEIPT.json', receipt)
