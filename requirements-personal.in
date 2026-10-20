@@ -1,0 +1,11 @@
+# Qualified local cinematic inference and geometry dependencies. No weights included.
+# Compile with uv pip compile --generate-hashes to requirements-personal.lock.
+# GraphMatcher ordering affects ambiguous, reviewed body/outline correspondences.
+networkx==3.6.1
+onnxruntime==1.24.2
+numpy==2.4.2
+pillow==12.1.1
+scipy==1.17.0
+safetensors==0.8.0
+spandrel==0.4.2
+torch==2.14.1

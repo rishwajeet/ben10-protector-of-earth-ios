@@ -1,0 +1,37 @@
+{
+  "schema": "protector-native.personal-tool-sources/v1",
+  "host": "macOS-arm64-with-full-Xcode",
+  "dolrecomp_revision": "6f2336397ad9fde3743a63cf083776d18d38345c",
+  "resources": {
+    "nodtool": {
+      "url": "https://github.com/encounter/nod/releases/download/v2.0.0-alpha.12/nodtool-macos-arm64",
+      "bytes": 3481936,
+      "sha256": "524c0b27c0c4289e435df4474d288ea7e63d6a34814cc7c650231688dd1e53b4",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/encounter/nod/tree/v2.0.0-alpha.12"
+    },
+    "dolrecomp-source.tar.gz": {
+      "url": "https://codeload.github.com/ExpansionPak/DolRecomp/tar.gz/6f2336397ad9fde3743a63cf083776d18d38345c",
+      "bytes": 840353,
+      "sha256": "86080aff48cc5aaa2f9704877c3973ce28f7b4a74af4a3ba0bb4843f81fec845",
+      "license": "GPL-3.0-or-later; retains Dolphin-derived notices",
+      "source": "https://github.com/ExpansionPak/DolRecomp/tree/6f2336397ad9fde3743a63cf083776d18d38345c"
+    },
+    "astcenc.zip": {
+      "url": "https://github.com/ARM-software/astc-encoder/releases/download/5.5.0/astcenc-5.5.0-macos-universal.zip",
+      "bytes": 1096761,
+      "sha256": "52b7c3380ac1e6afa1565c4fc86f571c510fed67f38d6e80c2f3cc3f23ae3059",
+      "binary_sha256": "883af82cdaa6f27bd57f864dcaae1b1ff7e5c66fb0607200fea9823a2d51fab8",
+      "license": "Apache-2.0",
+      "source": "https://github.com/ARM-software/astc-encoder/tree/5.5.0"
+    },
+    "dsp_coef.bin": {
+      "url": "https://raw.githubusercontent.com/dolphin-emu/dolphin/e6f3ae17627e4344da95b13424af5baf4c892b08/Data/Sys/GC/dsp_coef.bin",
+      "bytes": 4096,
+      "sha256": "d7741279c2e8ec5c5fb318f8fbdd6de6bf583520d288e836a5383233a4238179",
+      "license": "Dolphin free DSP replacement resource; GPL-2.0-or-later project provenance; redistribution review separate",
+      "source": "https://github.com/dolphin-emu/dolphin/tree/e6f3ae17627e4344da95b13424af5baf4c892b08/docs/DSP/free_dsp_rom"
+    }
+  },
+  "scope": "Downloads official pinned tool inputs locally; does not fetch game content, models, SDKs or signing tools. Root project licence and release authority remain separate."
+}

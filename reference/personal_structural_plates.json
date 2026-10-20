@@ -1,0 +1,109 @@
+{
+  "entries": [
+    {
+      "id": "32x32-e04d8d74a17c1089647566d2db9cb9377a00c7455b1a6027e0b03126961f10ca",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "663a437feb3aabda43dc9df52d54fbe0e692b1aa960f60a6f7fa2dc5cc0a2a2f"
+    },
+    {
+      "id": "32x32-33f227a827549690366cbf32a222c830615dadf75ea76458dbe0ac33ff3017ac",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "493eb30fc173afbb86fc93530a3df5a45044623d2afe36751c9b8680205095c8"
+    },
+    {
+      "id": "32x32-7baf2228e007ad0872d8e7113cd2409808d2973ebf7711700f38321abe6b7ee7",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "24e80a7c38dbf24dcb9beeca5a65b478e4a25ecc3c2c62a2fbf55a1552ed8125"
+    },
+    {
+      "id": "32x32-a0327fda39b2ae1fbd4031e158d021a5a9b49a38ed19570450d7fe2622fcafc1",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "263faa19102538d52a44b6a6966d99b53978622ec17368c19698275ffd86d7ab"
+    },
+    {
+      "id": "32x32-bd53ef9e570f4d6d96c1af317e25a320c3be8233753c9107a2fecf6bfae33a01",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "c195db36f0ee8fa0711f83d752234948838b8453042f32a84f59c1d12b521196"
+    },
+    {
+      "id": "32x32-d86dffe2e34dc1b4061687d5c0fcf7512c2ecf1a929ef693149f5d149866c2fb",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "598efb43154a2afcf87b00517d3de20196151a75aff9b7257553b292397072ae"
+    },
+    {
+      "id": "32x32-e17d113f8ef2041184c239d6a4fb0cee9518fad51305aaa759775fc2eeea798d",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "c51307d97a6c8b42054cfc0cbec8ce57e4d950fcdf8692c162f2da3c197e27e5"
+    },
+    {
+      "id": "32x32-2a21e398540c168fa2a76febb9e62591e8538f6ee07e733169af4ddc8ff2e20c",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "a126a3d495dfe1c2376357cfb85530c922180714e7e8d89c179ecfe9fd413a3e"
+    },
+    {
+      "id": "32x32-5ba7183dc6bf4b8bf38ecbb6d6966d1da0e86f0b705e1c1c7099a328e4794e53",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "8b495df2d0a21ca198cbbc449c805df583bf11debfe4fa8f7a6725908afabe90"
+    },
+    {
+      "id": "64x64-1088bb16d8a147012ebc2d6746f33c1955e362a14e5ae3bc924fc6b8f04114b5",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "971101e6aee32ae788e1d41536f3f1121af714795e220434038dc0bab9a2115d"
+    },
+    {
+      "id": "64x64-8c717db55b092e30b810d957e58b64ac0fc2b112cc0db523a99bdab0b32f5d25",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "9924d36ceb14546852d3b080a81edfc8939f6c953b62d927ec527f4bc76acf0c"
+    },
+    {
+      "id": "32x32-8d2d9f994be9872b11a1f23f6f42a7fb8a1bf172b38b5ac49e4ef2fc065886c5",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "ced6380228051d02f1a5d718fc4e605c929a857c87ab5b61ed52cac254595baf"
+    },
+    {
+      "id": "32x32-8f3c0a6ab206f543f43214dbb02cf4c914af68e82daae72a9a17931580c88c79",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "759986a6d36487bd143ddb365620e60b1d6745a1a981899387763b0a8cda7036"
+    },
+    {
+      "id": "32x32-a27b7c88345de386c637d3fad36656960e9faa4dc0e98ccdd1270cf63ab8f37e",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "8dc0ba51122ccfc254f4ff5e91733bf47467b36eef91a96ea954605703541209"
+    },
+    {
+      "id": "32x32-dac6371996027d1311f297f86650dd01a50f5936fd2f8d3692af2bedf686627a",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "03f58ef745066845c9b1f4948d358ad704ac746c255f6cf1f901d68b9c44cccc"
+    },
+    {
+      "id": "32x32-dbc7fa0fc3250ae4aa9145652310936bb47e4508b4152dffee08b662a6eb26a2",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "b1d9916ebb0b9a810af2b03c523890e14712ae110745ef4b7b593c52d3e71727"
+    },
+    {
+      "id": "32x32-2c7f75a42680d66312416aa1d5c3d17c5d9226518db902002b68868452963447",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "b0bb5b7be6c88a301e97320e562e8a8d3d93aea7f10e9d6f89fd8be6cebefea9"
+    },
+    {
+      "id": "64x64-2b96e77719b6af7dd0a8eb2d61689644ac2c93d3f86c9f66adf5b73c30200d39",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "912b328222f2513067b56f08064879653d1873f6bb7a87d480f47d6b779e8dac"
+    },
+    {
+      "id": "32x32-906c975afb2df8b450bbcb71a4cdc9b677004f1d4b9c70f9fb3ea25552acdef4",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "a7440834e35a28a76b791bab8e4bca2928f28c6fc795cead71d2e37aed133e4b"
+    },
+    {
+      "id": "32x32-d33dc04f0568da2ad1b63efa06c4863dc03181befd9d3cad0bf1be0c85985db5",
+      "original_producer_sha256": "9772f68c0704af475c5020be8497db4dffff4763cdb3273f5948967eb82f452b",
+      "recipe_sha256": "990c716e744232c37141422a3a8a34aecf7f85e44348e30c710c54ccd609583e"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-structural-plates/v1",
+  "scope": "Recipe identities only; authored geometry stays private and all colours are resampled from originals",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}

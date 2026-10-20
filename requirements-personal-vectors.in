@@ -1,0 +1,2 @@
+-r requirements-personal-structural.in
+resvg-py==0.5.0

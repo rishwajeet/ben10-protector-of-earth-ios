@@ -1,0 +1,3 @@
+# Source staging and existing dual-decode ASTC delivery tools; no neural runtime.
+-r requirements-personal-structural.in
+OpenEXR==3.5.2

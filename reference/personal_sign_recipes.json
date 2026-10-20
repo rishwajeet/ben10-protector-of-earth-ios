@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "id": "128x128-6a32bbc99c83dd6a227d2abf4a220417502fa41de2f7c5e933045d6770b8e7ea",
+      "recipe_sha256": "ad2aebe749869a88a9b82584ecf1b3e50815d1ead9d0f2825889b335e0afe17c"
+    },
+    {
+      "id": "128x128-765fdc3919f9aebeed4e82c5fd8ff82ee5b15913d1e90821b636d639cbbb62f0",
+      "recipe_sha256": "d4d6362b07e6a1254332c4a5e447d981d1532a83dad4ae895574afb0ee01fd35"
+    },
+    {
+      "id": "128x64-88c2bc2cb1b722b5b3ac617d30d6d7ec7f37fef09cd9b4d0638f01b39b63ef90",
+      "recipe_sha256": "3e27ff2a5a33921f6748fa0e68584fce008c47d1f18def76f0397fc4f97aad02"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-signs/v1",
+  "scope": "Recipe identities only; authored SVG/regions stay private; neural parents must be reconstructed locally",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}

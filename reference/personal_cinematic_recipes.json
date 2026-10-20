@@ -1,0 +1,2659 @@
+{
+  "schema": "protector-native.personal-cinematic-recipes/v1",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566",
+  "source_manifest_sha256": "e946fb3aecc5dbec272153f132b3ed7695dbe112d593c139281e447ba4fe1806",
+  "scope": "Source selectors and processing parameters only; no media or model weights. Redistribution review remains separate.",
+  "models": {
+    "realesrgan-anime-6b": {
+      "name": "realesrgan-anime-6b",
+      "sha256": "f872d837d3c90ed2e05227bed711af5671a6fd1c9f7d7e91c911a61f155e99da",
+      "source_url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.2.4",
+      "license": "Project BSD-3-Clause; local offline inference only, no model bundled"
+    },
+    "realesr-animevideov3": {
+      "name": "realesr-animevideov3",
+      "sha256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d",
+      "source_url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0",
+      "license": "Project BSD-3-Clause; local offline inference only, no model bundled"
+    }
+  },
+  "entries": [
+    {
+      "reference_recipe_sha256": "22b472732bda640538445d6fe6b86cb643db73351dc24cff14d8b026ad456471",
+      "source_sha256": "9b73ef2e8a8982f24c11fae18fb3fe78e66db565ae7c6083f6718d395271afbe",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 156,
+      "rate_numerator": 30,
+      "rate_denominator": 1,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v1",
+        "pack_id": "cinematic-d3-uhd-v1",
+        "movie": "D3.bik",
+        "output_dimensions": [
+          3840,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesrgan-anime-6b",
+        "shots": [
+          {
+            "first": 0,
+            "end": 156,
+            "mode": "crop",
+            "crop": [
+              0,
+              52,
+              640,
+              360
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "947da39b8ecf9f018a547e982b4e3a6da2b9038fcb7bc5c9c672954a9fe17385",
+      "source_sha256": "1a97de572ecb379326c74481ccfe79528caff9082cfe5c60ed5c0f70f16fc98e",
+      "source_width": 640,
+      "source_height": 448,
+      "frame_count": 656,
+      "rate_numerator": 30000,
+      "rate_denominator": 1001,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v1",
+        "pack_id": "cinematic-hvs-uhd-v2",
+        "movie": "HVSIntro.bik",
+        "output_dimensions": [
+          3840,
+          2160
+        ],
+        "deinterlace": "bwdif-bff",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 656,
+            "mode": "crop",
+            "crop": [
+              0,
+              60,
+              640,
+              360
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "e2a15eb70df2ef4201f50afd3e05cf80838d7ea810e034f1372a5791e5e304fa",
+      "source_sha256": "f45c912a5045a9fb9a277115f4213bbb88cd1eaab6f8223f7203503754bc6665",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2245,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-11-intro-2160p-v1",
+        "movie": "11_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2245,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f0cedec682fc377c55a335c242ba2074bd0ff60eeacd5db7c5131a72e63c15c4",
+      "source_sha256": "6bbb9284dc4eeef181476baaf0bbda8c8c94f0bfe9a63c0ce3dd7f0f647b338d",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 180,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-legal-2160p-v1",
+        "movie": "legal.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 180,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "2b137181bc03c9eb5e3af7a92c20e374cc0d7933dafa2c4c013ef19a0160eddb",
+      "source_sha256": "ad6c2cf92edecc7250f1ac1124fc8d3eafd320ae8722abf3aa09f84918ea03e2",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 150,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-esrb-2160p-v1",
+        "movie": "ESRB.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 150,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "174a824bf2b67cf4abffd4a1cfdec769edcd9818ba459cb35dedd8f51c754153",
+      "source_sha256": "b6c94a352d2baa16443808d52a5af7d6647bfa09e99ad9a78dd79288d52cf50f",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 3642,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-credits-2160p-v1",
+        "movie": "credits.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 3642,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "ad7cf4a8b3e9d9c5f2c4287c4906f4e273a7b313f4a5435180fab083ee364505",
+      "source_sha256": "18955d1ca076951493cf64bfba716cd4ec2a7ae53b355e11208518511cf6bc63",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 250,
+      "rate_numerator": 30,
+      "rate_denominator": 1,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-cn-2160p-v1",
+        "movie": "CN.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 250,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "206be76d7b0d56098f6b75e856380d7a2ab44d139b05dd122e563a8cc912a92f",
+      "source_sha256": "69a85594a7826a761026b78ca8a7d11fce30547b07fabea239b208f354336f63",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 526,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-watch-2160p-v1",
+        "movie": "watch.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "bwdif-bff",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 526,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "1452be3871bf10d0bf3b6946642ff170db15f43e21b8402de9994b1915f29fa0",
+      "source_sha256": "a3f96452d69260b2fb3d801d8cb2d80245b7c2dea0d44abf7b35fc5f20e77543",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 354,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-cannonbolt-2160p-v1",
+        "movie": "cannonbolt.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 354,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a453d503c17a693d30aaec86356a413dc48d35bf3a3eeef7a9f0c96da5a91898",
+      "source_sha256": "b7da75c6a09d59e4ecfef71508385a641af9b6c40e132867d5df07f98723ab2e",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 3509,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-snackbreak-2160p-v1",
+        "movie": "snackbreak.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 3509,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "caac49c7ca8c329108d7af81385a73d345597e0579e82fe5bc2e6a332866d175",
+      "source_sha256": "74bfbdcd95e898bc6a5e1a22e95fb491ca8a5f6ef935853a0bf571495335370c",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1320,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-11-outro-2160p-v1",
+        "movie": "11_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1320,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "92bb166f14d968b0a17468c20eaa88365d293c2b3f27633097d79eec2c0b6ba6",
+      "source_sha256": "89e5e64f1bb9e83cefc3262adf5daa30f7d3160eb8aae52dbb42d3571e2961e4",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2076,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-attract-2160p-v1",
+        "movie": "attract.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "bwdif-bff",
+        "deinterlace_ranges": [
+          {
+            "first": 362,
+            "end": 391,
+            "parity": "tff",
+            "reason": "Stone-courtyard Four Arms footage visibly combs at source 380. Exact boundary views show footage fades in at 362 and cuts at 391. TFF detail is clean; single-frame field evidence is TFF 13, BFF 0 within the shot."
+          },
+          {
+            "first": 391,
+            "end": 466,
+            "reason": "Cannonbolt and Heatblast footage visibly combs at 420 and 450; both explicit field reconstructions inspected. BFF is supported by 34/42 and 25/33 single-frame classifications. Keep the clean progressive Wildvine shot beginning at 466 unfiltered."
+          },
+          {
+            "first": 497,
+            "end": 534,
+            "parity": "tff",
+            "reason": "XLR8 spin has strong visible combing at 510; TFF detail has fewer split trails than BFF. Single-frame evidence 498..531 is TFF 17, BFF 8. Include the bright incoming/outgoing transitions; the unambiguously progressive Four Arms shot at 534 remains untouched."
+          },
+          {
+            "first": 577,
+            "end": 641,
+            "reason": "Ben/Heatblast stone-face platform shot has visible combing at 600 and 55 BFF single-frame detections. Exact inspected cut switches to the clean animated logo at 641; that complete graphic card is not deinterlaced."
+          },
+          {
+            "first": 828,
+            "end": 884,
+            "reason": "Ben bridge combat has clear combing on limbs and floor at 855. BFF single-frame evidence 36, TFF 1. Include the incoming picture wipe, and stop before the clean full graphic at 884."
+          },
+          {
+            "first": 954,
+            "end": 1000,
+            "reason": "Cannonbolt boss spin has clear interlaced sword/character motion at 975, with 25 BFF and no TFF single-frame detections. The original progressive Wildvine shot starts exactly at 1000 and stays unfiltered."
+          },
+          {
+            "first": 1302,
+            "end": 1446,
+            "reason": "Four Arms courtyard and XLR8/Cannonbolt cemetery excerpts show obvious combs at 1320, 1380 and 1440. Both field candidates remove combing; BFF is selected for this contiguous source block. Local detectors are mixed, so exact original field chronology is not claimed. Inherited effects trails are preserved, not synthesized away."
+          },
+          {
+            "first": 1446,
+            "end": 1489,
+            "parity": "tff",
+            "reason": "Four Arms throw shot has visible combs at 1476. TFF retains a clean continuous back/arm in the inspected comparison and is supported by 21 TFF versus 10 BFF single-frame detections. Exact cuts at 1446 and 1489 were inspected."
+          },
+          {
+            "first": 1489,
+            "end": 1555,
+            "reason": "Heatblast courtyard footage visibly combs at 1500; 62 BFF single-frame detections with zero TFF support BFF. End in the bright transition before the clean Vilgax-ship footage; the inspected 1590 shot is progressive and remains untouched."
+          }
+        ],
+        "scan_review": {
+          "decision": "Manual picture inspection selects affected shot intervals. Field scores only support parity choices; they do not select intervals. Unselected source frames bypass field reconstruction byte-for-byte before restoration. All title, ratings, package-art and attribution cards remain original progressive pictures. Output is a source-derived candidate; temporal quality and native presentation remain separate checks."
+        },
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2076,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "e4056bdbc6181f3601f629cbf23910b8c4239377db2a7a69bb8035510d1de5db",
+      "source_sha256": "be7be037728dd9198e7b02d885cce8f5d91285c7dfa1661e22cf9f74c939438e",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 971,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-12-intro-2160p-v1",
+        "movie": "12_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 971,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "0f26190cce4084d84ed095c3fc0d241ca28e098627891f69f7e1d34ba43bc380",
+      "source_sha256": "e0e583355c4311725a53d498c3bca67147f25fb1979233f426cd131a668a1cc0",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 656,
+      "rate_numerator": 30000,
+      "rate_denominator": 1001,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v1",
+        "pack_id": "cinematic-hvs-kid-uhd-v1",
+        "movie": "HVS_Kid_Intro.bik",
+        "output_dimensions": [
+          3840,
+          2160
+        ],
+        "deinterlace": "bwdif-bff",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 656,
+            "mode": "crop",
+            "crop": [
+              0,
+              60,
+              640,
+              360
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "fd13deb69f48806da02d1a17ed12cf5cd5852c430bb723c1fa047ccc4ba3331c",
+      "source_sha256": "a1825f33d559d2619e70abda8765f46603677c7fd5bcfc0e236dc294acba5d15",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1151,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-12-outro-2160p-v1",
+        "movie": "12_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1151,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "7e1a4dadc8b230c85731490f001d95a1329b216d0f21fec8061b3f13eb06132a",
+      "source_sha256": "028c852b14dac986515a3ec1eb7a10708f090e2bf8303586c1cd810592e5d1a5",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 998,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-13-intro-2160p-v1",
+        "movie": "13_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 998,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "2272806cbc7dcceb3bc086df414a51d769df08ec7130ea31e8ebed9368594194",
+      "source_sha256": "291fd27cff9797ce51fade6e5dae127abfee4660f92661a208c24c8449f012f8",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2251,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-13-outro-2160p-v1",
+        "movie": "13_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2251,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "e2e8c9aac54bdf62759b5b11e6d3f9f0a719fab5c9cedb98b27e04d3dfe46a30",
+      "source_sha256": "2fe263c4a6d136bbca13bdc899892b3d381eb5621331b6ee744bfeca9a1663ab",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 646,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-14-intro-2160p-v1",
+        "movie": "14_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 646,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "e11de7abb1c487bc03f4a388cdb0c8b0f6025ab09bd122b70a15740a8e99c363",
+      "source_sha256": "3893a8ce6f3fb976a3a7ec6b7a8bb18e669c995bd02d482a13838930f0740737",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1775,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-14-outro-2160p-v1",
+        "movie": "14_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1775,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "166cffa7da908f8166e7353de3db6d385f06eb9cf6cf15824d952ce4ccc27cc8",
+      "source_sha256": "e38837fe7ff56980cac6efb69a848c686e3bfa90358dcf91cac63bec41fcc985",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 566,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-15-intro-2160p-v1",
+        "movie": "15_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 566,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f9b1cf442a218d606a5b9daf6cb2d7418364fc791aacd38eb35ff1e621acd983",
+      "source_sha256": "5e45bf89ef26b960a534dd2318100ccd82edcd9bfb5e46e375d3adef2ab7ce67",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 772,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-15-outro-2160p-v1",
+        "movie": "15_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 772,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "0a117422dbfd22df85d4e92376a97824feb69a57d3950cfa0b26136851ad1482",
+      "source_sha256": "2edb357907a3ec4ec9abf8d7d87a9020d0747ca5bf82d3f3f163a3200e2c34be",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1761,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-21-intro-2160p-v1",
+        "movie": "21_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1761,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "69bd8d76def4f5c2e9e37acc8594c166d05f3bb92fb1a81a86c4b340832b07ca",
+      "source_sha256": "e838ab359e0dfa93ec0c0293c392b66668467eba1f1e9955ec3507a051824a4f",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 566,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-21-outro-2160p-v1",
+        "movie": "21_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 566,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "6e7596ee88d15c5fd75d90722ba96bf89d14a614338d354b9b5d21234c7d340e",
+      "source_sha256": "170ae2fd638b40e97f9559f08cc1454260b7e9382e8fa1e3181df804b3a5f08e",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 436,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-22-intro-2160p-v1",
+        "movie": "22_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 436,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "27be8fde403ddb48a30dbfc846fd89fd0bff643b43d44057059fdd1ef11ba9ec",
+      "source_sha256": "58a6308f36cdbfca392797f583e888a5de438036ae783da3d7dafd73f9a44616",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2097,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-22-outro-2160p-v1",
+        "movie": "22_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2097,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "64a872a41dc5b0d711a9527ab11d96c3f6c7b253f302b268debe888329ec63a2",
+      "source_sha256": "e1af11eb3f2b577c18193ef7fbc4baf50f50f8cb9e4b25d053f8c9b76573779c",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1285,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-23-intro-2160p-v1",
+        "movie": "23_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1285,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "c904e661ee5f4d0a172f20f6709c119cfba47bf45567828ea4b5bf5feea717a2",
+      "source_sha256": "6641af7409480c297d9081092d15176b479ec1a843626ca2083a5e2cd05489bb",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 501,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-23-outro-2160p-v1",
+        "movie": "23_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 501,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a4ebd942bd1c8bc5c2a1c008d1e7c52f3e5f601cbb16f2bb59757ea2893289b2",
+      "source_sha256": "164e4bd529e3c37820e73162f923067fe306f413b1adf4c21e53467a8c217ac7",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 633,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-24-intro-2160p-v1",
+        "movie": "24_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 633,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "251ce58a7111e058404d1a7729a845b68d499247b3254af56e19c837ea625db5",
+      "source_sha256": "6dacf1f8cea6d81877c7fb16faba380faa23131536c6c06150f61a65527268ea",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2974,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-24-outro-2160p-v1",
+        "movie": "24_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2974,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "0adb5e5f9b9c19d3f67ad55cd1716596c88ced1c0331325cc2b74fbaad5fcf58",
+      "source_sha256": "cf6cd807d8483724fedd9a0ebd1ab89c23ea2f43ad4825d94418e3dd6e113a9c",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 454,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-25-intro-2160p-v1",
+        "movie": "25_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 454,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "bda00d3b805b8b862589c9df2060e305c662b62a51160b880b335d449ef21c1e",
+      "source_sha256": "aa87c35f436640dfc5f86508511e72ec8fe0325a1a28782f7ba467aa86fcc46c",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 117,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-25-outro-2160p-v1",
+        "movie": "25_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 117,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "65a21d5c9502df54f96ba782acb9dd8248214e13d41d70295c26f3080bc9ef12",
+      "source_sha256": "33d0eda63487c4cf60d771a34fe1f30193b3a3f7bd28b50f6d3cbac39a0c16c6",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 917,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-31-intro-2160p-v1",
+        "movie": "31_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 917,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "82baea5d93e8dfb17503a827508d9368b90171618a6a8bcc2ee1cf1ebddbeacd",
+      "source_sha256": "c11ac29ce0f5c10b4b71073dd8e8a024919be5557f4ce996ee7fc79da33782c6",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1341,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-31-outro-2160p-v1",
+        "movie": "31_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1341,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "7c278436de4eb5bfa11736e215e2aa4110bd6f7642f8f8a0c788d97421fbfb06",
+      "source_sha256": "79d412f338f60eacd64954e152b958fa8c93466113d1e14153e4a0cc73e66f07",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 840,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-32-intro-2160p-v1",
+        "movie": "32_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 840,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "b7866abdcd9c578f7385f8f5783396979639d216aa733cdc00586163405b005c",
+      "source_sha256": "c404f7e5deec64937ba2da15518ef30ff234ff66bc5c3b2cbd8246655f6e56a5",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1204,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-32-outro-2160p-v1",
+        "movie": "32_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1204,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "cf7a87ee8d19b93f0ea45ef513afeb99bd02eb136f457970ecab5b795a25a913",
+      "source_sha256": "3a1c693254753f735ed4a86ce8978d726adfb8df8fdd0d725dcb578810022745",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 832,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-33-intro-2160p-v1",
+        "movie": "33_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 832,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "66c988e5f6b5b925aed0a39146f6d7ab0a91796932e4daa50e55a3d09d761b18",
+      "source_sha256": "5236ac0b3df0d67e1f551590fb847167ca74cf59565daf4af9c03a80ca8995da",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1060,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-33-outro-2160p-v1",
+        "movie": "33_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1060,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "eeec764363984c8cbe2a0cc72c726cf48b21ee5d2f701447909292130b3b6934",
+      "source_sha256": "92bfc258fb63847120e61d1e8c2af13a4feaa51f4548d4641c74d4c737710140",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 851,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-34-intro-2160p-v1",
+        "movie": "34_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 851,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "df7e98e275f7fc3446a46030b4acdd6ad879da1f621b2d37d3e2d50e2b6a17d9",
+      "source_sha256": "00cbba7a30998c71c9dfa8fae130061d4f322e578e3647c18286c7d71d693d55",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 849,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-34-outro-2160p-v1",
+        "movie": "34_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 849,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "40c8b16f704902c0aa8f778b62d8c4b6f748e0664f1b48717c112b4e45d704c4",
+      "source_sha256": "978931c302f18e8e5d4aa8581912a13a9fe8c2bd3785aadaa1210142c8dc6712",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 269,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-35-intro-2160p-v1",
+        "movie": "35_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 269,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "9e1c4a47042e990b7cd0972311046ffb3b688fe2a03857d520b0ffd5d41f6596",
+      "source_sha256": "edc521fb8079839905a8c12219fe781831928be084b6d6401fe0e865e746c187",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 201,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-35-outro-2160p-v1",
+        "movie": "35_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 201,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "595c21fb38dbb68a6b01fa5c6ba6f35fc8a97730348e5fde8e61c95223eaae3f",
+      "source_sha256": "08c50c56d2b9d5d843ba2d4205cd103c179c19c4452160ba6ce8de8fba752779",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 765,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-41-intro-2160p-v1",
+        "movie": "41_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 765,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a3106dc95c80a43287dbc341accc42a1a55a7385248d557610002dce568ddb06",
+      "source_sha256": "3c8b7ec1905d17e5bbec152a3f75dcf2ede459475431e0ed65f879969a987712",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 714,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-41-outro-2160p-v1",
+        "movie": "41_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 714,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "300811afe99beee65fca5be22d47d43fc7ed055fa92c8356af17715900db2550",
+      "source_sha256": "560a6ad15557382ebcce4cb4fdbcc15cdbb136f605399ca3f4976b3826223799",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 600,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-42-intro-2160p-v1",
+        "movie": "42_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 600,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a3a8820c0c77d90463338c78c78eafccf6aac6470acb4c943f0893c3edd6749f",
+      "source_sha256": "1251ec8b37accff7efc211ef82fd04b82940f9534dfcc47d22c0ec2860da2139",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1105,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-42-outro-2160p-v1",
+        "movie": "42_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1105,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "889822d691f11286fa32a066ea273e95089160dc6d122bfb2947561291ec9ff8",
+      "source_sha256": "bee79b249015928745240543a5c0b28e3679efd11a2d80838b535857c5623b59",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 708,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-43-intro-2160p-v1",
+        "movie": "43_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 708,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "52120c392b464af61597142d4e6f6113ce196afaa51207b4269538cf002a3bd7",
+      "source_sha256": "9bdb666e294f1851cf62ea9b78a747c4852ce14083f34be97d04e6e5bac2f913",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1132,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-43-outro-2160p-v1",
+        "movie": "43_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1132,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "5c9e58b4ffd0bbd39424712c78f94a33366e4c582866ee9d6e244a0a3e3299ea",
+      "source_sha256": "feda69e2b289a9a78674cd76168d5b56c86ae4b722699bef0e171bba0529492a",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1401,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-44-intro-2160p-v1",
+        "movie": "44_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1401,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "afc65215497363a8f16538bc73f44a840d41745d93042ae92e2c940bdf7b0b77",
+      "source_sha256": "b59ba735f1bacbc4a194cb9e708776a8d356333575b7313a1806d2d61a86dfae",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1261,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-44-outro-2160p-v1",
+        "movie": "44_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1261,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "3eefdd7a17fdde4a0e354f4125b4fe69b446cd42916687da5aaba32e73521b59",
+      "source_sha256": "67ef68cc25ccc4c56c8c56ef79e54799ad7c7398a07a185abb94297093787ad6",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 441,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-45-intro-2160p-v1",
+        "movie": "45_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 441,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "8e1e93822fd7688d1e88ea1a02b66b62a73cf0004880c6d51107e36db505b072",
+      "source_sha256": "45ba2d91b4f7191ab5b4f2bbf87b137298346845e2f31427d1dbe84dd7cccf79",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 381,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-45-outro-2160p-v1",
+        "movie": "45_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 381,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "6f64fa33f6318e39cb4c6d072797ce24e596396fff810984636a548ca17b70af",
+      "source_sha256": "954d99ec7fb60e5052925c9d56fd8183990ce48899413420b682597e4ef8a727",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 696,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-51-intro-2160p-v1",
+        "movie": "51_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 696,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "b3be375653c0523a8b4ca70d5805591f8fe2a881191e959b8c9e688a9254c566",
+      "source_sha256": "07814eb5d6229123b3770d66d22d9e9b4c6cd0925b31b52c88e41696bd4e6132",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 741,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-51-outro-2160p-v1",
+        "movie": "51_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 741,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "0a4ab57c9fe75864bb89e492f40210930233213b2a9bd1b436fae023e2dc534b",
+      "source_sha256": "9947a19c9370a801a4acc0c7cb9dbfc08efd6d43ba356a4b9b6db0600679e3d9",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 409,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-52-intro-2160p-v1",
+        "movie": "52_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 409,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "db324210579c3989f77413f8901713f9c9c7c9f6863b6325d946e85b445b0e30",
+      "source_sha256": "dbbc12d5d0c9346c5c1d4aac3df5c9643b5b9da322fa6c56e16b18bdb43e97e3",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 378,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-52-outro-2160p-v1",
+        "movie": "52_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 378,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f594ba480a5d94e51dd1104e289cc949ee1f8939c426d62f51ad82ce9fecd23b",
+      "source_sha256": "f270f954276859d69b1f9679ab03732ebb917dbf5e4aa29ea199a72cbf3e854f",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 90,
+      "rate_numerator": 30,
+      "rate_denominator": 1,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-53-intro-2160p-v1",
+        "movie": "53_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 90,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a4c457322b8e7d1ae02f8089ecfafa0f31e2329053a5997f7ea5b9477d8b20b2",
+      "source_sha256": "f270f954276859d69b1f9679ab03732ebb917dbf5e4aa29ea199a72cbf3e854f",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 90,
+      "rate_numerator": 30,
+      "rate_denominator": 1,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-53-outro-2160p-v1",
+        "movie": "53_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 90,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "a440a30ac1b96032b75b2b1f419877608591c54439f56d37b500e3bc12c443e2",
+      "source_sha256": "4c86c4aabe34f4f5a4940ba1dcec3d0e8e5d26160b2a5b8353951132f936be40",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 1185,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-54-intro-2160p-v1",
+        "movie": "54_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 1185,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "4a1cb925e9f6bdbd5bf159f75f2e70b2da63afc3f2d38bfa4164bd24290d06d7",
+      "source_sha256": "c5443d3ed42e5f1e58631a9014b358995b741d52a41f712881afa83c928d33a4",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 2380,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-54-outro-2160p-v1",
+        "movie": "54_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 2380,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "31569471a1760fe7edc063e84ad52d86a32d74082ca42934d10c7b88bff27173",
+      "source_sha256": "574c2a12039db255bafa2eef413bc8232325d9e809683642d8c2f04e7d831a3d",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 351,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-55-intro-2160p-v1",
+        "movie": "55_intro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 351,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "ce30d12481acd00dfc9aff825e5c18d8d38f6e7b48f8530c79cd4dd677d5d46b",
+      "source_sha256": "47bcc3fd932cfc995d2354553d9f918afdb36ac64c3fcc6cd858e7e3c445f4e0",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 851,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-55-outro-2160p-v1",
+        "movie": "55_outro.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 851,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "76212fe67f0ec32e2334a877fd9405921f08dfe78bd6948fbb021ae61325c933",
+      "source_sha256": "dd751ecbe358e599171633ff8fcf9ede3054250c68fab6a87cd60187d4948f54",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 803,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-55-outro-b-2160p-v1",
+        "movie": "55_outro_B.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 803,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "654752409b9c3d29d43db6c4abf013ade116d6085e50cb0bfecc26350d47bb71",
+      "source_sha256": "2b0d307d0dbcf06338d3d13fe63a7f45ae5791d1b01c96c0f4de54ed52cf1988",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 500,
+      "rate_numerator": 31,
+      "rate_denominator": 1,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-arcade-background-2160p-v1",
+        "movie": "Arcade_Background.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 500,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f6c9a0e2a7f8c9aec7878773bce8c67242c4614b018c39e1f4d3cd5f94c57da9",
+      "source_sha256": "41f054c5df08aab4b66fe43a89b82a91c2cabaa6155ef268bf1289942a040153",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 150,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-dolby-2160p-v1",
+        "movie": "Dolby.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 150,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "9c3d84f3c4dacbbc7e92e332c5ab1ef913a38878c10663fbf8964a97f5825590",
+      "source_sha256": "15f0809814b765c454aa39cdb73fa7d33c5ac97d2de5bb1f3df551b0add19042",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 151,
+      "rate_numerator": 2997,
+      "rate_denominator": 100,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-logo-2k-2160p-v1",
+        "movie": "Logo_2K.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 151,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "810b685b6a098c3d7db862f9e4c164cbfe854916ac06b1a26ba3675cb2f4d786",
+      "source_sha256": "1734c7fadf6c56aaffb87383bc9d28ca9130a0f5150b6841962ba8f90d5ac417",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 427,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-diamondhead-2160p-v1",
+        "movie": "diamondhead.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 427,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f814c9b04db3cae2a48114f102111308a43f072c838f1350f634a01eab24c2a2",
+      "source_sha256": "bd041ed0688e51fb4eea5f89a0561d71d08290d1289b999f203aed37fdf97831",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 380,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-fourarms-2160p-v1",
+        "movie": "fourarms.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 380,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "910ea85bb34b6796dd374d53222ba68243504e81956e60bbfd2286b555f34a53",
+      "source_sha256": "be8a0cdf37193a9cb3033fbc0643d33bab4cd45e254017f232a7f4d1d4522afa",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 320,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-greymatter-2160p-v1",
+        "movie": "greymatter.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 320,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "c88264c1a04535ca63a90f32512b2253730e0dae018d3b5ec383ae18d5a0dde3",
+      "source_sha256": "75f4fc4860dee13a258ee900ca9cfb3be7288e90a5a19c993193da5e4a3a4ed3",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 275,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-heatblast-2160p-v1",
+        "movie": "heatblast.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 275,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "51fcfa5ca6006d2b1f44c01d8898f33924bd37f49fc507da295fb0e19a8ce011",
+      "source_sha256": "3fd72ab9787c08905328e1fbde83a1291425b45d9e5982d23f22befce861ca45",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 393,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-ripjaws-2160p-v1",
+        "movie": "ripjaws.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 393,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "f5ce2dbdbda2648a8462f41ae9945d5a3af939d62574392ea94eaa7aba0197c7",
+      "source_sha256": "d5ed850bab03831a6675bafee0f2869ed067b2f06b5d3ad163430022a92f707a",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 3683,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-sleepawaycamper-2160p-v1",
+        "movie": "sleepawaycamper.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 3683,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "95c1713ef930cbb54e6dfd52183b32eb157eb7b483b477c7c4e8fe70e1dc672d",
+      "source_sha256": "f5adc3a7c9ecd8c6519e2d7791e459e1397d5eab88997a9373ed7cfc05cd4f8f",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 430,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-stinkfly-2160p-v1",
+        "movie": "stinkfly.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 430,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "4b84ba3017c2f419c3e4fde0c10757bc6923c74975c618285bf33d43601bc5ca",
+      "source_sha256": "1a50dbcd00c2c39f5a4c938db02f4e6ce911c0ea88a3459f104847c151540e98",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 264,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-upgrade-2160p-v1",
+        "movie": "upgrade.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 264,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "bb4f70ca511ce2ca83c92e8f081a611872fa05c53c513fe9b24a6c7db0dec873",
+      "source_sha256": "d3e88224279e574a957f3af7be7834dfce2d24bd6f4529e5046553853c6d7df4",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 484,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-wildmutt-2160p-v1",
+        "movie": "wildmutt.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 484,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "ecdbd42db5c496f6effab9e4db302a8baeac0ee865b43e4249b9cb69adab3944",
+      "source_sha256": "40e4c2c99b10fd0bc9531e100aba194f36074c1e74ee2b0ac8659d1fc802f454",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 445,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-wildvine-2160p-v1",
+        "movie": "wildvine.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 445,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    },
+    {
+      "reference_recipe_sha256": "daffc65ca10f4f08be065afc1ae9aefa79ac4c989fa534442fcd1534d5cb9acc",
+      "source_sha256": "ddbff00b8bad79110338e2f27057431f58755c52c36f9b8826e56a9d93cb8ce7",
+      "source_width": 640,
+      "source_height": 480,
+      "frame_count": 378,
+      "rate_numerator": 10000000,
+      "rate_denominator": 333333,
+      "recipe": {
+        "schema": "protector-native.cinematic-restoration/v2",
+        "pack_id": "cinematic-xlr8-2160p-v1",
+        "movie": "xlr8.bik",
+        "output_dimensions": [
+          2880,
+          2160
+        ],
+        "deinterlace": "none",
+        "model": "realesr-animevideov3",
+        "shots": [
+          {
+            "first": 0,
+            "end": 378,
+            "mode": "preserve",
+            "crop": [
+              0,
+              0,
+              640,
+              480
+            ],
+            "reason": "Keep the source-reviewed composition pinned by reference_recipe_sha256; no automatic crop, invented frames or inferred motion."
+          }
+        ]
+      }
+    }
+  ]
+}

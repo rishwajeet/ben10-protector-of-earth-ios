@@ -1,0 +1,1252 @@
+{
+  "schema": "protector-native.personal-source-allowlist/v1",
+  "publication_authorized": true,
+  "publication": {
+    "approved_by": "Project owner (RJ)",
+    "date": "2026-10-20",
+    "scope": "Public developer-preview source kit: allowlisted source, tools and hash contracts only; no game data, translated code, binaries or model weights"
+  },
+  "scope": "Public developer-preview source kit; explicitly selected runtime source, portable tools and hash contracts; no history or payloads",
+  "files": [
+    {
+      "source": "docs/PUBLIC_RELEASE_PROVENANCE.md",
+      "destination": "docs/PUBLIC_RELEASE_PROVENANCE.md"
+    },
+    {
+      "source": "tests/test_personal_models.py",
+      "destination": "tests/test_personal_models.py"
+    },
+    {
+      "source": "LICENSE",
+      "destination": "LICENSE"
+    },
+    {
+      "source": "LICENSING.md",
+      "destination": "LICENSING.md"
+    },
+    {
+      "source": "reference/personal_model_sources.json",
+      "destination": "reference/personal_model_sources.json"
+    },
+    {
+      "source": "tools/check_personal_models.py",
+      "destination": "tools/check_personal_models.py"
+    },
+    {
+      "source": "tools/export_personal_authored_inputs.py",
+      "destination": "tools/export_personal_authored_inputs.py"
+    },
+    {
+      "source": "tests/test_personal_authored_export.py",
+      "destination": "tests/test_personal_authored_export.py"
+    },
+    {
+      "source": "tools/esrgan_tail_batches.py",
+      "destination": "tools/esrgan_tail_batches.py"
+    },
+    {
+      "source": "tests/test_esrgan_tail_batches.py",
+      "destination": "tests/test_esrgan_tail_batches.py"
+    },
+    {
+      "source": "tools/personal_grid_variants.py",
+      "destination": "tools/personal_grid_variants.py"
+    },
+    {
+      "source": "tests/test_personal_grid_variants.py",
+      "destination": "tests/test_personal_grid_variants.py"
+    },
+    {
+      "source": "reference/personal_grid_variants.json",
+      "destination": "reference/personal_grid_variants.json"
+    },
+    {
+      "source": "tests/test_personal_texture_pipeline.py",
+      "destination": "tests/test_personal_texture_pipeline.py"
+    },
+    {
+      "source": "docs/THIRD_PARTY_REVIEW.md",
+      "destination": "docs/THIRD_PARTY_REVIEW.md"
+    },
+    {
+      "source": "tools/audit_personal_dependencies.py",
+      "destination": "tools/audit_personal_dependencies.py"
+    },
+    {
+      "source": "tests/test_personal_dependencies.py",
+      "destination": "tests/test_personal_dependencies.py"
+    },
+    {
+      "source": "tools/personal_texture_variants.py",
+      "destination": "tools/personal_texture_variants.py"
+    },
+    {
+      "source": "reference/personal_texture_variants.json",
+      "destination": "reference/personal_texture_variants.json"
+    },
+    {
+      "source": "tools/personal_texture_delivery.py",
+      "destination": "tools/personal_texture_delivery.py"
+    },
+    {
+      "source": "tools/cook_texture_pack.py",
+      "destination": "tools/cook_texture_pack.py"
+    },
+    {
+      "source": "tools/cook_alpha_texture_pack.py",
+      "destination": "tools/cook_alpha_texture_pack.py"
+    },
+    {
+      "source": "tools/compose_texture_packs.py",
+      "destination": "tools/compose_texture_packs.py"
+    },
+    {
+      "source": "requirements-personal-delivery.in",
+      "destination": "requirements-personal-delivery.in"
+    },
+    {
+      "source": "requirements-personal-delivery.lock",
+      "destination": "requirements-personal-delivery.lock"
+    },
+    {
+      "source": "tools/personal_texture_pipeline.py",
+      "destination": "tools/personal_texture_pipeline.py"
+    },
+    {
+      "source": "CMakeLists.txt",
+      "destination": "CMakeLists.txt"
+    },
+    {
+      "source": "cmake/InteractiveAudio.cmake",
+      "destination": "cmake/InteractiveAudio.cmake"
+    },
+    {
+      "source": "cmake/InteractiveCinematicPack.cmake",
+      "destination": "cmake/InteractiveCinematicPack.cmake"
+    },
+    {
+      "source": "cmake/InteractiveGeometryPack.cmake",
+      "destination": "cmake/InteractiveGeometryPack.cmake"
+    },
+    {
+      "source": "cmake/InteractiveIOS.cmake",
+      "destination": "cmake/InteractiveIOS.cmake"
+    },
+    {
+      "source": "cmake/InteractiveTexturePack.cmake",
+      "destination": "cmake/InteractiveTexturePack.cmake"
+    },
+    {
+      "source": "native/apple/save_backup.h",
+      "destination": "native/apple/save_backup.h"
+    },
+    {
+      "source": "native/apple/save_backup.mm",
+      "destination": "native/apple/save_backup.mm"
+    },
+    {
+      "source": "native/ios/save_backup_controller.h",
+      "destination": "native/ios/save_backup_controller.h"
+    },
+    {
+      "source": "native/ios/save_backup_controller.mm",
+      "destination": "native/ios/save_backup_controller.mm"
+    },
+    {
+      "source": "native/tests/save_backup_probe.mm",
+      "destination": "native/tests/save_backup_probe.mm"
+    },
+    {
+      "source": "tests/test_save_backup_native.py",
+      "destination": "tests/test_save_backup_native.py"
+    },
+    {
+      "source": "docs/PERSONAL_BUILD_KIT.md",
+      "destination": "docs/PERSONAL_BUILD_KIT.md"
+    },
+    {
+      "source": "native/apple/action_glyphs.h",
+      "destination": "native/apple/action_glyphs.h"
+    },
+    {
+      "source": "native/apple/audio_output.h",
+      "destination": "native/apple/audio_output.h"
+    },
+    {
+      "source": "native/apple/audio_output.mm",
+      "destination": "native/apple/audio_output.mm"
+    },
+    {
+      "source": "native/apple/content_store.h",
+      "destination": "native/apple/content_store.h"
+    },
+    {
+      "source": "native/apple/content_store.mm",
+      "destination": "native/apple/content_store.mm"
+    },
+    {
+      "source": "native/apple/game_session.mm",
+      "destination": "native/apple/game_session.mm"
+    },
+    {
+      "source": "native/include/protector/audio_output.h",
+      "destination": "native/include/protector/audio_output.h"
+    },
+    {
+      "source": "native/include/protector/ax.h",
+      "destination": "native/include/protector/ax.h"
+    },
+    {
+      "source": "native/include/protector/ax_audio.h",
+      "destination": "native/include/protector/ax_audio.h"
+    },
+    {
+      "source": "native/include/protector/ax_diagnostics.h",
+      "destination": "native/include/protector/ax_diagnostics.h"
+    },
+    {
+      "source": "native/include/protector/ax_engine.h",
+      "destination": "native/include/protector/ax_engine.h"
+    },
+    {
+      "source": "native/include/protector/cinematic.h",
+      "destination": "native/include/protector/cinematic.h"
+    },
+    {
+      "source": "native/include/protector/cinematic_pack.h",
+      "destination": "native/include/protector/cinematic_pack.h"
+    },
+    {
+      "source": "native/include/protector/cpu.h",
+      "destination": "native/include/protector/cpu.h"
+    },
+    {
+      "source": "native/include/protector/full_state.h",
+      "destination": "native/include/protector/full_state.h"
+    },
+    {
+      "source": "native/include/protector/game_session.h",
+      "destination": "native/include/protector/game_session.h"
+    },
+    {
+      "source": "native/include/protector/geometry_pack.h",
+      "destination": "native/include/protector/geometry_pack.h"
+    },
+    {
+      "source": "native/include/protector/guest_pacer.h",
+      "destination": "native/include/protector/guest_pacer.h"
+    },
+    {
+      "source": "native/include/protector/interaction_context.h",
+      "destination": "native/include/protector/interaction_context.h"
+    },
+    {
+      "source": "native/include/protector/live_gx.h",
+      "destination": "native/include/protector/live_gx.h"
+    },
+    {
+      "source": "native/include/protector/live_input.h",
+      "destination": "native/include/protector/live_input.h"
+    },
+    {
+      "source": "native/include/protector/live_metal_renderer.h",
+      "destination": "native/include/protector/live_metal_renderer.h"
+    },
+    {
+      "source": "native/include/protector/menu_input.h",
+      "destination": "native/include/protector/menu_input.h"
+    },
+    {
+      "source": "native/include/protector/metal_renderer.h",
+      "destination": "native/include/protector/metal_renderer.h"
+    },
+    {
+      "source": "native/include/protector/motion_clock.h",
+      "destination": "native/include/protector/motion_clock.h"
+    },
+    {
+      "source": "native/include/protector/motion_identity.h",
+      "destination": "native/include/protector/motion_identity.h"
+    },
+    {
+      "source": "native/include/protector/native_resolution.h",
+      "destination": "native/include/protector/native_resolution.h"
+    },
+    {
+      "source": "native/include/protector/platform.h",
+      "destination": "native/include/protector/platform.h"
+    },
+    {
+      "source": "native/include/protector/qte_presentation.h",
+      "destination": "native/include/protector/qte_presentation.h"
+    },
+    {
+      "source": "native/include/protector/room.h",
+      "destination": "native/include/protector/room.h"
+    },
+    {
+      "source": "native/include/protector/runtime_result.h",
+      "destination": "native/include/protector/runtime_result.h"
+    },
+    {
+      "source": "native/include/protector/save_store.h",
+      "destination": "native/include/protector/save_store.h"
+    },
+    {
+      "source": "native/include/protector/script_flow.h",
+      "destination": "native/include/protector/script_flow.h"
+    },
+    {
+      "source": "native/include/protector/texture_pack.h",
+      "destination": "native/include/protector/texture_pack.h"
+    },
+    {
+      "source": "native/include/protector/touch_layout.h",
+      "destination": "native/include/protector/touch_layout.h"
+    },
+    {
+      "source": "native/include/protector/tutorial_context.h",
+      "destination": "native/include/protector/tutorial_context.h"
+    },
+    {
+      "source": "native/include/protector/ui_context.h",
+      "destination": "native/include/protector/ui_context.h"
+    },
+    {
+      "source": "native/include/protector/ui_copy.h",
+      "destination": "native/include/protector/ui_copy.h"
+    },
+    {
+      "source": "native/include/protector/ui_text.h",
+      "destination": "native/include/protector/ui_text.h"
+    },
+    {
+      "source": "native/include/protector/visibility.h",
+      "destination": "native/include/protector/visibility.h"
+    },
+    {
+      "source": "native/ios/Info.plist.in",
+      "destination": "native/ios/Info.plist.in"
+    },
+    {
+      "source": "native/ios/InteractiveInfo.plist.in",
+      "destination": "native/ios/InteractiveInfo.plist.in"
+    },
+    {
+      "source": "native/ios/LiveMetalInfo.plist.in",
+      "destination": "native/ios/LiveMetalInfo.plist.in"
+    },
+    {
+      "source": "native/ios/MetalInfo.plist.in",
+      "destination": "native/ios/MetalInfo.plist.in"
+    },
+    {
+      "source": "native/ios/PerfInfo.plist.in",
+      "destination": "native/ios/PerfInfo.plist.in"
+    },
+    {
+      "source": "native/ios/RoomInfo.plist.in",
+      "destination": "native/ios/RoomInfo.plist.in"
+    },
+    {
+      "source": "native/ios/content_import.h",
+      "destination": "native/ios/content_import.h"
+    },
+    {
+      "source": "native/ios/content_import.mm",
+      "destination": "native/ios/content_import.mm"
+    },
+    {
+      "source": "native/ios/control_art.h",
+      "destination": "native/ios/control_art.h"
+    },
+    {
+      "source": "native/ios/interactive_main.mm",
+      "destination": "native/ios/interactive_main.mm"
+    },
+    {
+      "source": "native/ios/live_metal_main.mm",
+      "destination": "native/ios/live_metal_main.mm"
+    },
+    {
+      "source": "native/ios/main.m",
+      "destination": "native/ios/main.m"
+    },
+    {
+      "source": "native/ios/metal_main.m",
+      "destination": "native/ios/metal_main.m"
+    },
+    {
+      "source": "native/ios/perf_main.m",
+      "destination": "native/ios/perf_main.m"
+    },
+    {
+      "source": "native/ios/qa/AnimatedArtworkSourceUITests.m",
+      "destination": "native/ios/qa/AnimatedArtworkSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/AuthorizedArtworkUITests.m",
+      "destination": "native/ios/qa/AuthorizedArtworkUITests.m"
+    },
+    {
+      "source": "native/ios/qa/CinematicUITests.m",
+      "destination": "native/ios/qa/CinematicUITests.m"
+    },
+    {
+      "source": "native/ios/qa/ComboSourceUITests.m",
+      "destination": "native/ios/qa/ComboSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/ContentImportUITests.m",
+      "destination": "native/ios/qa/ContentImportUITests.m"
+    },
+    {
+      "source": "native/ios/qa/ControlTestHost.m",
+      "destination": "native/ios/qa/ControlTestHost.m"
+    },
+    {
+      "source": "native/ios/qa/ControlUITests.m",
+      "destination": "native/ios/qa/ControlUITests.m"
+    },
+    {
+      "source": "native/ios/qa/ControllerGuideUITests.m",
+      "destination": "native/ios/qa/ControllerGuideUITests.m"
+    },
+    {
+      "source": "native/ios/qa/DefeatUITests.m",
+      "destination": "native/ios/qa/DefeatUITests.m"
+    },
+    {
+      "source": "native/ios/qa/DialogueSourceUITests.m",
+      "destination": "native/ios/qa/DialogueSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/ExtrasViewersSourceUITests.m",
+      "destination": "native/ios/qa/ExtrasViewersSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/FoliageArtworkUITests.m",
+      "destination": "native/ios/qa/FoliageArtworkUITests.m"
+    },
+    {
+      "source": "native/ios/qa/FourArmsGrabUITests.m",
+      "destination": "native/ios/qa/FourArmsGrabUITests.m"
+    },
+    {
+      "source": "native/ios/qa/FrontendArtworkUITests.m",
+      "destination": "native/ios/qa/FrontendArtworkUITests.m"
+    },
+    {
+      "source": "native/ios/qa/FrontendUITests.m",
+      "destination": "native/ios/qa/FrontendUITests.m"
+    },
+    {
+      "source": "native/ios/qa/GalleryArtworkUITests.m",
+      "destination": "native/ios/qa/GalleryArtworkUITests.m"
+    },
+    {
+      "source": "native/ios/qa/GallerySourceUITests.m",
+      "destination": "native/ios/qa/GallerySourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/MaterialArtworkSourceUITests.m",
+      "destination": "native/ios/qa/MaterialArtworkSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/QTESourceUITests.m",
+      "destination": "native/ios/qa/QTESourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/SaveFailureUITests.m",
+      "destination": "native/ios/qa/SaveFailureUITests.m"
+    },
+    {
+      "source": "native/ios/qa/SaveUITests.m",
+      "destination": "native/ios/qa/SaveUITests.m"
+    },
+    {
+      "source": "native/ios/qa/SecondaryFrontendUITests.m",
+      "destination": "native/ios/qa/SecondaryFrontendUITests.m"
+    },
+    {
+      "source": "native/ios/qa/SecretsSourceUITests.m",
+      "destination": "native/ios/qa/SecretsSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/SettingsControllerTests.mm",
+      "destination": "native/ios/qa/SettingsControllerTests.mm"
+    },
+    {
+      "source": "native/ios/qa/SharedPanelSourceUITests.m",
+      "destination": "native/ios/qa/SharedPanelSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/UpgradeSourceUITests.m",
+      "destination": "native/ios/qa/UpgradeSourceUITests.m"
+    },
+    {
+      "source": "native/ios/qa/controller_snapshot_qa.h",
+      "destination": "native/ios/qa/controller_snapshot_qa.h"
+    },
+    {
+      "source": "native/ios/qa/controller_snapshot_qa.mm",
+      "destination": "native/ios/qa/controller_snapshot_qa.mm"
+    },
+    {
+      "source": "native/ios/room_main.m",
+      "destination": "native/ios/room_main.m"
+    },
+    {
+      "source": "native/ios/touch_settings.h",
+      "destination": "native/ios/touch_settings.h"
+    },
+    {
+      "source": "native/ios/touch_settings.mm",
+      "destination": "native/ios/touch_settings.mm"
+    },
+    {
+      "source": "native/licenses/Dolphin-GPL-2.0-or-later.txt",
+      "destination": "native/licenses/Dolphin-GPL-2.0-or-later.txt"
+    },
+    {
+      "source": "native/licenses/README.md",
+      "destination": "native/licenses/README.md"
+    },
+    {
+      "source": "native/macos/boot_main.c",
+      "destination": "native/macos/boot_main.c"
+    },
+    {
+      "source": "native/macos/interactive_main.mm",
+      "destination": "native/macos/interactive_main.mm"
+    },
+    {
+      "source": "native/macos/live_metal_main.mm",
+      "destination": "native/macos/live_metal_main.mm"
+    },
+    {
+      "source": "native/macos/main.c",
+      "destination": "native/macos/main.c"
+    },
+    {
+      "source": "native/macos/metal_main.m",
+      "destination": "native/macos/metal_main.m"
+    },
+    {
+      "source": "native/metal/canyon_sky.h",
+      "destination": "native/metal/canyon_sky.h"
+    },
+    {
+      "source": "native/metal/cinematic_pack.mm",
+      "destination": "native/metal/cinematic_pack.mm"
+    },
+    {
+      "source": "native/metal/cinematic_surround.h",
+      "destination": "native/metal/cinematic_surround.h"
+    },
+    {
+      "source": "native/metal/city_sky.h",
+      "destination": "native/metal/city_sky.h"
+    },
+    {
+      "source": "native/metal/combat_hud.h",
+      "destination": "native/metal/combat_hud.h"
+    },
+    {
+      "source": "native/metal/combat_move_labels.h",
+      "destination": "native/metal/combat_move_labels.h"
+    },
+    {
+      "source": "native/metal/combo_glyphs.h",
+      "destination": "native/metal/combo_glyphs.h"
+    },
+    {
+      "source": "native/metal/finite_room_frame.h",
+      "destination": "native/metal/finite_room_frame.h"
+    },
+    {
+      "source": "native/metal/frontend_layout.h",
+      "destination": "native/metal/frontend_layout.h"
+    },
+    {
+      "source": "native/metal/gallery_layout.h",
+      "destination": "native/metal/gallery_layout.h"
+    },
+    {
+      "source": "native/metal/gallery_model_frame.h",
+      "destination": "native/metal/gallery_model_frame.h"
+    },
+    {
+      "source": "native/metal/geometry_pack.mm",
+      "destination": "native/metal/geometry_pack.mm"
+    },
+    {
+      "source": "native/metal/hill_backdrop.h",
+      "destination": "native/metal/hill_backdrop.h"
+    },
+    {
+      "source": "native/metal/live_gx_renderer.mm",
+      "destination": "native/metal/live_gx_renderer.mm"
+    },
+    {
+      "source": "native/metal/qte_glyphs.h",
+      "destination": "native/metal/qte_glyphs.h"
+    },
+    {
+      "source": "native/metal/related_city_sky.h",
+      "destination": "native/metal/related_city_sky.h"
+    },
+    {
+      "source": "native/metal/renderer.mm",
+      "destination": "native/metal/renderer.mm"
+    },
+    {
+      "source": "native/metal/repeating_backdrop.h",
+      "destination": "native/metal/repeating_backdrop.h"
+    },
+    {
+      "source": "native/metal/scene_antialias.h",
+      "destination": "native/metal/scene_antialias.h"
+    },
+    {
+      "source": "native/metal/shared_panel_layout.h",
+      "destination": "native/metal/shared_panel_layout.h"
+    },
+    {
+      "source": "native/metal/texture_pack.mm",
+      "destination": "native/metal/texture_pack.mm"
+    },
+    {
+      "source": "native/metal/upgrade_glyphs.h",
+      "destination": "native/metal/upgrade_glyphs.h"
+    },
+    {
+      "source": "native/metal/world_map_layout.h",
+      "destination": "native/metal/world_map_layout.h"
+    },
+    {
+      "source": "native/src/audio_output.c",
+      "destination": "native/src/audio_output.c"
+    },
+    {
+      "source": "native/src/ax.c",
+      "destination": "native/src/ax.c"
+    },
+    {
+      "source": "native/src/ax_audio.c",
+      "destination": "native/src/ax_audio.c"
+    },
+    {
+      "source": "native/src/ax_diagnostics.c",
+      "destination": "native/src/ax_diagnostics.c"
+    },
+    {
+      "source": "native/src/ax_engine.c",
+      "destination": "native/src/ax_engine.c"
+    },
+    {
+      "source": "native/src/ax_pb.c",
+      "destination": "native/src/ax_pb.c"
+    },
+    {
+      "source": "native/src/boot.c",
+      "destination": "native/src/boot.c"
+    },
+    {
+      "source": "native/src/cinematic.c",
+      "destination": "native/src/cinematic.c"
+    },
+    {
+      "source": "native/src/cpu.c",
+      "destination": "native/src/cpu.c"
+    },
+    {
+      "source": "native/src/dol_loader.c",
+      "destination": "native/src/dol_loader.c"
+    },
+    {
+      "source": "native/src/full_state.c",
+      "destination": "native/src/full_state.c"
+    },
+    {
+      "source": "native/src/guest_pacer.c",
+      "destination": "native/src/guest_pacer.c"
+    },
+    {
+      "source": "native/src/interaction_context.c",
+      "destination": "native/src/interaction_context.c"
+    },
+    {
+      "source": "native/src/interaction_rules.inc",
+      "destination": "native/src/interaction_rules.inc"
+    },
+    {
+      "source": "native/src/live_gx.c",
+      "destination": "native/src/live_gx.c"
+    },
+    {
+      "source": "native/src/live_input.c",
+      "destination": "native/src/live_input.c"
+    },
+    {
+      "source": "native/src/menu_input.c",
+      "destination": "native/src/menu_input.c"
+    },
+    {
+      "source": "native/src/motion_clock.c",
+      "destination": "native/src/motion_clock.c"
+    },
+    {
+      "source": "native/src/platform.c",
+      "destination": "native/src/platform.c"
+    },
+    {
+      "source": "native/src/room.c",
+      "destination": "native/src/room.c"
+    },
+    {
+      "source": "native/src/save_store.c",
+      "destination": "native/src/save_store.c"
+    },
+    {
+      "source": "native/src/script_flow.c",
+      "destination": "native/src/script_flow.c"
+    },
+    {
+      "source": "native/src/touch_layout.c",
+      "destination": "native/src/touch_layout.c"
+    },
+    {
+      "source": "native/src/tutorial_context.c",
+      "destination": "native/src/tutorial_context.c"
+    },
+    {
+      "source": "native/src/tutorial_rules.inc",
+      "destination": "native/src/tutorial_rules.inc"
+    },
+    {
+      "source": "native/src/ui_context.c",
+      "destination": "native/src/ui_context.c"
+    },
+    {
+      "source": "native/src/ui_copy.c",
+      "destination": "native/src/ui_copy.c"
+    },
+    {
+      "source": "native/src/ui_text.c",
+      "destination": "native/src/ui_text.c"
+    },
+    {
+      "source": "native/src/visibility.c",
+      "destination": "native/src/visibility.c"
+    },
+    {
+      "source": "native/tests/audio_output_tests.c",
+      "destination": "native/tests/audio_output_tests.c"
+    },
+    {
+      "source": "native/tests/ax_audio_asset_bridge.c",
+      "destination": "native/tests/ax_audio_asset_bridge.c"
+    },
+    {
+      "source": "native/tests/ax_audio_tests.c",
+      "destination": "native/tests/ax_audio_tests.c"
+    },
+    {
+      "source": "native/tests/ax_diagnostics_tests.c",
+      "destination": "native/tests/ax_diagnostics_tests.c"
+    },
+    {
+      "source": "native/tests/ax_tests.c",
+      "destination": "native/tests/ax_tests.c"
+    },
+    {
+      "source": "native/tests/cinematic_pack_tests.mm",
+      "destination": "native/tests/cinematic_pack_tests.mm"
+    },
+    {
+      "source": "native/tests/cinematic_preparation_tests.mm",
+      "destination": "native/tests/cinematic_preparation_tests.mm"
+    },
+    {
+      "source": "native/tests/cinematic_tests.c",
+      "destination": "native/tests/cinematic_tests.c"
+    },
+    {
+      "source": "native/tests/content_store_probe.mm",
+      "destination": "native/tests/content_store_probe.mm"
+    },
+    {
+      "source": "native/tests/content_manifest_probe.mm",
+      "destination": "native/tests/content_manifest_probe.mm"
+    },
+    {
+      "source": "native/tests/dvd_async_tests.c",
+      "destination": "native/tests/dvd_async_tests.c"
+    },
+    {
+      "source": "native/tests/dvd_cancel_asset_probe.c",
+      "destination": "native/tests/dvd_cancel_asset_probe.c"
+    },
+    {
+      "source": "native/tests/game_session_tests.mm",
+      "destination": "native/tests/game_session_tests.mm"
+    },
+    {
+      "source": "native/tests/geometry_fixture.h",
+      "destination": "native/tests/geometry_fixture.h"
+    },
+    {
+      "source": "native/tests/geometry_pack_tests.mm",
+      "destination": "native/tests/geometry_pack_tests.mm"
+    },
+    {
+      "source": "native/tests/guest_pacer_tests.c",
+      "destination": "native/tests/guest_pacer_tests.c"
+    },
+    {
+      "source": "native/tests/interaction_context_tests.c",
+      "destination": "native/tests/interaction_context_tests.c"
+    },
+    {
+      "source": "native/tests/live_gx_renderer_tests.mm",
+      "destination": "native/tests/live_gx_renderer_tests.mm"
+    },
+    {
+      "source": "native/tests/live_input_tests.c",
+      "destination": "native/tests/live_input_tests.c"
+    },
+    {
+      "source": "native/tests/menu_input_tests.c",
+      "destination": "native/tests/menu_input_tests.c"
+    },
+    {
+      "source": "native/tests/motion_clock_tests.c",
+      "destination": "native/tests/motion_clock_tests.c"
+    },
+    {
+      "source": "native/tests/qte_motion_asset_probe.c",
+      "destination": "native/tests/qte_motion_asset_probe.c"
+    },
+    {
+      "source": "native/tests/room_tests.c",
+      "destination": "native/tests/room_tests.c"
+    },
+    {
+      "source": "native/tests/runtime_tests.c",
+      "destination": "native/tests/runtime_tests.c"
+    },
+    {
+      "source": "native/tests/save_commit_tests.c",
+      "destination": "native/tests/save_commit_tests.c"
+    },
+    {
+      "source": "native/tests/save_store_tests.c",
+      "destination": "native/tests/save_store_tests.c"
+    },
+    {
+      "source": "native/tests/script_flow_tests.c",
+      "destination": "native/tests/script_flow_tests.c"
+    },
+    {
+      "source": "native/tests/texture_pack_tests.mm",
+      "destination": "native/tests/texture_pack_tests.mm"
+    },
+    {
+      "source": "native/tests/tutorial_context_tests.c",
+      "destination": "native/tests/tutorial_context_tests.c"
+    },
+    {
+      "source": "native/tests/ui_context_tests.c",
+      "destination": "native/tests/ui_context_tests.c"
+    },
+    {
+      "source": "native/tests/ui_text_tests.c",
+      "destination": "native/tests/ui_text_tests.c"
+    },
+    {
+      "source": "protector_native/__init__.py",
+      "destination": "protector_native/__init__.py"
+    },
+    {
+      "source": "protector_native/animations.py",
+      "destination": "protector_native/animations.py"
+    },
+    {
+      "source": "protector_native/asset_inventory.py",
+      "destination": "protector_native/asset_inventory.py"
+    },
+    {
+      "source": "protector_native/bigb.py",
+      "destination": "protector_native/bigb.py"
+    },
+    {
+      "source": "protector_native/character_skin.py",
+      "destination": "protector_native/character_skin.py"
+    },
+    {
+      "source": "protector_native/cinematic_framing.py",
+      "destination": "protector_native/cinematic_framing.py"
+    },
+    {
+      "source": "protector_native/cinematics.py",
+      "destination": "protector_native/cinematics.py"
+    },
+    {
+      "source": "protector_native/content_package.py",
+      "destination": "protector_native/content_package.py"
+    },
+    {
+      "source": "protector_native/dol.py",
+      "destination": "protector_native/dol.py"
+    },
+    {
+      "source": "protector_native/dynamic_materials.py",
+      "destination": "protector_native/dynamic_materials.py"
+    },
+    {
+      "source": "protector_native/executable_truth.py",
+      "destination": "protector_native/executable_truth.py"
+    },
+    {
+      "source": "protector_native/geometry_pairing.py",
+      "destination": "protector_native/geometry_pairing.py"
+    },
+    {
+      "source": "protector_native/geometry_refinement.py",
+      "destination": "protector_native/geometry_refinement.py"
+    },
+    {
+      "source": "protector_native/maps.py",
+      "destination": "protector_native/maps.py"
+    },
+    {
+      "source": "protector_native/meshes.py",
+      "destination": "protector_native/meshes.py"
+    },
+    {
+      "source": "protector_native/rigid_admission.py",
+      "destination": "protector_native/rigid_admission.py"
+    },
+    {
+      "source": "protector_native/rigid_authoring.py",
+      "destination": "protector_native/rigid_authoring.py"
+    },
+    {
+      "source": "protector_native/rigid_model.py",
+      "destination": "protector_native/rigid_model.py"
+    },
+    {
+      "source": "protector_native/skinning.py",
+      "destination": "protector_native/skinning.py"
+    },
+    {
+      "source": "protector_native/textures.py",
+      "destination": "protector_native/textures.py"
+    },
+    {
+      "source": "reference/personal_build_inputs.json",
+      "destination": "reference/personal_build_inputs.json"
+    },
+    {
+      "source": "reference/personal_cinematic_recipes.json",
+      "destination": "reference/personal_cinematic_recipes.json"
+    },
+    {
+      "source": "reference/personal_geometry_recipes.json",
+      "destination": "reference/personal_geometry_recipes.json"
+    },
+    {
+      "source": "reference/personal_source_allowlist.json",
+      "destination": "reference/personal_source_allowlist.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes-00.json",
+      "destination": "reference/personal_texture_recipes-00.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes-01.json",
+      "destination": "reference/personal_texture_recipes-01.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes-02.json",
+      "destination": "reference/personal_texture_recipes-02.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes-03.json",
+      "destination": "reference/personal_texture_recipes-03.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes-04.json",
+      "destination": "reference/personal_texture_recipes-04.json"
+    },
+    {
+      "source": "reference/personal_texture_recipes.json",
+      "destination": "reference/personal_texture_recipes.json"
+    },
+    {
+      "source": "reference/personal_texture_grids.json",
+      "destination": "reference/personal_texture_grids.json"
+    },
+    {
+      "source": "reference/personal_texture_pairs.json",
+      "destination": "reference/personal_texture_pairs.json"
+    },
+    {
+      "source": "reference/personal_thumbnail_recipes.json",
+      "destination": "reference/personal_thumbnail_recipes.json"
+    },
+    {
+      "source": "reference/personal_vector_recipes.json",
+      "destination": "reference/personal_vector_recipes.json"
+    },
+    {
+      "source": "reference/personal_structural_plates.json",
+      "destination": "reference/personal_structural_plates.json"
+    },
+    {
+      "source": "reference/personal_atlas_recipes.json",
+      "destination": "reference/personal_atlas_recipes.json"
+    },
+    {
+      "source": "reference/personal_facade_recipes.json",
+      "destination": "reference/personal_facade_recipes.json"
+    },
+    {
+      "source": "reference/personal_finite_recipes.json",
+      "destination": "reference/personal_finite_recipes.json"
+    },
+    {
+      "source": "reference/personal_layered_atlas_recipes.json",
+      "destination": "reference/personal_layered_atlas_recipes.json"
+    },
+    {
+      "source": "reference/personal_sign_recipes.json",
+      "destination": "reference/personal_sign_recipes.json"
+    },
+    {
+      "source": "requirements-personal-atlases.in",
+      "destination": "requirements-personal-atlases.in"
+    },
+    {
+      "source": "requirements-personal-atlases.lock",
+      "destination": "requirements-personal-atlases.lock"
+    },
+    {
+      "source": "requirements-personal-vectors.in",
+      "destination": "requirements-personal-vectors.in"
+    },
+    {
+      "source": "requirements-personal-vectors.lock",
+      "destination": "requirements-personal-vectors.lock"
+    },
+    {
+      "source": "requirements-personal-structural.in",
+      "destination": "requirements-personal-structural.in"
+    },
+    {
+      "source": "requirements-personal-structural.lock",
+      "destination": "requirements-personal-structural.lock"
+    },
+    {
+      "source": "reference/personal_tool_sources.json",
+      "destination": "reference/personal_tool_sources.json"
+    },
+    {
+      "source": "requirements-personal.in",
+      "destination": "requirements-personal.in"
+    },
+    {
+      "source": "requirements-personal.lock",
+      "destination": "requirements-personal.lock"
+    },
+    {
+      "source": "tools/assemble_interface_grid.py",
+      "destination": "tools/assemble_interface_grid.py"
+    },
+    {
+      "source": "tools/audit_bigb.py",
+      "destination": "tools/audit_bigb.py"
+    },
+    {
+      "source": "tools/benchmark_texture_restoration.py",
+      "destination": "tools/benchmark_texture_restoration.py"
+    },
+    {
+      "source": "tools/bootstrap_personal_tools.py",
+      "destination": "tools/bootstrap_personal_tools.py"
+    },
+    {
+      "source": "tools/build_native_entry.py",
+      "destination": "tools/build_native_entry.py"
+    },
+    {
+      "source": "tools/build_texture_pack.py",
+      "destination": "tools/build_texture_pack.py"
+    },
+    {
+      "source": "tools/encode_cinematic_delivery.py",
+      "destination": "tools/encode_cinematic_delivery.py"
+    },
+    {
+      "source": "tools/export_personal_source.py",
+      "destination": "tools/export_personal_source.py"
+    },
+    {
+      "source": "tools/finish_texture_neutral.py",
+      "destination": "tools/finish_texture_neutral.py"
+    },
+    {
+      "source": "tools/inventory_cinematics.py",
+      "destination": "tools/inventory_cinematics.py"
+    },
+    {
+      "source": "tools/package_personal_content.py",
+      "destination": "tools/package_personal_content.py"
+    },
+    {
+      "source": "tools/personal_build.py",
+      "destination": "tools/personal_build.py"
+    },
+    {
+      "source": "tools/personal_cinematics.py",
+      "destination": "tools/personal_cinematics.py"
+    },
+    {
+      "source": "tools/personal_geometry.py",
+      "destination": "tools/personal_geometry.py"
+    },
+    {
+      "source": "tools/personal_textures.py",
+      "destination": "tools/personal_textures.py"
+    },
+    {
+      "source": "tools/personal_texture_grids.py",
+      "destination": "tools/personal_texture_grids.py"
+    },
+    {
+      "source": "tools/personal_texture_pairs.py",
+      "destination": "tools/personal_texture_pairs.py"
+    },
+    {
+      "source": "tools/personal_texture_corrections.py",
+      "destination": "tools/personal_texture_corrections.py"
+    },
+    {
+      "source": "tools/personal_source_patterns.py",
+      "destination": "tools/personal_source_patterns.py"
+    },
+    {
+      "source": "tools/personal_thumbnails.py",
+      "destination": "tools/personal_thumbnails.py"
+    },
+    {
+      "source": "tools/personal_vectors.py",
+      "destination": "tools/personal_vectors.py"
+    },
+    {
+      "source": "tools/personal_structural_plates.py",
+      "destination": "tools/personal_structural_plates.py"
+    },
+    {
+      "source": "tools/personal_atlases.py",
+      "destination": "tools/personal_atlases.py"
+    },
+    {
+      "source": "tools/personal_facades.py",
+      "destination": "tools/personal_facades.py"
+    },
+    {
+      "source": "tools/personal_finite_materials.py",
+      "destination": "tools/personal_finite_materials.py"
+    },
+    {
+      "source": "tools/personal_layered_atlases.py",
+      "destination": "tools/personal_layered_atlases.py"
+    },
+    {
+      "source": "tools/personal_signs.py",
+      "destination": "tools/personal_signs.py"
+    },
+    {
+      "source": "tools/build_interface_vectors.py",
+      "destination": "tools/build_interface_vectors.py"
+    },
+    {
+      "source": "tools/replay_personal_texture_batches.py",
+      "destination": "tools/replay_personal_texture_batches.py"
+    },
+    {
+      "source": "tools/prepare_texture_restoration.py",
+      "destination": "tools/prepare_texture_restoration.py"
+    },
+    {
+      "source": "tools/restore_cinematic.py",
+      "destination": "tools/restore_cinematic.py"
+    },
+    {
+      "source": "tools/restore_interface_grid.py",
+      "destination": "tools/restore_interface_grid.py"
+    },
+    {
+      "source": "tools/restore_texture_batch.py",
+      "destination": "tools/restore_texture_batch.py"
+    },
+    {
+      "source": "tools/restore_texture_objects.py",
+      "destination": "tools/restore_texture_objects.py"
+    },
+    {
+      "source": "tools/review_interface_source.py",
+      "destination": "tools/review_interface_source.py"
+    },
+    {
+      "source": "tools/personal_thumbnail_variants.py",
+      "destination": "tools/personal_thumbnail_variants.py"
+    },
+    {
+      "source": "reference/personal_thumbnail_variants.json",
+      "destination": "reference/personal_thumbnail_variants.json"
+    },
+    {
+      "source": "tests/test_personal_thumbnail_variants.py",
+      "destination": "tests/test_personal_thumbnail_variants.py"
+    },
+    {
+      "source": "tests/test_personal_texture_batches.py",
+      "destination": "tests/test_personal_texture_batches.py"
+    },
+    {
+      "source": "tools/dat_window_batches.py",
+      "destination": "tools/dat_window_batches.py"
+    },
+    {
+      "source": "tests/test_dat_window_batches.py",
+      "destination": "tests/test_dat_window_batches.py"
+    },
+    {
+      "source": "native/tests/guest_memory_inline_tests.c",
+      "destination": "native/tests/guest_memory_inline_tests.c"
+    },
+    {
+      "source": "docs/PUBLIC_README.md",
+      "destination": "README.md"
+    },
+    {
+      "source": "tools/compose_cinematic_packs.py",
+      "destination": "tools/compose_cinematic_packs.py"
+    },
+    {
+      "source": "tools/personal_cinematic_delivery.py",
+      "destination": "tools/personal_cinematic_delivery.py"
+    },
+    {
+      "source": "tools/personal_convert_textures.py",
+      "destination": "tools/personal_convert_textures.py"
+    },
+    {
+      "source": "tests/test_personal_cinematic_delivery.py",
+      "destination": "tests/test_personal_cinematic_delivery.py"
+    }
+  ]
+}

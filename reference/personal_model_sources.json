@@ -1,0 +1,46 @@
+{
+  "schema": "protector-native.personal-model-sources/v1",
+  "scope": "Manual acquisition from upstream only; no bundled weights, automatic downloads, licence acceptance or redistribution clearance",
+  "models": [
+    {
+      "filename": "4x-PBRify_UpscalerV4.safetensors",
+      "bytes": 139793020,
+      "sha256": "a00fa50116895a9b766aeb012edad0a14d66f3afda65539efc0f6fc28c991ba2",
+      "download_url": "https://github.com/Kim2091/Kim2091-Models/releases/download/4x-PBRify_UpscalerV4/4x-PBRify_UpscalerV4.safetensors",
+      "review_url": "https://github.com/Kim2091/Kim2091-Models/releases/tag/4x-PBRify_UpscalerV4",
+      "recorded_terms": "Release states CC0; keep model external"
+    },
+    {
+      "filename": "ArtCNN_R16F96.onnx",
+      "bytes": 16313082,
+      "sha256": "498f1295c43f5799ef5bdea14a8f5b7a68d1f99ae67fee8a8f77ec9b25ca3e8d",
+      "download_url": "https://raw.githubusercontent.com/Artoriuz/ArtCNN/e138cc15c0d9fb6ec04b86fc453f7faa30e2b5d3/ONNX/ArtCNN_R16F96.onnx",
+      "review_url": "https://github.com/Artoriuz/ArtCNN/blob/e138cc15c0d9fb6ec04b86fc453f7faa30e2b5d3/LICENSE",
+      "recorded_terms": "Project MIT notice; selected model rights review remains separate"
+    },
+    {
+      "filename": "4xHDcube3_500k.pth",
+      "bytes": 67020101,
+      "sha256": "fdffd8999df0f99d581888f78acb29e1c32f72f791691a29fcaa421319acc131",
+      "download_url": "https://github.com/Venomalia/HDcube/releases/download/3.0/4xHDcube3_500k.pth",
+      "review_url": "https://github.com/Venomalia/HDcube/blob/main/LICENSE",
+      "recorded_terms": "Custom licence prohibits model redistribution without permission; do not bundle or mirror"
+    },
+    {
+      "filename": "RealESRGAN_x4plus_anime_6B.pth",
+      "bytes": 17938799,
+      "sha256": "f872d837d3c90ed2e05227bed711af5671a6fd1c9f7d7e91c911a61f155e99da",
+      "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth",
+      "review_url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.2.4",
+      "recorded_terms": "Project BSD-3-Clause; selected release-weight rights review remains separate"
+    },
+    {
+      "filename": "realesr-animevideov3.pth",
+      "bytes": 2504012,
+      "sha256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d",
+      "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth",
+      "review_url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0",
+      "recorded_terms": "Project BSD-3-Clause; selected release-weight rights review remains separate"
+    }
+  ]
+}

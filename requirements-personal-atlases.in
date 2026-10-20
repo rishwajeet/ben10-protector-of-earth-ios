@@ -1,0 +1,3 @@
+-r requirements-personal-structural.in
+cairosvg==2.8.2
+cairocffi==1.7.1

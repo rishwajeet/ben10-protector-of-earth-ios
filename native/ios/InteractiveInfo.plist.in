@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleExecutable</key><string>${MACOSX_BUNDLE_EXECUTABLE_NAME}</string>
+  <key>CFBundleIdentifier</key><string>${PROTECTOR_IOS_BUNDLE_IDENTIFIER}</string>
+  <key>CFBundleName</key><string>Protector Native</string>
+  <key>CFBundleDisplayName</key><string>Protector Native</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>0.1</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSRequiresIPhoneOS</key><true/>
+  <key>DTPlatformName</key><string>${PROTECTOR_IOS_PLATFORM_NAME}</string>
+  <key>CFBundleSupportedPlatforms</key><array><string>${PROTECTOR_IOS_SUPPORTED_PLATFORM}</string></array>
+  <key>MinimumOSVersion</key><string>${CMAKE_OSX_DEPLOYMENT_TARGET}</string>
+  <key>UIFileSharingEnabled</key><true/>
+  <key>LSSupportsOpeningDocumentsInPlace</key><true/>
+  <key>UTExportedTypeDeclarations</key><array><dict>
+    <key>UTTypeIdentifier</key><string>house.machine.protector.personal-content</string>
+    <key>UTTypeDescription</key><string>Protector personal content</string>
+    <key>UTTypeConformsTo</key><array><string>public.data</string></array>
+    <key>UTTypeTagSpecification</key><dict>
+      <key>public.filename-extension</key><array><string>pnc</string></array>
+    </dict>
+  </dict><dict>
+    <key>UTTypeIdentifier</key><string>house.machine.protector.save-backup</string>
+    <key>UTTypeDescription</key><string>Protector saved progress</string>
+    <key>UTTypeConformsTo</key><array><string>public.data</string></array>
+    <key>UTTypeTagSpecification</key><dict>
+      <key>public.filename-extension</key><array><string>pnsave</string></array>
+    </dict>
+  </dict></array>
+  <key>UIDeviceFamily</key><array><integer>1</integer></array>
+  <key>UIRequiredDeviceCapabilities</key><array><string>arm64</string><string>metal</string></array>
+  <key>ITSAppUsesNonExemptEncryption</key><false/>
+  <key>UILaunchScreen</key><dict/>
+  <key>UISupportedInterfaceOrientations</key><array>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+  <key>UIRequiresFullScreen</key><true/>
+  <key>UIApplicationSceneManifest</key><dict>
+    <key>UIApplicationSupportsMultipleScenes</key><false/>
+    <key>UISceneConfigurations</key><dict>
+      <key>UIWindowSceneSessionRoleApplication</key><array><dict>
+        <key>UISceneConfigurationName</key><string>Original game</string>
+        <key>UISceneDelegateClassName</key><string>ProtectorInteractiveSceneDelegate</string>
+      </dict></array>
+    </dict>
+  </dict>
+</dict></plist>

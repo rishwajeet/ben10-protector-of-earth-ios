@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "id": "64x64-b88110cd3865d00a22276b1f0e84c3544b88fd22259c62c540193ff3e90fae5d",
+      "recipe_sha256": "04ac0093275effdaabd406995746b0deec296930108de1d48d6ec0c92f2d36ea"
+    },
+    {
+      "id": "128x128-9197551bd2f9b72004d5e516065a2d73dc8387b465637a82bd0c6c3cb28169da",
+      "recipe_sha256": "749e33d3622df9dd9d93efb6e9c6cca50977580a3a20f44fef878c03cd068375"
+    },
+    {
+      "id": "64x64-4b89a531f28846bcad27b658b25de796f3885ac3b19d7dd6c8ce763b1e57a33d",
+      "recipe_sha256": "e4084b2581a8894e9f9bd4d2e4f46f34ebb2510a4d3943296c96c34f8274aab9"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-layered-atlases/v1",
+  "scope": "Recipe identities only; private authored geometry and drawings are external; no historical pixel payloads",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}

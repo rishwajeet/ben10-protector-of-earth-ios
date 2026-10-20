@@ -1,0 +1,4 @@
+# Qualified deterministic source-contour reconstruction; no model weights.
+numpy==2.4.2
+pillow==12.1.1
+scipy==1.17.0

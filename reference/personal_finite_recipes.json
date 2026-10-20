@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "id": "64x64-dc975c423407ba0fcf4bcb0a0cef418d516f6a0006d7379dd851fe736e58be83",
+      "recipe_sha256": "e592c864a426fa09b407090ba91eab054bea5756e909f9ad331daedcdafc27cf"
+    },
+    {
+      "id": "32x32-e4936445ac5de15a8b61ff3602a698cc7bcb33daa8613e705096ff853f16725a",
+      "recipe_sha256": "691290a89cb0d5bbf557970bf8eb6aa1901ca43e98fcf77b79e676d2342ade7c"
+    },
+    {
+      "id": "32x32-117e457c36210fb57644695e4a1f3cf7d171c4be5ddee11a59cd0da22b559fa6",
+      "recipe_sha256": "b898eb2966cfb29aee4f01e109190f3e4e28c9153a46c964c7e431e7cacd957c"
+    },
+    {
+      "id": "64x64-4693e1165c12a6cc19b692f765159d3d07316eedb80b78d391c2ffd35cdbe243",
+      "recipe_sha256": "16b2cd2c8c72ddcb70f76848c48b837bc1c99e8dbf48cd9dbf2827475e1822f2"
+    },
+    {
+      "id": "64x64-2757f4a41f7195af47fd1cc01425284c6c068193579770d296b7a8a7e3404e8f",
+      "recipe_sha256": "e31f2310399a797258944975336e6c6eda190adc302f176cb73d2371d83a1635"
+    },
+    {
+      "id": "64x64-4e4564fc0147b88b8414741cfe7653becfa40b4f1e7cba76257d8697b67e1282",
+      "recipe_sha256": "3f2796c05fc701bc1713e97c461b00002c5b5eaaa5efdfad565bbce14df6a85a"
+    },
+    {
+      "id": "32x32-29201ad09f7f9ad14a2d47d51c65df28d2614863d393f1cb8eb814d1650fed0e",
+      "recipe_sha256": "1690cc0df3f901a32c7a629783835b28f48d3e983fa8d8fd48728af40e1c7ed1"
+    },
+    {
+      "id": "32x32-4cf54841b28178abd0513a92143bdc16bc64d9ae3cb6790164833abebe874978",
+      "recipe_sha256": "5c533dcd56bf8b396cffd7e25b706a7555dea017481840d5a44976813ecfe32c"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-finite-materials/v1",
+  "scope": "Identities only; private registered geometry is external and colour values are reconstructed from originals",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}

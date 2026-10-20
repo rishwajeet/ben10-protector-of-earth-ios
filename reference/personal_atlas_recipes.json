@@ -1,0 +1,124 @@
+{
+  "distribution_clearance": false,
+  "entries": [
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "128x128-2fb47d2e5e88cb6ff221977fba3d5cea4f96797565cbdc2b50f4f0d7e9ec2e42",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "636c33cede3738555a08c6132fce254e60c0500c40c09e95d37c89e3b3766947",
+      "source_dimensions": [
+        128,
+        128
+      ],
+      "vector_sha256": "9c0c9d6bf13b4ea8982bc2122ed4d22d6c0f3b97cc11f922824001c4345a95ed"
+    },
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "128x128-dd273e7a231bb2c6dc14896e2af2a5bbc83320fc9966b8f525fbe98b28bea68f",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "be429157b9b1bb962be119627191f3c5553061165fb38c9259b91dc716844512",
+      "source_dimensions": [
+        128,
+        128
+      ],
+      "vector_sha256": "e22b50e4de52fccbcc709afa2361f66d9c750020d707be712906bc677d247232"
+    },
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "64x64-38a2028d5aa5c7337709f5ff05f71a633253da705c32d8ef0feacf9650ba1eae",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "dd5e205902bb8c758aa328a762bc9c76c5512b12ed8d933908a2261e22308b19",
+      "source_dimensions": [
+        64,
+        64
+      ],
+      "vector_sha256": "597b65040fb2e04517c126f1623913d5676ead76e374671ac3f8ecdee9bf2abf"
+    },
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "64x64-c65f4f39a84009ed68abff59718b03a8c688612827a6a12f398bdb26ff41d2b4",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "0e5637cebe35a143dc50383b099add213da19ca18659945c7857717cd585f57f",
+      "source_dimensions": [
+        64,
+        64
+      ],
+      "vector_sha256": "d0eba8005ea72f131b8b5aac6960405f758eeeb3b5c1e8761e8e72935ba7393f"
+    },
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "128x128-5055644590d4274f4b68fc29194b27bce789175fc7011c34bbc7929955ceb0ca",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "23f86d84eb7dd01ee8a5c25b0f4e45f1e25facac748400c45381b4f5bd5e1018",
+      "source_dimensions": [
+        128,
+        128
+      ],
+      "vector_sha256": "715ee9925f911680cc4f8a8ac4926fb260d8e6b0975ac3cd8dc35b104aaf908c"
+    },
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "downsample": "RGB Lanczos 2:1",
+      "id": "64x64-c2961235001e3799cd746f1bc4c1f1c26dba2d48d4672092f96f91bdde1222a6",
+      "raster_dimensions": [
+        2048,
+        2048
+      ],
+      "rasterizer": "CairoSVG 2.8.2; cairocffi 1.7.1; cairo 1.18.4",
+      "reference_rgba8_sha256": "4be179fbd405a02c8a34c57b3d731a8c5d351451ec4273040ef00f470bc53fb1",
+      "source_dimensions": [
+        64,
+        64
+      ],
+      "vector_sha256": "8186bc8dde39811de06bbc42fb35cfcc5b62ba4d580eee51a9ab1243217b9abc"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-atlases/v1",
+  "scope": "Identities only; private authored SVG files are supplied separately",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}

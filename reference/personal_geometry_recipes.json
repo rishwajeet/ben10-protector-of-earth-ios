@@ -1,0 +1,2781 @@
+{
+  "schema": "protector-native.personal-geometry-recipes/v1",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "reference_manifest_sha256": "2f0536116658ff84fe9cdb7817ca3035b3289e86e653dcfc95369cefaabe5c9d",
+  "pack_id": "roster-cannon-candidate-v1",
+  "entry_count": 194,
+  "entry_order": [
+    "99_95-002f5480-draw-1",
+    "99_95-002f5480-draw-0",
+    "99_95-002f54e0-draw-0",
+    "99_95-002f54e0-draw-1",
+    "99_95-002f54e0-draw-2",
+    "99_95-002f54a0-draw-0",
+    "99_95-002f54a0-draw-1",
+    "99_95-002f54a0-draw-2",
+    "99_95-002f54c0-draw-1",
+    "99_95-002f54c0-draw-0",
+    "99_95-002f5520-draw-1",
+    "99_95-002f5520-draw-0",
+    "99_95-002f5500-draw-1",
+    "99_95-002f5500-draw-2",
+    "99_95-002f5500-draw-3",
+    "99_95-002f5500-draw-0",
+    "99_95-002f5540-draw-0",
+    "99_95-002f5540-draw-2",
+    "99_95-002f5540-draw-1",
+    "13_02-0009de40-rigid-draw-0",
+    "13_02-00086860-rigid-draw-0",
+    "13_02-00086860-rigid-draw-1",
+    "32_01-0010ba20-rigid-draw-0",
+    "99_95-00292960-rigid-draw-3",
+    "99_95-00292960-rigid-draw-4",
+    "99_95-00292960-rigid-draw-5",
+    "99_95-00292960-rigid-draw-6",
+    "99_95-00292960-rigid-draw-7",
+    "99_95-00292960-rigid-draw-8",
+    "99_95-00292960-rigid-draw-9",
+    "99_95-00292960-rigid-draw-10",
+    "99_95-00292960-rigid-draw-11",
+    "99_95-00292960-rigid-draw-12",
+    "99_95-00292960-rigid-draw-13",
+    "99_95-00292960-rigid-draw-14",
+    "99_95-00292960-rigid-draw-15",
+    "99_95-00292960-rigid-draw-16",
+    "99_95-00292960-rigid-draw-17",
+    "99_95-00292960-rigid-draw-18",
+    "99_95-00292960-rigid-draw-19",
+    "99_95-00292960-rigid-draw-20",
+    "99_95-00292960-rigid-draw-21",
+    "99_95-00292960-rigid-draw-22",
+    "99_95-00292960-rigid-draw-23",
+    "99_95-00292960-rigid-draw-24",
+    "99_95-00292960-rigid-draw-25",
+    "99_95-00292960-rigid-draw-26",
+    "99_95-00292960-rigid-draw-27",
+    "99_95-00292960-rigid-draw-28",
+    "99_95-00292960-rigid-draw-29",
+    "99_95-00292960-rigid-draw-30",
+    "99_95-00292960-rigid-draw-31",
+    "99_95-00292960-rigid-draw-32",
+    "99_95-00292960-rigid-draw-33",
+    "99_95-00292960-rigid-draw-34",
+    "99_95-00292960-rigid-draw-35",
+    "99_95-00292960-rigid-draw-36",
+    "99_95-00292960-rigid-draw-37",
+    "99_95-00292960-rigid-draw-38",
+    "99_95-00292960-rigid-draw-39",
+    "99_95-00292960-rigid-draw-40",
+    "99_95-002d6da0-rigid-draw-3",
+    "99_95-002d6da0-rigid-draw-2",
+    "99_95-002d6da0-rigid-draw-5",
+    "99_95-002d6da0-rigid-draw-4",
+    "99_95-002d6da0-rigid-draw-7",
+    "99_95-002d6da0-rigid-draw-6",
+    "99_95-002d6da0-rigid-draw-9",
+    "99_95-002d6da0-rigid-draw-8",
+    "99_95-002d6da0-rigid-draw-11",
+    "99_95-002d6da0-rigid-draw-10",
+    "99_95-002d6da0-rigid-draw-13",
+    "99_95-002d6da0-rigid-draw-12",
+    "99_95-002d6da0-rigid-draw-15",
+    "99_95-002d6da0-rigid-draw-14",
+    "99_95-002d6da0-rigid-draw-17",
+    "99_95-002d6da0-rigid-draw-16",
+    "99_95-002d6da0-rigid-draw-23",
+    "99_95-002d6da0-rigid-draw-22",
+    "99_95-002d6da0-rigid-draw-25",
+    "99_95-002d6da0-rigid-draw-24",
+    "99_95-002d6da0-rigid-draw-28",
+    "99_95-002bd800-rigid-draw-6",
+    "99_95-002bd800-rigid-draw-7",
+    "99_95-002bd800-rigid-draw-8",
+    "99_95-002bd800-rigid-draw-9",
+    "99_95-002bd800-rigid-draw-10",
+    "99_95-002bd800-rigid-draw-11",
+    "99_95-002bd800-rigid-draw-14",
+    "99_95-002bd800-rigid-draw-15",
+    "99_95-002bd800-rigid-draw-16",
+    "99_95-002bd800-rigid-draw-17",
+    "99_95-002bd800-rigid-draw-18",
+    "99_95-002bd800-rigid-draw-19",
+    "99_95-002bd800-rigid-draw-22",
+    "99_95-002bd800-rigid-draw-23",
+    "99_95-002bd800-rigid-draw-12",
+    "99_95-002bd800-rigid-draw-13",
+    "99_95-002bd800-rigid-draw-20",
+    "99_95-002bd800-rigid-draw-21",
+    "99_95-002bd800-rigid-draw-3",
+    "99_95-002bd800-rigid-draw-4",
+    "99_95-002bd800-rigid-draw-5",
+    "99_95-0025d320-rigid-draw-3",
+    "99_95-0025d320-rigid-draw-2",
+    "99_95-0025d320-rigid-draw-8",
+    "99_95-0025d320-rigid-draw-7",
+    "99_95-0025d320-rigid-draw-10",
+    "99_95-0025d320-rigid-draw-9",
+    "99_95-0025d320-rigid-draw-12",
+    "99_95-0025d320-rigid-draw-11",
+    "99_95-0025d320-rigid-draw-14",
+    "99_95-0025d320-rigid-draw-13",
+    "99_95-0025d320-rigid-draw-16",
+    "99_95-0025d320-rigid-draw-15",
+    "99_95-0025d320-rigid-draw-18",
+    "99_95-0025d320-rigid-draw-17",
+    "99_95-0025d320-rigid-draw-20",
+    "99_95-0025d320-rigid-draw-19",
+    "99_95-0025d320-rigid-draw-22",
+    "99_95-0025d320-rigid-draw-21",
+    "99_95-0025d320-rigid-draw-5",
+    "99_95-0025d320-rigid-draw-6",
+    "99_95-0025d320-rigid-draw-4",
+    "99_95-00278280-rigid-draw-16",
+    "99_95-00278280-rigid-draw-15",
+    "99_95-00278280-rigid-draw-18",
+    "99_95-00278280-rigid-draw-17",
+    "99_95-00278280-rigid-draw-25",
+    "99_95-00278280-rigid-draw-24",
+    "99_95-00278280-rigid-draw-27",
+    "99_95-00278280-rigid-draw-26",
+    "99_95-00278280-rigid-draw-36",
+    "99_95-00278280-rigid-draw-35",
+    "99_95-00278280-rigid-draw-44",
+    "99_95-00278280-rigid-draw-43",
+    "99_95-00278280-rigid-draw-5",
+    "99_95-00278280-rigid-draw-6",
+    "99_95-00278280-rigid-draw-4",
+    "99_95-00278280-rigid-draw-8",
+    "99_95-00278280-rigid-draw-9",
+    "99_95-00278280-rigid-draw-7",
+    "99_95-00278280-rigid-draw-11",
+    "99_95-00278280-rigid-draw-12",
+    "99_95-00278280-rigid-draw-10",
+    "99_95-00278280-rigid-draw-31",
+    "99_95-00278280-rigid-draw-32",
+    "99_95-00278280-rigid-draw-30",
+    "99_95-00278280-rigid-draw-38",
+    "99_95-00278280-rigid-draw-39",
+    "99_95-00278280-rigid-draw-37",
+    "99_95-00278280-rigid-draw-41",
+    "99_95-00278280-rigid-draw-42",
+    "99_95-00278280-rigid-draw-40",
+    "99_95-00278280-rigid-draw-22",
+    "99_95-00278280-rigid-draw-23",
+    "99_95-00278280-rigid-draw-21",
+    "99_95-00278280-rigid-draw-28",
+    "99_95-00278280-rigid-draw-29",
+    "99_95-00245fc0-rigid-draw-9",
+    "99_95-00245fc0-rigid-draw-8",
+    "99_95-00245fc0-rigid-draw-11",
+    "99_95-00245fc0-rigid-draw-10",
+    "99_95-00245fc0-rigid-draw-15",
+    "99_95-00245fc0-rigid-draw-14",
+    "99_95-00245fc0-rigid-draw-29",
+    "99_95-00245fc0-rigid-draw-28",
+    "99_95-00245fc0-rigid-draw-3",
+    "99_95-00245fc0-rigid-draw-5",
+    "99_95-00245fc0-rigid-draw-4",
+    "99_95-00245fc0-rigid-draw-32",
+    "99_95-00245fc0-rigid-draw-33",
+    "99_95-00245fc0-rigid-draw-13",
+    "99_95-00245fc0-rigid-draw-12",
+    "99_95-00245fc0-rigid-draw-31",
+    "99_95-00245fc0-rigid-draw-30",
+    "99_95-00278280-rigid-draw-14",
+    "99_95-00278280-rigid-draw-13",
+    "99_95-00278280-rigid-draw-34",
+    "99_95-00278280-rigid-draw-33",
+    "32_01-00096a60-rigid-draw-5",
+    "32_01-00096a60-rigid-draw-4",
+    "32_01-00096a60-rigid-draw-11",
+    "32_01-00096a60-rigid-draw-10",
+    "32_01-00096a60-rigid-draw-17",
+    "32_01-00096a60-rigid-draw-16",
+    "32_01-00096a60-rigid-draw-19",
+    "32_01-00096a60-rigid-draw-18",
+    "32_01-00096a60-rigid-draw-21",
+    "32_01-00096a60-rigid-draw-20",
+    "32_01-00096a60-rigid-draw-23",
+    "32_01-00096a60-rigid-draw-22",
+    "32_01-00096a60-rigid-draw-25",
+    "32_01-00096a60-rigid-draw-24"
+  ],
+  "entries_sha256": "7fafb077b89ed52afae07e8ba5aaea04aba6e2e0c4fdcf03e16f2f467d6489e5",
+  "scope": "Source selectors, fixed processing settings and verification hashes only; no generated geometry. Public distribution review is separate.",
+  "groups": [
+    {
+      "id": "99_95-002f5480-draw-1",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f5480",
+      "body_draws": [
+        1
+      ],
+      "outline_draw": 0,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f5480-draw-1",
+          "sha256": "15e2c736f634bc3bb5f9079115d2e4fe9795dd60c0612a52aa1eec0982ab8633"
+        },
+        {
+          "id": "99_95-002f5480-draw-0",
+          "sha256": "7fc9ff390cf1b47e14e324a1688ffbeaa16d4474294a54b2da7539604fe3cea1"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002f54e0-draw-0",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f54e0",
+      "body_draws": [
+        0,
+        1
+      ],
+      "outline_draw": 2,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f54e0-draw-0",
+          "sha256": "5cfd4c03f6b03c3b6d232883df0f84570cc965c1b337fc81475d0b144acb283e"
+        },
+        {
+          "id": "99_95-002f54e0-draw-1",
+          "sha256": "97589c29aa4377e42d2e54d8ded9d2d93345a364e64d2b531d4aa994edd4ea4f"
+        },
+        {
+          "id": "99_95-002f54e0-draw-2",
+          "sha256": "257c74190d0ca09fcc4a9e4c606d572ba457bdb1363b0802e3ad085f2649c121"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002f54a0-draw-0",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f54a0",
+      "body_draws": [
+        0,
+        1
+      ],
+      "outline_draw": 2,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f54a0-draw-0",
+          "sha256": "8ec303a705be7aa4bfac68204a260445a47265766ef3fc1da24cbcb8c25c570b"
+        },
+        {
+          "id": "99_95-002f54a0-draw-1",
+          "sha256": "8581588e8a91d58b433d5231211c6f9cab5e8ad1bade79ea1b59f98a7c51151a"
+        },
+        {
+          "id": "99_95-002f54a0-draw-2",
+          "sha256": "901595149a269c3cd30b7148f9291ba6e400efa722ae19e4792d769593a54485"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002f54c0-draw-1",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f54c0",
+      "body_draws": [
+        1
+      ],
+      "outline_draw": 0,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f54c0-draw-1",
+          "sha256": "d66c3935e1c6f9791d793754e1b5cfd4b33ec469ecd5cd621fa7ca2e6035900c"
+        },
+        {
+          "id": "99_95-002f54c0-draw-0",
+          "sha256": "79bdb4f0ae286b491a514da390a00942fb36f0a83c96f3443c2f2bf72f904fe8"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002f5520-draw-1",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f5520",
+      "body_draws": [
+        1
+      ],
+      "outline_draw": 0,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f5520-draw-1",
+          "sha256": "dddd54109ede0d1345d9c7f8b15fb02ec189e087ebf10555a4a55392d70249e0"
+        },
+        {
+          "id": "99_95-002f5520-draw-0",
+          "sha256": "3bb780fb87beb3b512c9c0d9ff3134c8635a8eb4843c7d68b4f1dbf736bb9dff"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002f5500-draw-1",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f5500",
+      "body_draws": [
+        1,
+        2,
+        3
+      ],
+      "outline_draw": 0,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f5500-draw-1",
+          "sha256": "eb39c05850241743b3d36b7dcf1edb38f78b82ff8d0c27f688384f06754abeae"
+        },
+        {
+          "id": "99_95-002f5500-draw-2",
+          "sha256": "5cfeedd45ee483438dc095db4613466dad5a898a1478548f742e81b3a4649864"
+        },
+        {
+          "id": "99_95-002f5500-draw-3",
+          "sha256": "563df9da8bd9e09a621998248a29572bf1b0bad1aa327c45ccf31decf75ab9fc"
+        },
+        {
+          "id": "99_95-002f5500-draw-0",
+          "sha256": "b5b0c5949d333a1699c6f3c57d228ecbb1444691f55a61ffdb4f531c77ffa58c"
+        }
+      ],
+      "shell_review": {
+        "kind": "partial",
+        "sha256": "f8cc2063fa823b3f07efebae5c81d9e12d7151329b3c88b20cbf0b48671b7993"
+      }
+    },
+    {
+      "id": "99_95-002f5540-draw-0",
+      "kind": "skinned",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002f5540",
+      "body_draws": [
+        0,
+        2
+      ],
+      "outline_draw": 1,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002f5540-draw-0",
+          "sha256": "f31003ca8eb1cd011ea6a9f54034c405cf8153365d03cccbb25b8337f559448f"
+        },
+        {
+          "id": "99_95-002f5540-draw-2",
+          "sha256": "002a282b4c575165df78439aa9c70daeafc8a40096fd1c02d429cb1dd95ead80"
+        },
+        {
+          "id": "99_95-002f5540-draw-1",
+          "sha256": "9cd8f3e0b1ec3f29f0d3e600326932e59557a4f0b819b81280d849ce3071c099"
+        }
+      ],
+      "shell_review": {
+        "kind": "partial",
+        "sha256": "d8cf5a603ae0e097eb56947ae44acc8e1b25ea13ff2e66a2ff73b083af54dbb4"
+      }
+    },
+    {
+      "id": "13_02-0009de40-rigid-draw-0",
+      "kind": "rigid",
+      "package": "13_02.gcs",
+      "package_sha256": "46590cf41c987f89d2a1901c2dc9955a5d9f2f7484732ad393d8cbdcaa93f2df",
+      "offset": "0x0009de40",
+      "body_draws": [
+        0
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "13_02-0009de40-rigid-draw-0",
+          "sha256": "41dfb571f445743b105fa043f8a6641aad4bf3b861946cc5e07d098f658d1ae2"
+        }
+      ]
+    },
+    {
+      "id": "13_02-00086860-rigid-draw-0",
+      "kind": "rigid",
+      "package": "13_02.gcs",
+      "package_sha256": "46590cf41c987f89d2a1901c2dc9955a5d9f2f7484732ad393d8cbdcaa93f2df",
+      "offset": "0x00086860",
+      "body_draws": [
+        0
+      ],
+      "outline_draw": 1,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "13_02-00086860-rigid-draw-0",
+          "sha256": "b941c79481c2d6ba45e89dc3a2a38c019199277bcfdfc0361f21b8d81f27bb58"
+        },
+        {
+          "id": "13_02-00086860-rigid-draw-1",
+          "sha256": "07652e2b5926d96eab1bba12075d1cc1fe538dc9e13bdeb188bc899b60dd20b8"
+        }
+      ],
+      "shell_review": {
+        "kind": "partial",
+        "sha256": "4d2c3204e62d21bd4cf9b6f6f02c98f11ac2726cae206184974251f4e918df9e"
+      }
+    },
+    {
+      "id": "32_01-0010ba20-rigid-draw-0",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x0010ba20",
+      "body_draws": [
+        0
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-0010ba20-rigid-draw-0",
+          "sha256": "51f16e05f05af26501a075d69dc5396c3d7e371070b0a3f6ba991257ffc5a746"
+        }
+      ]
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-3",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        3
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-3",
+          "sha256": "52831f47d44e22cf000550063e85cc19320731043bcc03e518f905511d6e0296"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-4",
+          "sha256": "fc9723abf8729a6ac33b07b2ed659c6708f0ddba2306e8e90bcb235d6f3b366d"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "54b2d6ce9ef47cbb5ef2535c033ac58ad9caa6add4c66aad9cd9f99291556345"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-5",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        5
+      ],
+      "outline_draw": 6,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-5",
+          "sha256": "831e069811e829ee678153db8dc1d687939aaf67b3c4c6d49581efd36dfa332a"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-6",
+          "sha256": "1da171f17fc74b8def19d573fbdf43a76ee794ff626f6a50ae1fd97e2f2e4335"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "34c551ce6ecf6527f3693146128dd749fc19df5491c185d6618c3a65e42bf7a8"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-7",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        7
+      ],
+      "outline_draw": 8,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-7",
+          "sha256": "c6a03da2120fc5d183b50e34205697787bfaaf206b91c4750c26f23818541048"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-8",
+          "sha256": "8f25b21a6642799fbbcc7d238599181713b1a86d16b088e9deed1e0c16ed74c5"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "49b0e04e92754278c22a55ef735dc69e98ce0aa72b8bfc2f0b6690901b5cf07a"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-9",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        9
+      ],
+      "outline_draw": 10,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-9",
+          "sha256": "555834fd920a40323f830a9dbf49496a681566248286e28645e5cf569d0c0238"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-10",
+          "sha256": "aa5d94091a8bef30169a0df733045c3ccfeb677aa718061003c6470a770ecfb1"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.018,
+        "sha256": "4fb0211af6003b4da42a840535071df159d4b5c53f0b53e73f0229a7371ccbd2"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-11",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        11
+      ],
+      "outline_draw": 12,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-11",
+          "sha256": "8f2788837158edcd0525697ad97f3acee16e091ff425dbaa7654d36ab0cd77d6"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-12",
+          "sha256": "54d050858ddb022ea154f9111f3b3b7a28c154192bcc9f7574bf0c15af1b4337"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "39bbc24be66e1982a0e550ed13d43d7d8b77cacf78f3b9526f0886d89a49255b"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-13",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        13
+      ],
+      "outline_draw": 14,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-13",
+          "sha256": "6cbd2a87e4eeddfb1857d5de8d2c0898d1fa5af2de4b21b2173bd3a982e9f713"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-14",
+          "sha256": "08584e43288c1f2c8b144445e159217ae3ed5c77115c1a5c564a6b1518d615b0"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.018,
+        "sha256": "3efa2fbfe0677c1ab9cde63b22ece369c1df226e648dee017b7df9c42fdbcebb"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-15",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        15
+      ],
+      "outline_draw": 16,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-15",
+          "sha256": "58dbb4233110a0eb8e7f497b15338a5ea33ac1d9fb60ef0ba9447d37da872758"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-16",
+          "sha256": "b0c910a50965e1c204f9fd614ad7ef6371a06b4772ae2a504d711d008df8f19e"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "36462717c6423f16305d32acf10659ecc088e3ea48f7134da5b966b9d007e3d7"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-17",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        17
+      ],
+      "outline_draw": 18,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-17",
+          "sha256": "a8f7c631eab331aac4d74373f88df5d412f23bb7449c29bb0e537cecccd52745"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-18",
+          "sha256": "ee1d1b6c8def60f33413b688d65b23a416afa129dd839ff547b7207a7ddbef39"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "5c82395d143ce7351ce1b798c081b69ba67b33eeb0e60bc5ca49f2e4e653320b"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-19",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        19
+      ],
+      "outline_draw": 20,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-19",
+          "sha256": "ac29586c84418cee19bb19f3dc7b6919e5f3f79969be6afb859ad627e80d2359"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-20",
+          "sha256": "03cce5fc566cbefeceb014f67fe418070b5a8c281d29f5c830251817210f34b5"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "d6ef0fdf3feb327066c5b8f05148183ba1418e087323f0e07b95e20b5de9ca5c"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-21",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        21
+      ],
+      "outline_draw": 22,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-21",
+          "sha256": "68317ffafca887e816ef1ea5272816fe0504467bddbfda7b50f43e4215c236ef"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-22",
+          "sha256": "b49f7d8ebcf615bd28f722ade5c7544535800f2c3a09bb7f4e79c08616c28dd1"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "a9d2580b30834c569556d5f9116cecce2b2f50095f646ee331f14a02760de783"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-23",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        23
+      ],
+      "outline_draw": 24,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-23",
+          "sha256": "4bf43a1254c301a6d9a60c8b4093b4ef2a1a7e9c4084d1c33b2dab8d5a261be8"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-24",
+          "sha256": "449d0ac957ae864023cba665cdd07e0f7909cd135596a733bb1cb453d86a7d6f"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "1aa2d21dbe5f9a1c05cf68b2491e9e1ca9537a326e1c204c88c74cd1f59610c0"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-25",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        25
+      ],
+      "outline_draw": 26,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-25",
+          "sha256": "bb59e5097830f39639b9fbfbd690fcdd3663906924955643dfa368342f5437a3"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-26",
+          "sha256": "095224195c0e9203be19e6b8b2dabaa94d2e55eb52c419e6c593993def51cdfc"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "15c41c334776ded0926c7bfd45467ea4012a89f3b509e68aa41f4bcde7bc1d7e"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-27",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        27
+      ],
+      "outline_draw": 28,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-27",
+          "sha256": "ef9642460d12bfb15754af704f2fcdf7768eb1c779f3b1d3d344f73ab41bbbc4"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-28",
+          "sha256": "9b70cf8636df69bad3dc7e022e2c190a1ff7a8a3eddf5e97e0bb68c10c7948fd"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "91f4d6a51a40ff74ccf46abd90577a16ba7fa7de553c76a5dca8db5deb3caed4"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-29",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        29
+      ],
+      "outline_draw": 30,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-29",
+          "sha256": "137eb61b8917a687291722a6437de587c864f178215cb5c6b83e5a190de4a23b"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-30",
+          "sha256": "91a09cd3599200ebed06ac7e83ab56a9e3f565fbf8681a05ebb69fad7b0d98d6"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "71b8cfd1ba139585b3107c5b563d2598d1d0b94b59261b4b14f634415725c7e6"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-31",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        31
+      ],
+      "outline_draw": 32,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-31",
+          "sha256": "8caa43f0a7686ce7381a13ec8fea8a5e47db0113b4238951479d00c219975351"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-32",
+          "sha256": "fd5f0aba61854514803d5ef552fd416db00f2afe756a2f321aef7b20d2f47164"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "b4ab1a0e72992bba1e649b0e2546d688757a5dd998d8b3588e6a6862bc25e99f"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-33",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        33
+      ],
+      "outline_draw": 34,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-33",
+          "sha256": "0a5ebc6629f504a14f136e40ae4f2cf0ffc333fd8eb67543c87b12327f91d81b"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-34",
+          "sha256": "37ca9a39e5b212ba3a225c7a42024f99043d7a51b1d33b77bfaa2591fd05e303"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "46f656c477192ea4ae56c1ef5d22f825a4c457b6976131ba54d734f7813ee91d"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-35",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        35
+      ],
+      "outline_draw": 36,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-35",
+          "sha256": "1e0d4f774ef5a10e71c2634e2004448d612be3c098c30451b45ca5b4ff09f057"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-36",
+          "sha256": "ef6264b61f86525fe0b9b2fceac85cdeaad1416ed8e519802015464cd057b253"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "e3ab8ca98e6be9489e460235493061bf66b09b81a4bddfadd2a019ee3cf29216"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-37",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        37
+      ],
+      "outline_draw": 38,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-37",
+          "sha256": "f35d0d53a6c0f40831702db7daa9088a18abd70420f347697ce826261509c5fe"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-38",
+          "sha256": "696cae9c2f561c86172a237975765c30338e14db98add2885ab41a1f843a5fe2"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "2fd0f18c3b492262c2e5ddf881fc0f65c30b67b7dde426061921a3b6bf474901"
+      }
+    },
+    {
+      "id": "99_95-00292960-rigid-draw-39",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00292960",
+      "body_draws": [
+        39
+      ],
+      "outline_draw": 40,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00292960-rigid-draw-39",
+          "sha256": "6ccd4d7048d5e03702d71c76a8ddd4ae8eae6e4329892e954a1b3d6913dca184"
+        },
+        {
+          "id": "99_95-00292960-rigid-draw-40",
+          "sha256": "055f4d44c969c113f82cbdb26a5504cbf9847a19519c279c1bd56da4a2ee5503"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.018,
+        "sha256": "3f470db617deb36b3b499cc8e5f218e0044ef44f1a22ec2d4743292c26c02e5b"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-3",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        3
+      ],
+      "outline_draw": 2,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-3",
+          "sha256": "28de71e88a3db68ae535cc14669117adc7c536afe6ff5aececd1289393ca8d70"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-2",
+          "sha256": "628f4bb6b2b6c23e3e4e81225d85c43a4e851c33fb109d02b19a705a3f30f421"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "75946a609cc12de224af5116bd9690931e9095f2cee68e8adac651a8dc223294"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-5",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        5
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-5",
+          "sha256": "123767ad92651b90f284505b219dba2c94325bf4168eebb94e19cb8f7ba6a39f"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-4",
+          "sha256": "ff185bf60676b055d72dc01421cc645e4f798fa5b9d1357df9c8e4e521f22305"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "df133f24fb70832e7387f1f3caef652b20ae72ceb305ba6da6858bb12e2a0941"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-7",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        7
+      ],
+      "outline_draw": 6,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-7",
+          "sha256": "b870799d692c875c640b0a2189220ac21ed4202bbf54a9533514e778e5b1a8d7"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-6",
+          "sha256": "2106115d1ed6b3432d9dfe7ac26971a82980a15a5d4015f3c019dc9c8708a9c2"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "36fe5d99da1a22de905d97a628436f1c38e06989a6c14614c99aefba06c0a1d4"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-9",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        9
+      ],
+      "outline_draw": 8,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-9",
+          "sha256": "fe344731bcfe98cc823856f1d78c8cd9e9ef0c09baf69d5ea91ae92347f8fe75"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-8",
+          "sha256": "4a48712c69312b50ef8a22c45c86ad283eb133f5589678445d13129dc299e3a2"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "123a8cacec5acec4c23d51052c390487806edb52718cebada3c5a76a38ba360e"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-11",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        11
+      ],
+      "outline_draw": 10,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-11",
+          "sha256": "98b8ee95a10c2257fd3ba147f281996fb07f614319c3e5faab039a8641d379db"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-10",
+          "sha256": "b9f2f23eb2b96bf88f8f6cb10b7724dc932dd9c60388d3d06c1536f4512e882e"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "d4e237e062461f01f16c43ce19d6653d2aa075cf27ce6a7b6ccba6f210389be9"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-13",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        13
+      ],
+      "outline_draw": 12,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-13",
+          "sha256": "c07d14ec49e6542b362d39f8410fe8995183eb85e8936f4b9769b1770ad32bd4"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-12",
+          "sha256": "8e31dfc0d961985975d4ed789586ac991ec633bca9988807c4de47b91871a78c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "d7d571732df29a805ac707029c46d41306a4f27056f5f2352718e228327774ca"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-15",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        15
+      ],
+      "outline_draw": 14,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-15",
+          "sha256": "609d77e113201f46f0bf575e02ba7c4f3d9ed094ee9ba35e5bca551d5c6534a2"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-14",
+          "sha256": "50eb811691eef65761b02e0f5fe037d372dff0ede764bf76c3302dd864330b93"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "9c7bbb7fa51e69f244ca9cb729dfe88b7bf177f971033bd08c433301e2dbcf61"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-17",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        17
+      ],
+      "outline_draw": 16,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-17",
+          "sha256": "25517765610346fd486cf653a2dc3a8b4254d41a9ba777fa4bc17272765fe428"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-16",
+          "sha256": "e5c7aae4a6e35917b1cfd90608939637bda1ac0a5aef5773902a1de19bde3401"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "2fa9e502cdc6eebefb56c2c781823b6905895319fcaec890b40bb0056ba035e9"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-23",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        23
+      ],
+      "outline_draw": 22,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-23",
+          "sha256": "a3fcefeae564e6da9f283bb43ad37e9409983015c219397d18b87a22fcb6ff17"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-22",
+          "sha256": "6a389a1dbd2515dfc61d3183f110bd4d7bddd4e43f5d4775ce259a9d4c5883ef"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "c4e1b09afea3b822610a2ed254f03c475a66d63ef04913952f5a2b14e1d53177"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-25",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        25
+      ],
+      "outline_draw": 24,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-25",
+          "sha256": "ce86b185a75b53a5a1d804c80ed7aecbab443cb677af555d9530af6251abe513"
+        },
+        {
+          "id": "99_95-002d6da0-rigid-draw-24",
+          "sha256": "024c5273cca097654e1cef9174218aa22be1f6f5f123ebfed9de4245e407f259"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "6f8279ed00c09486ec6e999f4519561cb36d0a6fb74a5d3d1f0ac025da096758"
+      }
+    },
+    {
+      "id": "99_95-002d6da0-rigid-draw-28",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002d6da0",
+      "body_draws": [
+        28
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002d6da0-rigid-draw-28",
+          "sha256": "8561f510c30bd51a5d119c11a8dadde671d647f151f257c9f54a5da48b57b8cb"
+        }
+      ]
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-6",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        6
+      ],
+      "outline_draw": 7,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-6",
+          "sha256": "a85e396dd2ca7609d131279e157456263af7ebf521b0f48987de6be2e7087db4"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-7",
+          "sha256": "40eab5b55d1f2d6d6023c36c37e3fd928b355d39af5b32c0fefce7d591b583d4"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "4b0146f696a6b625c577dc4ec3ed0a955f00e48b5d91e8d8f088d119a58c832e"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-8",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        8
+      ],
+      "outline_draw": 9,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-8",
+          "sha256": "78ea024f5cc48986bc155b59eb62f19b5bad910594912850c66f1419d5042872"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-9",
+          "sha256": "f7f91a20ef69b0678739db999043f65128e1da908b64de1e3b93ce63555c24d3"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "504ca4dadc087eb011752c851e8fbf3109838be35438861969b3b3ac77893768"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-10",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        10
+      ],
+      "outline_draw": 11,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-10",
+          "sha256": "bb27e0c5b1a0b7a280dc09155b27c356490b257196a880a76f09ba2731e66fab"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-11",
+          "sha256": "b1b1823144286a81d43709aa75e832ec0e640c5036ca931077b42171fd31121e"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "1425c265de7fbda3b4e779868d5c0c3f36e02a1427d23699a589b67567dacf45"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-14",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        14
+      ],
+      "outline_draw": 15,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-14",
+          "sha256": "6f71b54acfd3f972838334cefb977542d50f58a9167098d2c677ace96cb5c9d9"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-15",
+          "sha256": "19dfb87f25b016eb2c80978f5cd642fde22db3fa62a8f4efd33db5411466b8ad"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "97255db807bcbff7ffebeb10d281532a28cae4d6b7561cc0e83e86ac2a47d71b"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-16",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        16
+      ],
+      "outline_draw": 17,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-16",
+          "sha256": "8880aeb8fa4389665cd695bf0930912f67b6120841bebddad445c3235812ce8c"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-17",
+          "sha256": "ba6f0f353b84a813d89827af45b5a1f7c89922d9a2077ea12ff78bbb62d39e92"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "583ea938e897842a5ff1f7e1aacd2ca1846f6f1cd94f58355b43930d2a47dcd6"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-18",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        18
+      ],
+      "outline_draw": 19,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-18",
+          "sha256": "90a0e91b8735911e522e648828c7bcb28ea8f76fce840c5bf928c8afbf1c5176"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-19",
+          "sha256": "6ab178017e7d00c96c8742b30f56a7fcf919b05f7fb4300b37f62a7bc061e968"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "2d109f35e7837067b31d51f77c543ff3dab0482d88b397322613b6b52066c994"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-22",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        22
+      ],
+      "outline_draw": 23,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-22",
+          "sha256": "4b1b0ee126000fd9b871d963b90af2ba53bb91f1aa73a9978d0764fa65a6c686"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-23",
+          "sha256": "d9a7f17d3e668c93c43b00cde6c1f08a9b95791b29dc3508f0d03ff9d5dbc27b"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "16ec7c9561aaa5e59724b0325709f3ceb998db1e1e7c01588a276b6629d49bcf"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-12",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        12
+      ],
+      "outline_draw": 13,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-12",
+          "sha256": "7e4ba719937b69b9dd651b056086a304e32a09eb8c546803f969be7eaf6418cc"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-13",
+          "sha256": "034a022a3e1e6fc80c351e43bda25fda704116fc15ac6af0a5b4379ae9dee513"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.028,
+        "sha256": "10152b2e9855288c59d036e59c820a0e09512ec4db53db69f6ad0a48ebf4beff"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-20",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        20
+      ],
+      "outline_draw": 21,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-20",
+          "sha256": "61cd70c46acc217fe9ddcbadd5373698ac8aa6a8b6b27e0cb2af2b7ed7077a3b"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-21",
+          "sha256": "49f3adbc70b2732578fcf9c53a058c9848e249b7b6972270200c1a9da39f8888"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.028,
+        "sha256": "b929030115f3c56366085970772b832eaeb3e11c72c8e4c5b35e81c585244d7a"
+      }
+    },
+    {
+      "id": "99_95-002bd800-rigid-draw-3",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x002bd800",
+      "body_draws": [
+        3,
+        4
+      ],
+      "outline_draw": 5,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-002bd800-rigid-draw-3",
+          "sha256": "4781a5fb5346eb221ea5561633f7aab30b2dd85d04f65b7cb7165000b355b98e"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-4",
+          "sha256": "7abf85816bdf00b5631930858e25220af3cf16de042aa2b724d50d636dc7a7a9"
+        },
+        {
+          "id": "99_95-002bd800-rigid-draw-5",
+          "sha256": "e84713dc67c6f2d8156cd7be402b1b1a10b220502ca9fa40d46768efa4fb5159"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.028,
+        "sha256": "4503aca7e17adf81cbe516b57e7ddd35f909d68c22b637a3095f1ec5acda663e"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-3",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        3
+      ],
+      "outline_draw": 2,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-3",
+          "sha256": "432cfec2fa6e1f5015f0bf57e143aaa6fdb7e6e00075750e08cd96d4dac1cdd9"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-2",
+          "sha256": "c053f7bd5dd585346e8b79a66b1cb19ba83acbb62f7176936366efbd5027c7c0"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "02be7b65ff3b7e2890ea2cedf8a5a67dbf9896c8a4682a7138e98b3e5e4eb608"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-8",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        8
+      ],
+      "outline_draw": 7,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-8",
+          "sha256": "8e1bb2a3c17a4122f978213ba3314731b82fd9f3048647cc5c56d53e0af3036a"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-7",
+          "sha256": "d2e584e8bbdd2321793cd924b203def22dfd58ac48d5eccfc26972cfa579d587"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "059def08c4c086487d2c5bf4eab7ccec43b7ba222dbed9d4448adf7b3a1c0111"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-10",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        10
+      ],
+      "outline_draw": 9,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-10",
+          "sha256": "404a93cc1fe00fa4f89c33c73a7bc39666dea40a6e634d9ae0cff4b139eae7a5"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-9",
+          "sha256": "440a7945c2034096c7bafb261febf682fa2210916a1e919ee231cc5e49fd5876"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "9a904a59098a80af28716e5ca52dccd8fdcbf13d86e2e705fcf9742956944d8b"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-12",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        12
+      ],
+      "outline_draw": 11,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-12",
+          "sha256": "507cba97f5570bf70ad7baa14e8923869159c816dc5776b7db451719b3bda43e"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-11",
+          "sha256": "78da03ee57794624976bae1642e97f5b7d2f4f3933f810276b44070b1e6da7ad"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "123ac9feef89fce819baa9c602d25b92737d40e3cc4125d10583cfab5f55363f"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-14",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        14
+      ],
+      "outline_draw": 13,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-14",
+          "sha256": "8adb7c17ef1e7b54d1bee90c22c822ac8ed1ce20a62cb66aaedba83f6d4e6a4a"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-13",
+          "sha256": "38ec9a5c48ec5495782b01c09ffafb44f610275461aa870f0f7ca5aeb0d2e3f3"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "6c96b804a3ac8e6b5356557e32bb86ed6d2cfda2daa19fc6d09de51733afd7f0"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-16",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        16
+      ],
+      "outline_draw": 15,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-16",
+          "sha256": "44fe899bf16c0f6e829129c0a2b376678adc491c9a69afc26ab481f527263467"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-15",
+          "sha256": "641327ff073ef8306b457e70e99843f292a42df3185a63ba311b43fd3a0a0a0a"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "719ce742dc88499d04361fb2bd6aad773c1a8c109e92ca667697feb5d6448add"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-18",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        18
+      ],
+      "outline_draw": 17,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-18",
+          "sha256": "6f2f318cb6875682908ffeae0e28627db402e1de5f5d9d2d79227d9dddba2355"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-17",
+          "sha256": "7ad0c9105c637544241a4a0d499f70499933404adc0a92d739ae98764c48be50"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "7a8cbd8eda2c71025842b2bf044fcf4ebab1fa34c1d82fc1aa2b11d87136a73e"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-20",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        20
+      ],
+      "outline_draw": 19,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-20",
+          "sha256": "83f8802f8dde7146431d49eadcb49865e2b7ed4e67df5426cd95ac3b0d4a609a"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-19",
+          "sha256": "a2b40c0e96a3c985bb34bca144b16e7292824dd00261130ba5b705c5e5e7724c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "7982b81564bf0ee336a20c00d9e12627155c1f714762d7ac7160030e94697dc4"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-22",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        22
+      ],
+      "outline_draw": 21,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-22",
+          "sha256": "d75d5017fb5a6d88d901808d45c69bd817af21ec721a1194f1be8020971b847a"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-21",
+          "sha256": "c8daa732b97932d9878a0e4c7295fdc5a8fd7f59d6b149b016fc0171975cbe29"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "61c08ddff16c8960c4d8b2a86533f6029a2e523a25cd1f80772c2fd4291922a9"
+      }
+    },
+    {
+      "id": "99_95-0025d320-rigid-draw-5",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x0025d320",
+      "body_draws": [
+        5,
+        6
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-0025d320-rigid-draw-5",
+          "sha256": "80a2033d6508fe8de1dd65583d1d2c279ede5829f555ab9d5479efc0a024bd2e"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-6",
+          "sha256": "5386e7e52ebe4249930e20d7df2677a5c48e27c962e0869d089d74d0a412bd2a"
+        },
+        {
+          "id": "99_95-0025d320-rigid-draw-4",
+          "sha256": "3e9a5648a0dba0280e7932205562e0cf99f3f5a4594341cc31b7684e6e33df8f"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "2e87bd4014ab444b47c63a2e92201a7c60665322287d9b18125726d038a4af13"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-16",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        16
+      ],
+      "outline_draw": 15,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-16",
+          "sha256": "7a72bfa18de5b4692aca4b380913467c3d2804b6b368af7b8d954180a8b2aeb2"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-15",
+          "sha256": "12f2c326d8e886514278b94f8f88c70de0dc2b846928c33bdf1f261fcdd3940c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "1a0cd21e144ea80241e64cb58c52fe8d478582e58d0cfe615b93d400f476e922"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-18",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        18
+      ],
+      "outline_draw": 17,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-18",
+          "sha256": "60b9de637c9f1bab927e4b0a71b6d82acce499d5493e714a4a70d465e5496454"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-17",
+          "sha256": "83121d4c50fcbc09d46ef46c09ca5507a50daf187f3b72989ce9153d8c2e782e"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "6608e1539e55846e6843e15ceecd3c603b1987e3801637ea32b0e519e93e5ea2"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-25",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        25
+      ],
+      "outline_draw": 24,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-25",
+          "sha256": "2829a2057fb58ea71f764fa72c8e8cab420ec3e49b4851f04c4fb583397f604e"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-24",
+          "sha256": "38309ed9780db6ad85b166df62efc5b681dab6b3ac4173ac1d89c124e97bc24d"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "6e7813ca696698d6de61528e917718aa549278b057da86cadd6f30a3e3a555e0"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-27",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        27
+      ],
+      "outline_draw": 26,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-27",
+          "sha256": "bb2d5bab662c89d4bc5fdb7a64539c534026ad6fe5e0448f467a3297dff0f392"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-26",
+          "sha256": "3a5c2cea2e19a05df02ffce742892abe8e1e35ef5178c6dc7d04c9c4e6fb2061"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "5636791b7dcfc4b1782953a5434d8ee37a3a92cf6338f02b2ff0989c8587a707"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-36",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        36
+      ],
+      "outline_draw": 35,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-36",
+          "sha256": "32e7353c009f76502377ef5c4a00cd6d5e5793206bd32cd2d65b3e5ed491d71e"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-35",
+          "sha256": "620be0b3c8167c74fd7a45d7a9222a579d34e379bbe52425f8adf7f10598f3d4"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "c9bcb4b3d314bc2007dca0b502df915b1796fc7d95c50b20f694fbb3198ae005"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-44",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        44
+      ],
+      "outline_draw": 43,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-44",
+          "sha256": "8e30c54311296e990b7596e09d8d8f51883db20cb637d10f5115ae105a3a8e66"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-43",
+          "sha256": "d5ea02aa10e08a140f07a6eef9a982e37c413a6372ebc5fe68686d312aecb36e"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "1979928fe037509092b25baab2fa13ee04f17f3edfe7e48f9757109a7fd1a46a"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-5",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        5,
+        6
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-5",
+          "sha256": "f77c3f6fa54046a71d85adeec2ee355feff8e17c6e47e2d826e95c96a34e8474"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-6",
+          "sha256": "1ae6672865f09ca87c011057ed23908720b7aec2f540658af0d2d913b0a6df5e"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-4",
+          "sha256": "ded6eb378eacdd648fff674b74b3170e44aacf5d989dbc6ef1d84675f4cf74f0"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "c2f4bbd2f0bb470af7beb02d2f1da309669352ec526d4715b351f1ba93bfe413"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-8",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        8,
+        9
+      ],
+      "outline_draw": 7,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-8",
+          "sha256": "9db12cefe271a2b758888a6ae1e658d12117851bd44ce979592f15f593991da1"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-9",
+          "sha256": "484eb97b97007ddaf636a73de6465ad64b911cec569349064629848f7156934e"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-7",
+          "sha256": "2040faf6ace82d73dd4948e8bc23cdc9c7b88cec6d66c0af82df441e8230a43c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "79399245ada1268e4b07fb08e2f73cae86f4b10fdba1a97adc6c559b65e5d97a"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-11",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        11,
+        12
+      ],
+      "outline_draw": 10,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-11",
+          "sha256": "fbfe11da65a0437a44805d5bcc81f0b4c24572a91dc071acc450e26e62b7cda5"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-12",
+          "sha256": "96e34d6396353486a6bd8e46de6e9387320bc51d46fda9e0334995175d918306"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-10",
+          "sha256": "e44928cbcf110127ad7e7b4f81eafc07ff2f8ba89463eb5c19db09932bee26c9"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "e19b4ca1f5f4c7af1dc18bad3773f642f44be9c25d4bc2d38320b9ab3326dc90"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-31",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        31,
+        32
+      ],
+      "outline_draw": 30,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-31",
+          "sha256": "c08597fa9a441dd1935df727f145e6d898aca7833d27682c6cffa81f0cc08ae1"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-32",
+          "sha256": "60bb0798d74c2bcc850373eeae12b7c8f016d1dc9691f5f80472a760ae94cc4c"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-30",
+          "sha256": "28aa634662ed1cc69617be1696111d4d60fa90564cfe85f17690dcc4f1dc1666"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "579e077c532797666ec48a58eb70b19059389f6c8d588118c98637ea8ebe8c04"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-38",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        38,
+        39
+      ],
+      "outline_draw": 37,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-38",
+          "sha256": "ed8e639e45bbd7082c4a90bda38703dd2a9fdd629df6151141d4bfcae3565efe"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-39",
+          "sha256": "f7a58d516a59cf3a7505fb8d839f68215a9797f575326a44e1a7e292e8279aa7"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-37",
+          "sha256": "e8918b314cefca723b1127f1c8b3efca7242e64f4b74721fa750d2cbf702de84"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "ce4d4154c489d42786f1d398d5d97ab29d208be3a8c035f8a2b5c20e98d6cad1"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-41",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        41,
+        42
+      ],
+      "outline_draw": 40,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-41",
+          "sha256": "ede29f31cb8d5221935b2ccb9fe16557730b0aae066264e0fd6db8f7b8589f6d"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-42",
+          "sha256": "e840444fb2fd17c33db599555179fbc49765fc6299c1242df9a7264e688fba03"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-40",
+          "sha256": "465e7ac31780b86fe6528dfb0230c34b90c72d6ccd54a5a95bfa035b5ac08897"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.018,
+        "sha256": "872ee59aeca2faf7ceb377536f61b8462eaca34619c45343ab9d1e617a458b97"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-22",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        22,
+        23
+      ],
+      "outline_draw": 21,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-22",
+          "sha256": "4237405c4d157a6cdaffa11277e44cfdbd840bc44e6acea64096c219b9d281f8"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-23",
+          "sha256": "6410fa86bf28829bd1ea950a6838304e699ab94de678fc5fbdaa1985e2a6a523"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-21",
+          "sha256": "748ceb30f0e878fd37f352e8331c6ee76d2fb99ff2984f39dd9b876758e734dd"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "partial",
+        "maximum_distance": 0.018,
+        "sha256": "549687a96b778267f0af432454ae352c9de80dcc928011b9618f1a1affc2c2a8"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-28",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        28
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-28",
+          "sha256": "00091d8b8001ed7c4398b9f5df1f7e30067411d6edf9986778a416f1aa7b5394"
+        }
+      ]
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-29",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        29
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-29",
+          "sha256": "fb8122e3accabf55e56f63ad7ae9b2db2ca62d39863d80eeb7511739721f93dd"
+        }
+      ]
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-9",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        9
+      ],
+      "outline_draw": 8,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-9",
+          "sha256": "05a37a2edb207d9ff0122f7f8e9625773607344a02a16035e1f1b7159c8fb2a4"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-8",
+          "sha256": "e8c7f2e7dcaa75175da9062c7ae7faba6988720b39ca67ba329139abfa66a4a1"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "9c9adb06d70d31c4f7a0f080ddf3f7375e3e363739e17de0e157e44ebc0d0507"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-11",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        11
+      ],
+      "outline_draw": 10,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-11",
+          "sha256": "6e1d640b27516954b06e9793810a59544bfb678d4e7d5c7b7d2b34331ee051f3"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-10",
+          "sha256": "986fc4cf07b5350169864dbf0bd8a131f12e046494bc6ea331d04a2f6cf83df7"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "07c01d701b495e9e2f3b26204e7c3050ad6416f3ed9ceb28eeace05e88673dc2"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-15",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        15
+      ],
+      "outline_draw": 14,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-15",
+          "sha256": "29c26cca444ef9a4b4dc0e2f5b1e443d4bd1eebe7a08fe0e26d1ea5189515613"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-14",
+          "sha256": "a28a12daa2bf2a0de89346d9977194d36a75761b86b3e6c172c317e061c226aa"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "8ece98a5586d9ef8c9fe4c9563c59f27f292a80883c8f1b318a34f624a45e83d"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-29",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        29
+      ],
+      "outline_draw": 28,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-29",
+          "sha256": "34e31e8630a185b393d91dd2f56df5f194994c81442f30f2395e7a627e13eae4"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-28",
+          "sha256": "281e2472bc01eeb7f896473d7be30a36c71d3ff7448cd926c05314115f106c3f"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "8fe7913fdf13c27ed9ec7929defbf0eed016889f18218c158cb1e16965a21808"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-3",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        3,
+        5
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-3",
+          "sha256": "61b0cbadcc993769b6fde8ffa0c751e0ce87bc879192a0e0a512b9898053a3c4"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-5",
+          "sha256": "636f9df5b20dc4e39c9cdde1a0393c702763b136a76b315c5f2a89a24c8b4703"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-4",
+          "sha256": "35409bf18ebcbf78516aa72427d6cf79bf3299d0effb025e1b1fc348b862b26c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "2b8b7a4ba006c19beac5dd06c79b5a6c5a3e451202e50073fb4c163822d389f1"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-32",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        32
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-32",
+          "sha256": "00a914509a383bef3485fa65fef8bfdca4cac915e00751c030d71342debdee22"
+        }
+      ]
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-33",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        33
+      ],
+      "outline_draw": null,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-33",
+          "sha256": "7bb0f9bd96726e2a02cdf5fea5c0b3a1c39282631904079c4e87b7281c074e10"
+        }
+      ]
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-13",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        13
+      ],
+      "outline_draw": 12,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-13",
+          "sha256": "df57e06f164bf05ed0292df3715b15cec48a1356f2e6bf034f1ce900bee8ac6d"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-12",
+          "sha256": "c91ec230ecfac31115426f9326bd797801c75293723197275229fa203df0427a"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "ad2b763add5b1c4a25f8f50beda4561d0f1299718dcad6331c4e4c5e83b286ac"
+      }
+    },
+    {
+      "id": "99_95-00245fc0-rigid-draw-31",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00245fc0",
+      "body_draws": [
+        31
+      ],
+      "outline_draw": 30,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00245fc0-rigid-draw-31",
+          "sha256": "f7e748920187e61a33bf05a099eae158370cd387db84a97d5d2a0cc42edd661c"
+        },
+        {
+          "id": "99_95-00245fc0-rigid-draw-30",
+          "sha256": "f071a273be6132086905acdfb21ac5455fe0a4d03d9b3ee99ad78ac1552b2af5"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0075,
+        "sha256": "6d6a506dc8808a7910d08d287305a03ad931aa2fdd53ad85ad67a438536730ba"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-14",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        14
+      ],
+      "outline_draw": 13,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-14",
+          "sha256": "165a59af1609a3ba15ff53f4d3128bf72d3b7bb9c3c11e53fea923ce76ac78a2"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-13",
+          "sha256": "f19add55e18abcda8d86c26b0ce7a4e23a7c8a81902bf3e610d9142dbf87195c"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "body-complete",
+        "maximum_distance": 0.045,
+        "sha256": "76016a863cc6c28bdbf88a3484bfdede665b4e55ea9c58a583e582544ea1509b"
+      }
+    },
+    {
+      "id": "99_95-00278280-rigid-draw-34",
+      "kind": "rigid",
+      "package": "99_95.gcs",
+      "package_sha256": "722f4b0a2530c9c13678d34c1feb72bdf4e0f4d8d640ed201059419f091688c6",
+      "offset": "0x00278280",
+      "body_draws": [
+        34
+      ],
+      "outline_draw": 33,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "99_95-00278280-rigid-draw-34",
+          "sha256": "82987a2f9b60339777d9e9be5c9593b88a1b7cbe4bd55d111e91ae5eb72292e0"
+        },
+        {
+          "id": "99_95-00278280-rigid-draw-33",
+          "sha256": "7a117a63f95d7e25f9082ad17b559dc611740fb39c70cee47f7c66e7d68338e3"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "body-complete",
+        "maximum_distance": 0.018,
+        "sha256": "ec8fad0b629d3f5e05cb1d58064045000c587282b627493a1124029eeeb23986"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-5",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        5
+      ],
+      "outline_draw": 4,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-5",
+          "sha256": "217121301966d7aadf7ff1fc373ef3e59a9b1b96d8b1407239fb3a8e4f4443e2"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-4",
+          "sha256": "a380076716bb6f84861026a19b2fc8d397c4e8a2c7c90633764d7bc874f83c22"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0071,
+        "sha256": "d0d73b364a89155ac609b3dfb7de4094652d9f29c1aa0b94f632a8b191c2794f"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-11",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        11
+      ],
+      "outline_draw": 10,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-11",
+          "sha256": "18d448708fcf5cace351ba887fccc4ae3a3c4236cb60b99bbf777f146b3d234f"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-10",
+          "sha256": "ff732d3136c2f046eb532b19cc3654ece79d859973187efde376f8be5b8936fe"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0071,
+        "sha256": "490a0d1fca0a02c390ad142174bcb1551a1b1d128156117e0e90237f1288c677"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-17",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        17
+      ],
+      "outline_draw": 16,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-17",
+          "sha256": "a865bde761c9554113f6350d87ec0819b3489e1173fbb868807134bcbb1198f6"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-16",
+          "sha256": "07838898a2e0dae5c7326cc6a2b543b8053416249ba4f60e76e80ac2f431466f"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0087,
+        "sha256": "f1e80e36f8cce3098ed776685512e4aa12dd934a3bf1997ab33e7c0d75a5639a"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-19",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        19
+      ],
+      "outline_draw": 18,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-19",
+          "sha256": "28921e5b9744d68e5a02899b9eecb57778a3c0889cf7ddcd9d276ec218580df8"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-18",
+          "sha256": "f0de9d3c7b5bd99de4ea2fa7aa6b8d20ec6ca438dd77e2eb5dd877a9f7d15586"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0063,
+        "sha256": "73803adc23bc80552fe6c07897351d1e450858a7821b25beeb793b5bacb3568c"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-21",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        21
+      ],
+      "outline_draw": 20,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-21",
+          "sha256": "3c2982484e538a578787549ca858fb69a261a6ca25501a19f1fd32e8a1a88754"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-20",
+          "sha256": "64c8ae58129bd58deb80cd41361228726137a1cec9d76408679ba88fca1813c0"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0063,
+        "sha256": "226809c501fdb489ed4d02201501b6edf325771ec7e6e855de09fed3e9cb9e59"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-23",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        23
+      ],
+      "outline_draw": 22,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-23",
+          "sha256": "d682dde4e78649772681978446cd60433ca86a4820bec7f114d0e454c8235e98"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-22",
+          "sha256": "a77b7734155a242352479d44b719aa40c7be483a86b021cb6f605b0cf3d6d6bc"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0072,
+        "sha256": "b9b94b2e400736f0c64e78654864b590cc586f34680f7b221c2416368cf74739"
+      }
+    },
+    {
+      "id": "32_01-00096a60-rigid-draw-25",
+      "kind": "rigid",
+      "package": "32_01.gcs",
+      "package_sha256": "63b2e7adf705a26908bbe469b93027832c1f95320a91d7db4cb3b7048a43ffa5",
+      "offset": "0x00096a60",
+      "body_draws": [
+        25
+      ],
+      "outline_draw": 24,
+      "strength": 1,
+      "expected_entries": [
+        {
+          "id": "32_01-00096a60-rigid-draw-25",
+          "sha256": "a0ea47ea9e99e299db3217985aab768aeed90dd3a02842f6c7a9c88ce40a04fb"
+        },
+        {
+          "id": "32_01-00096a60-rigid-draw-24",
+          "sha256": "4bacdaf1191e0bc99e71c263bcdba2a42f9dc0408d98f4d2f87bbb83a2a518b0"
+        }
+      ],
+      "shell_review": {
+        "kind": "rigid-thickness",
+        "mode": "full",
+        "maximum_distance": 0.0079,
+        "sha256": "b99513f27ddd59ac207fa675e87d275745fcad0ebb1ff6260148448183bc99dd"
+      }
+    }
+  ]
+}

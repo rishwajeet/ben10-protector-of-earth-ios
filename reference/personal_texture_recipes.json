@@ -1,0 +1,69 @@
+{
+  "schema": "protector-native.personal-texture-recipes/v1",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "pack_id": "world-artwork-combined-v3",
+  "entry_count": 2221,
+  "models": {
+    "a00fa50116895a9b766aeb012edad0a14d66f3afda65539efc0f6fc28c991ba2": {
+      "sha256": "a00fa50116895a9b766aeb012edad0a14d66f3afda65539efc0f6fc28c991ba2",
+      "filename": "4x-PBRify_UpscalerV4.safetensors",
+      "source_url": "https://github.com/Kim2091/Kim2091-Models/releases/tag/4x-PBRify_UpscalerV4",
+      "recorded_license_claim": "CC0 per model release; model remains external",
+      "distribution_review": "not-cleared; local supplied weights only"
+    },
+    "498f1295c43f5799ef5bdea14a8f5b7a68d1f99ae67fee8a8f77ec9b25ca3e8d": {
+      "sha256": "498f1295c43f5799ef5bdea14a8f5b7a68d1f99ae67fee8a8f77ec9b25ca3e8d",
+      "filename": "ArtCNN_R16F96.onnx",
+      "source_url": "https://github.com/Artoriuz/ArtCNN",
+      "recorded_license_claim": "MIT; model remains external",
+      "distribution_review": "not-cleared; local supplied weights only"
+    },
+    "fdffd8999df0f99d581888f78acb29e1c32f72f791691a29fcaa421319acc131": {
+      "sha256": "fdffd8999df0f99d581888f78acb29e1c32f72f791691a29fcaa421319acc131",
+      "filename": "4xHDcube3_500k.pth",
+      "source_url": "https://github.com/Venomalia/HDcube/releases/tag/3.0",
+      "recorded_license_claim": "HDcube custom license: no model redistribution without permission; author claims no output copyright",
+      "distribution_review": "not-cleared; local supplied weights only"
+    }
+  },
+  "operation_counts": {
+    "local-rgb-neutral": 1317,
+    "authored-treatment-pending": 225,
+    "sampler-bicubic-rgb": 546,
+    "source-monotone-radial-rgb": 1,
+    "source-positive-periodic": 18,
+    "local-neutral": 89,
+    "source-constant": 25
+  },
+  "status": "incomplete-until-all-authored-treatments-replayed",
+  "scope": "Source selectors, settings and hashes only. No pixels, vectors or model weights. Publication review separate.",
+  "entry_files": [
+    {
+      "path": "personal_texture_recipes-00.json",
+      "sha256": "5d085c60268145c97187a9243a30e0b08f02ad62607c0181260d4c58aedcd8f8",
+      "entries": 512
+    },
+    {
+      "path": "personal_texture_recipes-01.json",
+      "sha256": "e849416c5588f510fb97e23c1653d4c18765d82e94ec457c1a02d0f8b1b56a89",
+      "entries": 512
+    },
+    {
+      "path": "personal_texture_recipes-02.json",
+      "sha256": "11523b9bcda0d3442637834141ec1670d93b8850c6cba0aeef69a5df47618c61",
+      "entries": 512
+    },
+    {
+      "path": "personal_texture_recipes-03.json",
+      "sha256": "d629fb22bb126854f75b0e34d7d168d67ca24c39a402c938f56b672d1bc9671c",
+      "entries": 512
+    },
+    {
+      "path": "personal_texture_recipes-04.json",
+      "sha256": "0cf035918c412e39ad5b008250ee633c7bce0fb221cb7a29e30697a3b6565947",
+      "entries": 173
+    }
+  ]
+}

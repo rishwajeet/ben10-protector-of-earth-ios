@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "id": "64x64-2e489e629a0fd923a21c65f1448cb348ebfb699f2606114bb3938f02ff49fec5",
+      "recipe_sha256": "922e56a332b1990229c3554bb79e62d88e9b041a7d1b5a793ddce07c07f9dedc"
+    },
+    {
+      "id": "64x64-3439910d0eaa8feb91f829f740de3b7ddf5c918a0f14096ec76f07050d223ee8",
+      "recipe_sha256": "d2ad3383c95c152eef689a9f9a7dccee252c30804e2b4c23d4230967d1c8bb5b"
+    },
+    {
+      "id": "64x64-6f479ca3c1d8defe91823487d7ebb159802d31416e2ba76534b1b8a1a207f2ca",
+      "recipe_sha256": "9bfd052d73eab8917c58ea938d0446aaa61be6a2c467e623d318f8cb73559e9e"
+    },
+    {
+      "id": "64x64-84b14774659b081975837733a1c7d223d54511d53de6df116b89ac70881cebcf",
+      "recipe_sha256": "322185b4ee00a2cd4e08d0a6469f6467a8d1b7cafe631e022149c919d15d72fa"
+    },
+    {
+      "id": "64x64-a150fee99c76954ae195c348703658a783597bd51d8dbd717dc4f1cf2b62d2ee",
+      "recipe_sha256": "bda25aeae940ae5315dc93c5d04e3c76283257ab05e403ed8b96b12b4fe559a9"
+    },
+    {
+      "id": "64x64-01ac2a73a299c1a745020bd9a50257bcdb0f2f181ca5e981823e0a4525f2202a",
+      "recipe_sha256": "71bb12bc9b3a4b45acc9443031c4953819045ea24f9b6dace47e9d0fe189ab11"
+    },
+    {
+      "id": "64x64-2ba48d5df2a15d50200bc86cb7a715cbdf64dd72ae640b7dcbecee80fb69bfd3",
+      "recipe_sha256": "a441dbdc5d0e7a632e53d2d6cfa535785330dec6bc0e8968721a855f219b9067"
+    }
+  ],
+  "reference_manifest_sha256": "9421f69769681c6116a0e09243c870410cb0a348e7f93b2fdf33dc061ea8533c",
+  "schema": "protector-native.personal-facades/v1",
+  "scope": "Recipe identities only; authored paths stay private and all colours are resampled from originals",
+  "source_lock_sha256": "510afc9f5e0042a28440d8d46f113e58d1507d89e4218e3c266d78a1518eeb5f",
+  "title_dol_sha256": "03d2d8238fbd62c611c259ebeac3b2d87c3744bbaf3fb31ffd2c28d6664ac566"
+}
