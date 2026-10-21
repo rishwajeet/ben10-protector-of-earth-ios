@@ -23,6 +23,8 @@ ALLOWLIST = ROOT / "reference/personal_source_allowlist.json"
 ALLOWED_SUFFIXES = {'.py', '.c', '.cpp', '.h', '.m', '.mm', '.inc', '.cmake', '.in', '.txt', '.md', '.json', '.lock'}
 # README images only: bounded binary files under one folder, never game data formats.
 MEDIA_ROOT, MEDIA_SUFFIXES = PurePosixPath('docs/media'), {'.jpg', '.png', '.webp'}
+# GitHub issue forms are the one hidden folder a public kit needs.
+ISSUE_FORMS = PurePosixPath('.github/ISSUE_TEMPLATE')
 SECRET_PATTERNS = [rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
     rb'\bgh[pousr]_[A-Za-z0-9]{30,}\b', rb'\bAKIA[0-9A-Z]{16}\b',
     rb'\bxox[baprs]-[0-9A-Za-z-]{20,}\b', rb'\bAIza[0-9A-Za-z_-]{35}\b']
@@ -32,9 +34,11 @@ def safe_relative(name):
     if not isinstance(name, str) or not name or '\\' in name or '\0' in name:
         raise BuildError("Invalid export path")
     path = PurePosixPath(name)
-    if path.is_absolute() or '..' in path.parts or any(part.startswith('.') and part != '__init__.py' for part in path.parts):
+    form = path.parent == ISSUE_FORMS and path.suffix == '.yml'
+    if path.is_absolute() or '..' in path.parts or \
+            (not form and any(part.startswith('.') and part != '__init__.py' for part in path.parts)):
         raise BuildError("Hidden, absolute or traversing export path")
-    if path.suffix not in ALLOWED_SUFFIXES and str(path) != 'LICENSE' and not is_media(path):
+    if path.suffix not in ALLOWED_SUFFIXES and str(path) != 'LICENSE' and not is_media(path) and not form:
         raise BuildError("Non-source export extension")
     return path
 

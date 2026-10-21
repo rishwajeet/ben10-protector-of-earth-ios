@@ -1271,6 +1271,14 @@
     {
       "source": "docs/media/wipe-canyon.webp",
       "destination": "docs/media/wipe-canyon.webp"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/build-report.yml",
+      "destination": ".github/ISSUE_TEMPLATE/build-report.yml"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/config.yml",
+      "destination": ".github/ISSUE_TEMPLATE/config.yml"
     }
   ]
 }

@@ -1,0 +1,95 @@
+name: Build report
+description: Tell us how building or running the kit went on your Mac and iPhone, whether it worked or stopped.
+title: "Build report: "
+labels: ["build report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying the developer preview. Reports from Macs and iPhones other than the one it was developed on are the most useful thing right now, including successful builds.
+
+        **Never attach game files**: no disc images, extracted files, the IPA you built or your `.pnc` content package. They contain material from the game.
+  - type: dropdown
+    id: result
+    attributes:
+      label: How far did you get?
+      options:
+        - Built, installed and played
+        - Stopped during a build step
+        - Built and installed, but the app has a problem
+    validations:
+      required: true
+  - type: dropdown
+    id: step
+    attributes:
+      label: Where did it stop?
+      description: Leave as "It didn't stop" if everything worked.
+      options:
+        - It didn't stop
+        - Step 1, verifying the artwork bundle
+        - Step 2, doctor or bootstrap
+        - Step 3, prepare, build or IPA
+        - Step 4, checking the models
+        - Step 5, rebuilding the models
+        - Step 6, cinematics
+        - Step 7, texture stages
+        - Step 7, texture delivery or assembly
+        - Step 8, packaging the content
+        - Signing or installing on the iPhone
+        - Importing the content in the app
+        - In the game
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac
+      description: Model, chip and memory, from Apple menu → About This Mac.
+      placeholder: MacBook Pro, M3 Max, 36 GB
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: macOS, Xcode and Python versions
+      placeholder: macOS 27.0.1, Xcode 27.0, Python 3.14.7
+    validations:
+      required: true
+  - type: input
+    id: iphone
+    attributes:
+      label: iPhone and iOS version
+      description: If you got as far as installing.
+      placeholder: iPhone 17 Pro, iOS 27.0
+  - type: textarea
+    id: command
+    attributes:
+      label: The command that failed
+      description: Copy it exactly from the README step you were on.
+      render: shell
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: The last 30 or so lines the tool printed.
+      render: text
+  - type: textarea
+    id: receipt
+    attributes:
+      label: Failure receipt
+      description: When a step stops, it names a receipt file such as `failure-….json` or `batch-failure-….json` in your work directory. Paste its contents here. It holds hashes, settings and file paths, not game data; edit out any paths you'd rather not share.
+      render: json
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Gameplay problems, performance, heat, or what worked well.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I built this from my own copy of the game (USA, RBNEG9, revision 0).
+          required: true
+        - label: I haven't attached any game files, extracted files, IPA or content package.
+          required: true
