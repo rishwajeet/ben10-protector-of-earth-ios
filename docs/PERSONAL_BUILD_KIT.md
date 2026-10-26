@@ -49,12 +49,14 @@ replay. Keep heavy runs stopped while competing work needs the machine.
 
 ```sh
 uv run python tools/personal_build.py prepare --input /private/game.rvz --work-dir /private/protector-build --nodtool /private/protector-tools/bin/nodtool --dolrecomp /private/protector-tools/build/dolrecomp
-uv run python tools/personal_build.py build --work-dir /private/protector-build --coefficients /private/protector-tools/downloads/dsp_coef.bin --sdk iphoneos
+uv run python tools/personal_build.py build --work-dir /private/protector-build --coefficients /private/protector-tools/downloads/dsp_coef.bin --sdk iphoneos --authored-inputs /private/authored-inputs
 uv run python tools/personal_build.py ipa --app /private/protector-build/build-iphoneos/protector_ios_interactive.app --output /private/Protector-unsigned.ipa
 ```
 
 The build remains strict-floating-point, ARM64 and enhanced-only. Large personal
-content is imported separately, not embedded in the IPA. The resulting IPA
+content is imported separately, not embedded in the IPA. The app icon is
+rendered from the artwork bundle's Omnitrix vectors by `tools/make_app_icon.py`;
+without `--authored-inputs` the app has no icon. The resulting IPA
 contains locally translated game code and must not be distributed as the public
 kit. It is unsigned for installation and requires the user's own signing path.
 No signing, installation or refresh result is implied by successful compilation.

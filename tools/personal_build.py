@@ -226,6 +226,15 @@ def build(args):
     if coefficients.stat().st_size != 4096 or digest_file(coefficients) != COEFFICIENTS_HASH:
         raise BuildError("DSP coefficients are not the admitted free replacement table")
     build_dir = work / ("build-" + args.sdk)
+    icon = []
+    if args.authored_inputs:
+        uv = shutil.which("uv")
+        if not uv:
+            raise BuildError("uv is required on PATH to render the app icon")
+        run([uv, "run", "--no-project", "--with-requirements", ROOT / "requirements-personal-vectors.lock",
+             "python", ROOT / "tools/make_app_icon.py", "--authored-inputs", args.authored_inputs,
+             "--output", work / "app-icon"])
+        icon = [f"-DPROTECTOR_IOS_ICON_CATALOG={work / 'app-icon/Assets.xcassets'}"]
     run(["cmake", "-S", ROOT, "-B", build_dir, "-G", "Ninja",
         "-DCMAKE_SYSTEM_NAME=iOS", f"-DCMAKE_OSX_SYSROOT={args.sdk}", "-DCMAKE_OSX_ARCHITECTURES=arm64",
         "-DCMAKE_OSX_DEPLOYMENT_TARGET=17.0", "-DCMAKE_BUILD_TYPE=Release", "-DBUILD_TESTING=OFF",
@@ -235,14 +244,14 @@ def build(args):
         f"-DPROTECTOR_GENERATED_DIR={work / 'prepared-generated'}",
         f"-DPROTECTOR_IOS_DATA_ROOT={work / 'extracted'}",
         f"-DPROTECTOR_IOS_KPAD_REFERENCE={work / 'neutral-kpad.json'}",
-        f"-DPROTECTOR_AX_COEFFICIENTS_FILE={coefficients}"])
+        f"-DPROTECTOR_AX_COEFFICIENTS_FILE={coefficients}", *icon])
     run(["cmake", "--build", build_dir, "--target", "protector_ios_interactive", "-j", args.jobs])
     app = build_dir / "protector_ios_interactive.app"
     for directory in ("Game", "RestoredArt", "EnhancedModels", "RestoredCinematics"):
         if (app / directory).exists():
             raise BuildError("Content separation failed: large data was copied into the app")
     return {"app": str(app), "sdk": args.sdk, "signed_for_installation": False,
-            "files": file_table(app)}
+            "app_icon": (app / "Assets.car").is_file(), "files": file_table(app)}
 
 
 def package_ipa(app: Path, output: Path):
@@ -300,6 +309,8 @@ def main():
     compile_parser.add_argument("--jobs", type=int, default=4)
     compile_parser.add_argument("--bundle-id", default=DEFAULT_BUNDLE_ID,
                                 help="your own app ID, e.g. com.yourname.protector; never change it between updates")
+    compile_parser.add_argument("--authored-inputs", type=Path,
+                                help="the verified artwork bundle; renders the app icon from its Omnitrix vectors")
     ipa = sub.add_parser("ipa")
     ipa.add_argument("--app", type=Path, required=True)
     ipa.add_argument("--output", type=Path, required=True)

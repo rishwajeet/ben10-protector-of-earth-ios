@@ -1093,6 +1093,10 @@
       "destination": "tools/export_personal_source.py"
     },
     {
+      "source": "tools/make_app_icon.py",
+      "destination": "tools/make_app_icon.py"
+    },
+    {
       "source": "tools/finish_texture_neutral.py",
       "destination": "tools/finish_texture_neutral.py"
     },
@@ -1247,6 +1251,10 @@
     {
       "source": "tests/test_personal_cinematic_delivery.py",
       "destination": "tests/test_personal_cinematic_delivery.py"
+    },
+    {
+      "source": "tests/test_app_icon.py",
+      "destination": "tests/test_app_icon.py"
     },
     {
       "source": "docs/media/aliens.jpg",

@@ -12,6 +12,7 @@
   <key>DTPlatformName</key><string>${PROTECTOR_IOS_PLATFORM_NAME}</string>
   <key>CFBundleSupportedPlatforms</key><array><string>${PROTECTOR_IOS_SUPPORTED_PLATFORM}</string></array>
   <key>MinimumOSVersion</key><string>${CMAKE_OSX_DEPLOYMENT_TARGET}</string>
+  ${PROTECTOR_IOS_ICON_KEYS}
   <key>UIFileSharingEnabled</key><true/>
   <key>LSSupportsOpeningDocumentsInPlace</key><true/>
   <key>UTExportedTypeDeclarations</key><array><dict>

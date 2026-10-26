@@ -132,8 +132,7 @@ What to expect before you start:
 - **iPhone only.** iPad is not supported in this preview. Recent Pro iPhones are
   recommended; older models are untested.
 - **Known rough edges:** the Omnimax pickup transition and some distant object
-  popping are still being checked; the phone runs warm in long sessions; the app
-  has no icon yet.
+  popping are still being checked; the phone runs warm in long sessions.
 
 ## What you need
 
@@ -194,13 +193,15 @@ content or saves.
 uv run python tools/personal_build.py prepare --input "$GAME" --work-dir "$WORK/build" \
   --nodtool "$WORK/tools/bin/nodtool" --dolrecomp "$WORK/tools/build/dolrecomp"
 uv run python tools/personal_build.py build --work-dir "$WORK/build" \
-  --coefficients "$WORK/tools/downloads/dsp_coef.bin" --sdk iphoneos --bundle-id com.yourname.protector
+  --coefficients "$WORK/tools/downloads/dsp_coef.bin" --sdk iphoneos --bundle-id com.yourname.protector \
+  --authored-inputs ../authored-inputs
 uv run python tools/personal_build.py ipa --app "$WORK/build/build-iphoneos/protector_ios_interactive.app" \
   --output "$WORK/Protector-unsigned.ipa"
 ```
 
-The builder rejects any disc other than `RBNEG9` revision 0. The resulting IPA
-contains code translated from your game: it is for your phone only.
+The builder rejects any disc other than `RBNEG9` revision 0. The app icon is
+drawn from the artwork bundle during the build. The resulting IPA contains code
+translated from your game: it is for your phone only.
 
 **4. Download the models** into `$MODELS`, keeping these exact filenames.
 Review each project's terms first.

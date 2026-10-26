@@ -51,6 +51,52 @@ add_executable(protector_ios_interactive MACOSX_BUNDLE
     native/metal/texture_pack.mm native/metal/geometry_pack.mm native/metal/cinematic_pack.mm
     "${CMAKE_BINARY_DIR}/kpad-reference.json" ${PROTECTOR_INTERACTIVE_CHUNKS})
 protector_embed_audio_coefficients(protector_ios_interactive)
+# App icon: an external asset catalog rendered from the artwork bundle by
+# tools/make_app_icon.py. Without one the app keeps the system's blank icon.
+set(PROTECTOR_IOS_ICON_CATALOG "" CACHE PATH "External Assets.xcassets holding an AppIcon set")
+set(PROTECTOR_IOS_ICON_KEYS "")
+if(PROTECTOR_IOS_ICON_CATALOG)
+    file(REAL_PATH "${PROTECTOR_IOS_ICON_CATALOG}" PROTECTOR_ICON_REAL)
+    cmake_path(IS_PREFIX PROTECTOR_SOURCE_REAL "${PROTECTOR_ICON_REAL}" NORMALIZE PROTECTOR_INSIDE)
+    if(PROTECTOR_INSIDE OR NOT EXISTS "${PROTECTOR_ICON_REAL}/AppIcon.appiconset/Contents.json")
+        message(FATAL_ERROR "The app icon must be an external asset catalog with an AppIcon set")
+    endif()
+    set(PROTECTOR_IOS_ICON_KEYS [=[<key>CFBundleIcons</key><dict>
+    <key>CFBundlePrimaryIcon</key><dict>
+      <key>CFBundleIconName</key><string>AppIcon</string>
+      <key>CFBundleIconFiles</key><array><string>AppIcon60x60</string></array>
+    </dict>
+  </dict>
+  <key>CFBundleIcons~ipad</key><dict>
+    <key>CFBundlePrimaryIcon</key><dict>
+      <key>CFBundleIconName</key><string>AppIcon</string>
+      <key>CFBundleIconFiles</key><array><string>AppIcon60x60</string><string>AppIcon76x76</string></array>
+    </dict>
+  </dict>]=])
+    if(CMAKE_GENERATOR STREQUAL "Xcode")
+        set_source_files_properties("${PROTECTOR_ICON_REAL}" PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
+        target_sources(protector_ios_interactive PRIVATE "${PROTECTOR_ICON_REAL}")
+        set_target_properties(protector_ios_interactive PROPERTIES
+            XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME "AppIcon")
+    else()
+        file(GLOB PROTECTOR_IOS_ICON_INPUTS CONFIGURE_DEPENDS "${PROTECTOR_ICON_REAL}/AppIcon.appiconset/*")
+        set(PROTECTOR_IOS_ICON_DIR "${CMAKE_BINARY_DIR}/app-icon")
+        set(PROTECTOR_IOS_ICON_OUTPUTS "${PROTECTOR_IOS_ICON_DIR}/Assets.car"
+            "${PROTECTOR_IOS_ICON_DIR}/AppIcon60x60@2x.png" "${PROTECTOR_IOS_ICON_DIR}/AppIcon76x76@2x~ipad.png")
+        add_custom_command(OUTPUT ${PROTECTOR_IOS_ICON_OUTPUTS}
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${PROTECTOR_IOS_ICON_DIR}"
+            COMMAND xcrun actool "${PROTECTOR_ICON_REAL}" --compile "${PROTECTOR_IOS_ICON_DIR}"
+                --platform "${PROTECTOR_IOS_PLATFORM_NAME}"
+                --minimum-deployment-target "${CMAKE_OSX_DEPLOYMENT_TARGET}"
+                --app-icon AppIcon --target-device iphone
+                --output-partial-info-plist "${PROTECTOR_IOS_ICON_DIR}/partial-info.plist"
+                --errors --warnings --output-format human-readable-text
+            DEPENDS ${PROTECTOR_IOS_ICON_INPUTS}
+            COMMENT "Compiling the app icon catalog" VERBATIM)
+        set_source_files_properties(${PROTECTOR_IOS_ICON_OUTPUTS} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
+        target_sources(protector_ios_interactive PRIVATE ${PROTECTOR_IOS_ICON_OUTPUTS})
+    endif()
+endif()
 if(PROTECTOR_IOS_EXTERNAL_CONTENT)
     configure_file("${CMAKE_SOURCE_DIR}/reference/personal_build_inputs.json"
         "${CMAKE_BINARY_DIR}/personal-build-inputs.json" COPYONLY)
