@@ -76,8 +76,6 @@ Before you start:
   tool stops there instead of accepting art nobody has checked.
 - It's iPhone only for now. I've only tested an iPhone 18 Pro; older models may
   not keep up.
-- Known problems: the HUD jumps briefly when you pick up the Omnimax, some
-  distant objects pop in, and the phone gets warm in long sessions.
 
 ## How it was made
 
