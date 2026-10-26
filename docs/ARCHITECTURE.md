@@ -1,13 +1,13 @@
 # Architecture
 
 This port runs *Ben 10: Protector of Earth* (Wii, USA `RBNEG9` revision 0) as a
-native iPhone app. The game's own code decides everything that happens in play;
-the project supplies the machine it expects and upgrades how the result is
-presented.
+native iPhone app. The game's original code still runs all of the gameplay.
+This project provides the Wii hardware that code expects and upgrades the
+graphics and controls.
 
 ## The two outputs
 
-The player's Mac turns their disc into two things that meet only on the phone.
+The player's Mac turns their disc into two outputs.
 
 | Output | Contains | Made by |
 | --- | --- | --- |
@@ -76,12 +76,13 @@ Upgrades on top of the original output:
 - **60 fps.** The game updates at 30 Hz. Between two real frames, the renderer
   matches each draw to its counterpart in the next frame (same geometry,
   material and textures) and draws its vertices partway between the two.
-  Unmatched draws are shown as they are. In heavy scenes the presentation steps down to a steady 30.
+  Unmatched draws are shown as they are. In heavy scenes the presentation
+  steps down to a steady 30.
 
-Replacement content is looked up by the identity of the original data. `native/metal/texture_pack.mm` swaps a texture only when its decoded
-source pixels match a restored entry's source hash, and
-`geometry_pack.mm` swaps a model only when its index data, vertex format and
-anchor hashes match exactly. Anything unmatched renders as original.
+Replacement content is looked up by the identity of the original data.
+`native/metal/texture_pack.mm` swaps a texture only when its decoded source
+pixels match a restored entry's source hash, and `geometry_pack.mm` swaps a
+model only when its index data, vertex format and anchor hashes match exactly. Anything unmatched renders as original.
 `cinematic_pack.mm` plays restored cutscenes through AVFoundation in place of the
 game's Bink movies, on the game's own timing.
 
@@ -94,8 +95,8 @@ traced textures and their recipes.
 - **Textures.** 2,221 textures, routed by recipe: 1,406 upscaled by the pinned
   models (Real-ESRGAN, PBRify, ArtCNN, HDcube), 590 rebuilt by deterministic
   source operations, and the rest from grids, thumbnails, pairs and the
-  artwork bundle's vectors, plates, signs and atlases. They are compressed to ASTC and
-  assembled into one pack.
+  artwork bundle's vectors, plates, signs and atlases. They are compressed to
+  ASTC and assembled into one pack.
 - **Cutscenes.** All 76 movies are restored from 640×480 to 2880×2160 at their
   original timing with two Real-ESRGAN models, then encoded with VideoToolbox.
 - **Models.** `tools/personal_geometry.py` rebuilds 194 model profiles from the

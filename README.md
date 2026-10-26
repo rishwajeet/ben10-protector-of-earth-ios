@@ -7,14 +7,10 @@
 A native iPhone port of the 2007 Wii game *Ben 10: Protector of Earth*. The
 game's PowerPC code is recompiled ahead of time into ARM64 and built into a
 normal iOS app, with a small runtime standing in for the Wii's graphics, sound
-and disc drive. No emulator is involved.
-
-The levels, enemies and difficulty are the original game's. The textures and
-cutscenes are rebuilt at much higher resolution, the camera is widescreen, and
-there are touch controls.
+and disc drive.
 
 This repository contains no game. The app and its content are built from your
-own disc on your own Mac, then installed on your iPhone.
+disc on your Mac, then installed on your iPhone.
 
 <p align="center">
   <img src="docs/media/teaser.webp" alt="Gameplay on iPhone: transforming and fighting" width="100%">
@@ -59,9 +55,9 @@ The Four Arms transformation cutscene, original and restored:
 
 ## How it works
 
-The game runs as native code on the phone. The conversion on your Mac produces
-two things: the app, with the game's code compiled into it, and a content package
-holding the game's data and the restored art.
+The conversion on your Mac produces two things: the app, with the game's code
+compiled into it, and a content package holding the game's data and the restored
+art.
 
 - **Recompilation.** [DolRecomp](https://github.com/ExpansionPak/DolRecomp)
   translates the game's PowerPC executable into C, about 4.7 million lines in
@@ -85,8 +81,7 @@ holding the game's data and the restored art.
 - **App.** A native iOS shell with touch controls, controller support, content
   import and save backups.
 
-[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) has the details, including what's
-verified and what isn't.
+More in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Status
 
@@ -100,7 +95,7 @@ Before you start:
 - Conversion is slow: about 12 hours for the cutscenes on an M4 Pro, and many
   more for the textures. Rerunning a stopped step continues where it left off.
 - Results vary slightly between Macs. Textures are checked against the originals
-  from your disc, so small rounding differences are expected and fine.
+  from your disc, so small rounding differences pass.
 - iPhone only. Tested on an iPhone 18 Pro; older models are untested.
 
 ## How I made it
@@ -240,8 +235,8 @@ folders except `$WORK/build` and `$WORK/tools`, which updates reuse.
 
 ## Put it on your iPhone
 
-iOS only runs apps that are signed for your phone, so the app needs signing
-with your Apple ID before it will install. Pick one way and stick with it. Every
+iOS installs only apps signed for your phone, so you sign this one with your
+Apple ID. Pick one way and stick with it. Every
 update and re-sign has to use the same bundle ID and the same Apple ID, or iOS
 either refuses the update or installs a second, empty copy of the app.
 
@@ -295,8 +290,8 @@ These sign with a free Apple ID and can refresh the app for you. Install
 Since mid-October 2026, Apple sign-in has been failing in all three for a lot
 of people, with errors like -80045, -80046 or 503 (AltStore is tracking it
 [here](https://github.com/altstoreio/AltStore/issues/1828)). If you hit that,
-use Xcode instead. Note that AltStore and SideStore add your team ID to the end
-of the bundle ID, and Sideloadly can change it too. An app installed by one of
+use Xcode instead. AltStore and SideStore add your team ID to the end of the
+bundle ID, and Sideloadly can change it too. An app installed by one of
 them is a different app from one installed by Xcode, with its own content and
 saves.
 
