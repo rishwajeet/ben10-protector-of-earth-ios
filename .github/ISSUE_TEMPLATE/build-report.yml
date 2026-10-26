@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for trying the developer preview. Reports from Macs and iPhones other than the one it was developed on are the most useful thing right now, including successful builds.
+        Thanks for trying it. Reports from Macs and iPhones other than mine are the most useful thing right now, and that includes builds that worked.
 
         **Never attach game files**: no disc images, extracted files, the IPA you built or your `.pnc` content package. They contain material from the game.
   - type: dropdown
