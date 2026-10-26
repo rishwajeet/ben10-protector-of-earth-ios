@@ -59,8 +59,8 @@ The Four Arms transformation cutscene, original and restored:
 
 ## How it works
 
-Nothing is emulated while you play. The conversion on your Mac produces two
-things: the app, with the game's code compiled into it, and a content package
+The game runs as native code on the phone. The conversion on your Mac produces
+two things: the app, with the game's code compiled into it, and a content package
 holding the game's data and the restored art.
 
 - **Recompilation.** [DolRecomp](https://github.com/ExpansionPak/DolRecomp)
@@ -77,7 +77,7 @@ holding the game's data and the restored art.
   edge-only antialiasing.
 - **60 fps.** The game still updates 30 times a second. Between updates, the
   renderer draws an extra frame by moving each model partway between two real
-  game frames. It doesn't blend images or guess ahead.
+  game frames.
 - **Restoration.** Upscaling models rebuild 2,221 textures and 76 cutscenes from
   your disc, and 194 models get smoother silhouettes that the game's own
   animation still drives. Each result is checked against the original data

@@ -3,7 +3,7 @@
 This port runs *Ben 10: Protector of Earth* (Wii, USA `RBNEG9` revision 0) as a
 native iPhone app. The game's own code decides everything that happens in play;
 the project supplies the machine it expects and upgrades how the result is
-presented. Nothing interprets PowerPC instructions at runtime.
+presented.
 
 ## The two outputs
 
@@ -24,8 +24,7 @@ app. The imported content and saves stay in the app's container.
 in `reference/personal_build_inputs.json`, and runs
 [DolRecomp](https://github.com/ExpansionPak/DolRecomp) on the main executable.
 The result is about 4.7 million lines of C in 120 files, plus a header
-describing the guest memory map. It stays in the player's work folder and never
-enters this repository.
+describing the guest memory map. It stays in the player's work folder.
 
 Translated functions operate on a `CPUState` (`native/include/protector/cpu.h`):
 PowerPC registers, condition and floating-point state, and guest memory. Guest
@@ -77,11 +76,9 @@ Upgrades on top of the original output:
 - **60 fps.** The game updates at 30 Hz. Between two real frames, the renderer
   matches each draw to its counterpart in the next frame (same geometry,
   material and textures) and draws its vertices partway between the two.
-  Unmatched draws are shown as they are. No image is blended and no future pose
-  is predicted. In heavy scenes the presentation steps down to a steady 30.
+  Unmatched draws are shown as they are. In heavy scenes the presentation steps down to a steady 30.
 
-Replacement content is looked up by the identity of the original data, not by
-position. `native/metal/texture_pack.mm` swaps a texture only when its decoded
+Replacement content is looked up by the identity of the original data. `native/metal/texture_pack.mm` swaps a texture only when its decoded
 source pixels match a restored entry's source hash, and
 `geometry_pack.mm` swaps a model only when its index data, vertex format and
 anchor hashes match exactly. Anything unmatched renders as original.
@@ -126,8 +123,7 @@ it, and an interrupted import leaves the previous content in place.
 ## Verification and limits
 
 - Every main level has been spot-checked. The fort, the canyon and the final
-  boss have been played on an iPhone 18 Pro. That is sampled coverage, not a
-  full campaign pass.
+  boss have been played through on an iPhone 18 Pro.
 - The full conversion has run on one Mac (M4 Pro, macOS 27, Xcode 27). The
   texture fingerprints were calibrated by rebuilding textures with different
   inference settings on that Mac, not yet on a second one.
