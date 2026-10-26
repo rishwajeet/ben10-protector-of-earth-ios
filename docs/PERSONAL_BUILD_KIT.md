@@ -176,9 +176,9 @@ reserve still applies. Choose thresholds appropriate to other active work.
 `--max-new-workers` stops before another uncached worker after the selected count;
 cached entries are revalidated without inference. The checkpoint keeps the full
 requested total and explicitly records a worker-limit stop, not completion.
-Rerunning reuses verified candidates. Hash admission remains strict: an unknown
-numerical output still requires separate developer qualification, not a looser
-memory mode or an automatic fallback to old artwork.
+Rerunning reuses verified candidates. An output that matches neither a known
+hash nor its source-anchored fingerprint stops the stage; there is no looser
+memory mode and no automatic fallback to old artwork.
 
 A failed worker or guarded preflight writes a timestamped `batch-failure-*.json`
 with the requested source IDs, error and available pressure measurements. The
@@ -325,9 +325,9 @@ value, and every alpha component is identical. No pixels or local paths are in
 the registry. This is a finite list of qualified byte results, not a blanket
 one-value tolerance at runtime or a guarantee for every Mac/backend.
 
-Replay, cache reuse and delivery preparation accept an exact selected hash or
-one of these listed hashes. Unknown outputs still fail without an explicit
-private developer comparison. Receipts distinguish a fresh private comparison
+Replay, cache reuse and delivery preparation accept an exact selected hash, one
+of these listed hashes, or an output that matches its source-anchored
+fingerprint (next section). Receipts distinguish a fresh private comparison
 from a known-hash lookup (`comparison_this_run: false`). The selected reference
 hash is not replaced. Source-only, vector, sign, grid and thumbnail outputs are
 not silently admitted through this main-neural registry. The 34 larger saved
@@ -338,6 +338,31 @@ replay on another system. The complete selected main-neural set has now replayed
 on the development Mac, with 301 exact and 1,105 independently qualified rounded
 outputs. Connected grids and painted signs have their own qualification below;
 they are not admitted through the main-neural registry.
+
+### Source-anchored fingerprints
+
+Model inference rounds differently from one Mac to the next, and between runs
+on the same Mac, so inference outputs cannot be held to one exact hash. Every
+copy of the disc decodes to the same source textures, so outputs are checked
+against those instead. `reference/personal_texture_fingerprints.json` covers
+every main-neural, connected-grid RGB, thumbnail and painted-sign output, plus
+each sign's neural parent. For up to 4 × 4 regions of the source grid it stores
+two measurements in hundredths of an 8-bit level: the mean difference between
+the output reduced back to its source grid and the original pixels, and the mean
+detail the upscale added inside each source texel. It holds no pixels.
+
+An output whose measurements all stay within 0.20 (residual) and 0.10 (detail)
+of the reviewed ones is admitted and recorded as `source-anchored-fingerprint`.
+To set those bounds, eleven main-neural textures across both operations and
+4×, 8× and 16× scales were regenerated with the first pass on the CPU and with
+each finisher backend. All 33 runs differed from the reviewed pixels by at most
+one level, and moved the fingerprint by at most 0.01. Deliberate faults moved it
+far more: a two-level brightness shift by 2.00, a one-pixel blur by at least
+0.14, a bicubic stand-in for the model by at least 0.37, and noisy or black
+patches by several levels. Structural plates, vectors, atlases and the other
+deterministic companions keep exact admission. The developer records the
+contract with `tools/personal_texture_fingerprints.py record` from the reviewed
+candidates. It has not yet been exercised on a second Mac.
 
 Registered thumbnails have a separate hash-only registry,
 `reference/personal_thumbnail_variants.json`. Its 30 known rounded outputs are

@@ -16,11 +16,13 @@ from tools.personal_build import BuildError, LOCK, check_table, outside_repo, wr
 from tools.personal_textures import compare_reference, load_contract, source_pixels, validate_contract
 from tools.personal_texture_variants import admit as admit_parent
 from tools.personal_thumbnail_variants import admit_thumbnail
+from tools.personal_texture_fingerprints import admit_fingerprint, within_bound
 
 CONTRACT = ROOT / 'reference/personal_thumbnail_recipes.json'
 ALGORITHMS = ['tools/personal_thumbnails.py', 'tools/personal_textures.py',
     'tools/prepare_texture_restoration.py', 'protector_native/textures.py', 'requirements-personal.lock',
     'tools/personal_texture_variants.py', 'reference/personal_texture_variants.json',
+    'tools/personal_texture_fingerprints.py', 'reference/personal_texture_fingerprints.json',
     'tools/personal_thumbnail_variants.py', 'reference/personal_thumbnail_variants.json']
 
 
@@ -116,7 +118,7 @@ def replay(args):
     for row in wanted:
         entry, parent_entry = entries[row['id']], entries[row['parent']]
         raw = source_pixels(entry, *package(entry['occurrence']['package']))
-        source_pixels(parent_entry, *package(parent_entry['occurrence']['package']))
+        parent_source = source_pixels(parent_entry, *package(parent_entry['occurrence']['package']))
         original = Image.frombytes('RGBA', (64, 64), raw)
         if original.getextrema()[3] != (255, 255):
             raise BuildError('Original thumbnail acquired alpha')
@@ -134,7 +136,9 @@ def replay(args):
                 parent_comparison = admit_parent(parent_entry, parent_hash)
                 if parent_comparison is None and references:
                     parent_comparison = compare_reference(parent_entry, parent, references)
-                if parent_comparison is None or parent_comparison['max_channel_error'] > 1:
+                if not within_bound(parent_comparison):
+                    parent_comparison = admit_fingerprint(parent_entry, parent, parent_source)
+                if not within_bound(parent_comparison):
                     raise BuildError('Restored parent is not the reviewed artwork')
             picture = render(original, parent, row)
         actual = hashlib.sha256(picture.convert('RGBA').tobytes()).hexdigest()
@@ -143,7 +147,9 @@ def replay(args):
             comparison = admit_thumbnail(entry, actual, recipe=row, parent_entry=parent_entry, parent_hash=parent_hash)
             if comparison is None and references:
                 comparison = compare_reference(entry, picture, references)
-            if comparison is None or comparison['max_channel_error'] > 1:
+            if not within_bound(comparison):
+                comparison = admit_fingerprint(entry, picture, raw)
+            if not within_bound(comparison):
                 raise BuildError('Thumbnail differs from selected reference: ' + row['id'])
         target = outputs / (row['id'] + '.png')
         if target.is_symlink():

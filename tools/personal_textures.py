@@ -24,6 +24,7 @@ from protector_native.executable_truth import RBNEG9_DOL_SHA256
 from tools.personal_build import BuildError, LOCK, check_table, outside_repo, write_json
 from tools.personal_geometry import identity
 from tools.personal_texture_variants import admit as admit_variant, compare_images
+from tools.personal_texture_fingerprints import admit_fingerprint, within_bound
 
 RECIPES = ROOT / "reference/personal_texture_recipes.json"
 NEURAL = {"local-rgb-neutral", "local-neutral"}
@@ -33,6 +34,7 @@ ALGORITHMS = ["tools/personal_textures.py", "tools/dat_window_batches.py", "tool
     "tools/audit_bigb.py", "tools/personal_texture_corrections.py", "tools/personal_source_patterns.py",
     "protector_native/textures.py", "protector_native/bigb.py", "requirements-personal.lock",
     "tools/personal_texture_variants.py", "reference/personal_texture_variants.json",
+    "tools/personal_texture_fingerprints.py", "reference/personal_texture_fingerprints.json",
     "tools/personal_thumbnail_variants.py", "reference/personal_thumbnail_variants.json"]
 
 
@@ -389,6 +391,8 @@ def replay(game, work, model_dir, kinds, entry_id, provider, numerical_reference
                 numerical = admit_variant(entry, actual)
                 if numerical is None and actual != entry['reference_rgba8_sha256'] and references and op['kind'] in NEURAL:
                     numerical = compare_reference(entry, saved, references)
+                if not within_bound(numerical) and actual != entry['reference_rgba8_sha256'] and op['kind'] in NEURAL:
+                    numerical = admit_fingerprint(entry, saved, rgba)
         else:
             if shutil.disk_usage(work).free < 5 * 1024**3:
                 raise BuildError("5 GiB storage reserve reached; completed candidates retained")
@@ -397,7 +401,7 @@ def replay(game, work, model_dir, kinds, entry_id, provider, numerical_reference
                 # rounding. Auto mode tries only the same pinned model/operation
                 # with those two backends. Public admission permits exact
                 # selected hashes or individually qualified variant hashes.
-                # Unknown outputs still need private numerical comparison.
+                # Other outputs pass only by their source-anchored fingerprint.
                 backends = [provider] if provider != "auto" else \
                     (["coreml", "cpu"] if references or op.get("quantize_after_first", False) else ["cpu", "coreml"])
                 for backend in backends:
@@ -415,13 +419,17 @@ def replay(game, work, model_dir, kinds, entry_id, provider, numerical_reference
                             break
                         print(f"Backend {backend} exceeded the reviewed rounding bound for {entry['id']}: "
                             f"max={numerical['max_channel_error']}, mean={numerical['mean_channel_error']:.8f}", flush=True)
+                    numerical = admit_fingerprint(entry, picture, rgba)
+                    if numerical is not None:
+                        break
+                    print(f"Backend {backend} output does not match the fingerprint of {entry['id']}", flush=True)
             else:
                 picture = render(entry, rgba)
                 actual = hashlib.sha256(picture.convert("RGBA").tobytes()).hexdigest()
-            if actual == entry["reference_rgba8_sha256"] or numerical is not None and numerical['max_channel_error'] <= 1:
+            if actual == entry["reference_rgba8_sha256"] or within_bound(numerical):
                 with target.open("xb") as stream:
                     picture.save(stream, format="PNG")
-        if actual != entry["reference_rgba8_sha256"] and (numerical is None or numerical['max_channel_error'] > 1):
+        if actual != entry["reference_rgba8_sha256"] and not within_bound(numerical):
             raise BuildError(f"Replayed texture pixels differ from selected reference: {entry['id']} ({actual})")
         results.append({"id": entry["id"], "rgba8_sha256": actual, "png_sha256": digest_file(target),
             "provider_this_run": backend_used, "reference_pixels_exact": actual == entry['reference_rgba8_sha256'],

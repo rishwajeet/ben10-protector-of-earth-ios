@@ -65,6 +65,14 @@
       "destination": "tests/test_personal_texture_pipeline.py"
     },
     {
+      "source": "tests/test_personal_texture_fingerprints.py",
+      "destination": "tests/test_personal_texture_fingerprints.py"
+    },
+    {
+      "source": "tests/test_personal_sign.py",
+      "destination": "tests/test_personal_sign.py"
+    },
+    {
       "source": "docs/THIRD_PARTY_REVIEW.md",
       "destination": "docs/THIRD_PARTY_REVIEW.md"
     },
@@ -81,8 +89,16 @@
       "destination": "tools/personal_texture_variants.py"
     },
     {
+      "source": "tools/personal_texture_fingerprints.py",
+      "destination": "tools/personal_texture_fingerprints.py"
+    },
+    {
       "source": "reference/personal_texture_variants.json",
       "destination": "reference/personal_texture_variants.json"
+    },
+    {
+      "source": "reference/personal_texture_fingerprints.json",
+      "destination": "reference/personal_texture_fingerprints.json"
     },
     {
       "source": "tools/personal_texture_delivery.py",
@@ -1111,6 +1127,10 @@
     {
       "source": "tools/personal_build.py",
       "destination": "tools/personal_build.py"
+    },
+    {
+      "source": "tools/personal_sign.py",
+      "destination": "tools/personal_sign.py"
     },
     {
       "source": "tools/personal_cinematics.py",

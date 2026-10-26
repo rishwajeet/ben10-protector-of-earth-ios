@@ -70,10 +70,12 @@ Before you start:
 - The conversion is slow. Restoring the cutscenes took about 12 hours on the M4
   Pro, and the textures take many more. Leave it running overnight. If a step
   stops, rerunning it picks up where it left off.
-- Other Macs might stop with an "unknown output" error. Each rebuilt texture has
-  to match the result recorded on my Mac, allowing for a listed set of rounding
-  differences, and a different chip or macOS version can round differently. The
-  tool stops there instead of accepting art nobody has checked.
+- Your Mac won't reproduce my textures bit for bit, because the upscaling models
+  round slightly differently on every Mac. So each rebuilt texture is checked
+  against the original from your own disc instead, and only differences the
+  size of rounding get through. If a texture really is wrong, the step stops and
+  names it. I've tested this by rebuilding textures with different settings on
+  my Mac, but not yet on a second Mac.
 - It's iPhone only for now. I've only tested an iPhone 18 Pro; older models may
   not keep up.
 
@@ -95,10 +97,9 @@ human-written open-source project, and disc extraction uses
   on your PATH. You also need [cairo](https://www.cairographics.org) 1.18.4
   (Homebrew has it).
 - An iPhone with about **25 GB free** for the content and its import.
-- A way to sign apps for your own phone: a free Apple ID with
-  [Sideloadly](https://sideloadly.io) or [AltStore](https://altstore.io), or a
-  paid Apple Developer account. Free signatures expire every 7 days, so you'll
-  re-sign weekly.
+- An Apple ID to sign the app for your phone. A free one works, but its
+  signature lasts 7 days, so you'll re-sign weekly. See
+  [Put it on your iPhone](#put-it-on-your-iphone).
 - A disc image (`.rvz` or `.iso`) of the USA release, game ID `RBNEG9`,
   revision 0.
 - Five upscaling model files (about 244 MB), which you download yourself from
@@ -211,28 +212,94 @@ uv run python tools/package_personal_content.py create --game "$WORK/build/extra
 The package is about 10 GB. Once it verifies, you can delete the working
 folders except `$WORK/build` and `$WORK/tools`, which updates reuse.
 
-## Install and play
+<a id="put-it-on-your-iphone"></a>
 
-1. Sign and install `Protector-unsigned.ipa` with Sideloadly, AltStore or your
-   developer account.
-2. Connect the iPhone to your Mac, open Finder, select the iPhone, open
+## Put it on your iPhone
+
+iOS only runs apps that are signed for your phone, so the app needs signing
+with your Apple ID before it will install. Pick one way and stick with it. Every
+update and re-sign has to use the same bundle ID and the same Apple ID, or iOS
+either refuses the update or installs a second, empty copy of the app.
+
+On the iPhone, turn on **Developer Mode** (Settings → Privacy & Security →
+Developer Mode, then restart and confirm). The switch only shows up after the
+phone has been connected to Xcode once, so do step 2 below first if you can't
+find it.
+
+### With Xcode (recommended)
+
+This signs in with Apple directly, so it isn't affected by the sign-in failures
+the sideloading apps are having at the moment. A free Apple ID gives a 7-day
+signature; a paid developer account ($99 a year) gives a year. I've used this
+path with a paid account; a free account's profile works the same way, but I
+haven't tried one.
+
+1. In Xcode, open **Settings → Apple Accounts** and add your Apple ID.
+2. Get Xcode to make a signing profile for your bundle ID. Create a throwaway
+   project (**File → New → Project → iOS → App**), set its **Bundle Identifier**
+   to exactly the ID you built with and its **Team** to your Apple ID. Connect
+   your iPhone, pick it as the destination and press **⌘B** to build. Don't press
+   Run: the throwaway app has the same bundle ID as the game, so installing it
+   would put it in the game's place.
+3. Sign the game and install it:
+
+```sh
+xcrun devicectl list devices              # copy your iPhone's identifier
+rm -rf "$WORK/Protector-signed.app"
+uv run python tools/personal_sign.py --app "$WORK/build/build-iphoneos/protector_ios_interactive.app" \
+  --output "$WORK/Protector-signed.app" --device YOUR_DEVICE_ID --install
+```
+
+The first time, iOS may say the developer isn't trusted. Open **Settings →
+General → VPN & Device Management**, tap your Apple ID and trust it.
+
+With a free Apple ID, do this every week: open the throwaway project, press
+**⌘B** with the phone connected to renew the profile, then rerun the commands in
+step 3.
+
+### With AltStore, SideStore or Sideloadly
+
+These sign with a free Apple ID and can refresh the app for you. Install
+`Protector-unsigned.ipa` from step 3 of *Build it*:
+
+- [AltStore Classic](https://altstore.io): hold Option, click the AltServer icon
+  in the menu bar and choose **Sideload .ipa**.
+- [SideStore](https://sidestore.io): import the IPA in the app, after the
+  one-time setup with iloader.
+- [Sideloadly](https://sideloadly.io): drag the IPA in. On Apple Silicon it
+  needs Rosetta.
+
+Since mid-October 2026, Apple sign-in has been failing in all three for a lot
+of people, with errors like -80045, -80046 or 503 (AltStore is tracking it
+[here](https://github.com/altstoreio/AltStore/issues/1828)). If you hit that,
+use Xcode instead. Note that AltStore and SideStore add your team ID to the end
+of the bundle ID, and Sideloadly can change it too. An app installed by one of
+them is a different app from one installed by Xcode, with its own content and
+saves.
+
+A free Apple ID allows 3 sideloaded apps per phone and 10 new app IDs a week.
+
+## Import the content and play
+
+1. Connect the iPhone to your Mac, open Finder, select the iPhone, open
    **Files**, and drag `Protector.pnc` onto **Protector Native**.
-3. Open the app, tap **Choose content package** and pick the file. Keep the
+2. Open the app, tap **Choose content package** and pick the file. Keep the
    screen on while it verifies and imports. Afterwards you can delete the
    copied `.pnc` from Files to free the space.
-4. Tap **Play**. Touch controls appear on screen, and a connected controller
+3. Tap **Play**. Touch controls appear on screen, and a connected controller
    takes over automatically.
 
 ## Updates, re-signing and saves
 
 Always install new builds and weekly re-signs **over** the existing app, with
-the same bundle ID. Deleting the app deletes the imported content and your
-saves. Before anything risky, open **Save backups → Back up saved progress** on
-the start screen and keep the `.pnsave` file somewhere outside the app, such as
-iCloud Drive.
+the same bundle ID and the same Apple ID. Deleting the app deletes the imported
+content and your saves. Before anything risky, open **Save backups → Back up
+saved progress** on the start screen and keep the `.pnsave` file somewhere
+outside the app, such as iCloud Drive.
 
-To update, pull this repository, rerun step 3 with the same `--bundle-id`, and
-install the new IPA over the old app. Your content stays imported.
+To update, pull this repository, rerun step 3 of *Build it* with the same
+`--bundle-id`, and sign and install the new build the same way as before. Your
+content stays imported.
 
 Every tool, its checks and its receipts are described in
 [docs/PERSONAL_BUILD_KIT.md](docs/PERSONAL_BUILD_KIT.md).

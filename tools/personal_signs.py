@@ -20,6 +20,7 @@ from protector_native.content_package import digest_file
 from tools.personal_build import BuildError, outside_repo, write_json
 from tools.personal_textures import load_contract, validate_contract, render as render_neural, ALGORITHMS
 from tools.personal_structural_plates import replay as replay_plates
+from tools.personal_texture_fingerprints import admit_fingerprint
 from tools.build_interface_vectors import read_vector
 
 CONTRACT = ROOT / 'reference/personal_sign_recipes.json'
@@ -262,7 +263,11 @@ def replay(game, work, authored, reference_parents=None, model_dir=None, provide
                     context['providers'][entry['id']] = backend
                     break
         if rgba_hash(parent) != recipe['base_reference_rgba8_sha256']:
-            raise BuildError('Painted sign neural parent differs; no silent rounding or historical fallback')
+            # Retained reference parents must be exact; a fresh parent may round differently on this Mac.
+            fresh = None if reference_parents else admit_fingerprint(entry, parent, original.convert('RGBA').tobytes(), role='sign-parent')
+            if fresh is None:
+                raise BuildError('Painted sign neural parent differs from its reviewed treatment')
+            context.setdefault('fingerprinted_parents', {})[entry['id']] = fresh
         path = authored / (recipe['vector_sha256'] + '.svg')
         if path.is_symlink() or digest_file(path) != recipe['vector_sha256']:
             raise BuildError('The exact private sign drawing is required')
@@ -270,7 +275,8 @@ def replay(game, work, authored, reference_parents=None, model_dir=None, provide
     return replay_plates(game, work, authored, contract_path=CONTRACT, contract_schema=SCHEMA,
         entry_count=3, renderer=drawing, extra_algorithms=[*ALGORITHMS, 'tools/personal_signs.py',
             'tools/build_interface_vectors.py', 'requirements-personal-vectors.lock'], family='painted sign',
-        receipt_context=context)
+        receipt_context=context,
+        admit=None if reference_parents else lambda entry, picture, raw: admit_fingerprint(entry, picture, raw))
 
 
 if __name__ == '__main__':

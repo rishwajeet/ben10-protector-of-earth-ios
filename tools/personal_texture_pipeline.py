@@ -36,14 +36,14 @@ FAMILIES = {
 AUTHORED = {'vectors', 'structural', 'atlases', 'facades', 'finite', 'layered-atlases', 'signs'}
 
 
-def inventory(selected=None, companions=None):
+def inventory(selected=None, companions=None, pin_contracts=True):
     selected = load_contract() if selected is None else selected
     validate_contract(selected)
     if selected['source_lock_sha256'] != digest_file(LOCK):
         raise BuildError('Original-content lock differs from texture index')
     files = ['reference/personal_texture_recipes.json', 'reference/personal_build_inputs.json',
         'reference/personal_texture_variants.json', 'reference/personal_thumbnail_variants.json',
-        'reference/personal_grid_variants.json',
+        'reference/personal_grid_variants.json', 'reference/personal_texture_fingerprints.json',
         *['reference/' + row['path'] for row in selected['entry_files']]]
     entries = {e['id']: e for e in selected['entries']}
     routes, stages = {}, []
@@ -102,7 +102,7 @@ def inventory(selected=None, companions=None):
         'selected_entries': len(entries), 'routed_entries': len(routes),
         'companion_entries': sum(FAMILIES[k][2] for k in FAMILIES),
         'family_counts': dict(sorted(Counter(families[s] for s in routes.values()).items())),
-        'contracts': {p: digest_file(ROOT / p) for p in files},
+        'contracts': {p: digest_file(ROOT / p) for p in files} if pin_contracts else {},
         'stages': stages, 'replay_verified': False, 'complete_runtime_pack': False,
         'publication_authorized': False}
 

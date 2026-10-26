@@ -209,7 +209,8 @@ def render(original, scale, recipe):
 
 def replay(game, work, authored, *, contract_path=None, contract_schema=None,
            entry_count=20, renderer=None, extra_algorithms=(), family='structural',
-           receipt_context=None):
+           receipt_context=None, admit=None):
+    """`admit(entry, picture, source_rgba)` may accept a non-exact plate; structural plates are exact."""
     from PIL import Image
     from protector_native.bigb import parse_relocation_commands
     from tools.audit_bigb import decode_package
@@ -266,8 +267,11 @@ def replay(game, work, authored, *, contract_path=None, contract_schema=None,
             raise BuildError('Private plate source or scale differs')
         picture = renderer(source, scale, recipe)
         actual = hashlib.sha256(picture.convert('RGBA').tobytes()).hexdigest()
+        comparison = None
         if actual != entry['reference_rgba8_sha256']:
-            raise BuildError('Plate replay differs from selected pixels: ' + entry['id'])
+            comparison = admit(entry, picture, raw) if admit else None
+            if comparison is None:
+                raise BuildError('Plate replay differs from selected pixels: ' + entry['id'])
         target = outputs / (entry['id'] + '.png')
         if target.is_symlink():
             raise BuildError('Plate candidate is a link')
@@ -280,12 +284,13 @@ def replay(game, work, authored, *, contract_path=None, contract_schema=None,
             with target.open('xb') as stream:
                 picture.save(stream, format='PNG')
         results.append({'id': entry['id'], 'rgba8_sha256': actual, 'png_sha256': digest_file(target),
-            'recipe_sha256': row['recipe_sha256'], 'reference_pixels_exact': True})
+            'recipe_sha256': row['recipe_sha256'], 'reference_pixels_exact': comparison is None,
+            **({'numerical_comparison': comparison} if comparison else {})})
         print(f'Private {family} plate replay verified: {len(results)}/{entry_count}', flush=True)
     if digest_file(contract_path) != owner['contract_sha256'] or any(digest_file(ROOT / p) != sha for p, sha in algorithms.items()):
         raise BuildError('Structural tools or contract changed during execution')
     receipt = {'schema': 'protector-native.personal-plate-result/v1', 'selected': len(results),
-        'exact_pixel_matches': len(results), 'complete_texture_pack': False,
+        'exact_pixel_matches': sum(r['reference_pixels_exact'] for r in results), 'complete_texture_pack': False,
         'requires_private_authored_inputs': True, 'distribution_clearance': False,
         'seconds': time.monotonic() - started, 'algorithms': algorithms, 'entries': results}
     if receipt_context is not None:

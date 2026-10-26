@@ -23,6 +23,7 @@ from tools.personal_geometry import identity
 from tools.personal_texture_pipeline import inventory
 from tools.personal_textures import compare_reference, load_contract, source_pixels
 from tools.personal_texture_variants import admit as admit_variant
+from tools.personal_texture_fingerprints import ADMISSION, CONTRACT as FINGERPRINTS, admit_fingerprint, within_bound
 
 
 def delivery_plan(selected, routing):
@@ -91,7 +92,13 @@ def candidates_for(entries, directories):
     return candidates
 
 
-def admitted_pixels(entry, path, expected_png, references, rounding_allowed):
+def rounding_families(routing):
+    """Outputs that come from model inference, directly or through a restored parent."""
+    return {k for s in routing['stages'] if s['family'] in ('neural', 'thumbnails', 'signs') or
+        s['family'] == 'grids' and s.get('plane') == 'rgb' for k in s['entries']}
+
+
+def admitted_pixels(entry, path, expected_png, references, rounding_allowed, source=None):
     from PIL import Image
     if digest_file(path) != expected_png:
         raise BuildError('Candidate PNG changed during delivery staging')
@@ -108,12 +115,14 @@ def admitted_pixels(entry, path, expected_png, references, rounding_allowed):
         comparison = None
         if actual != expected:
             comparison = admit_variant(entry, actual)
-            if comparison is None:
-                if not references or not rounding_allowed:
-                    raise BuildError('Candidate pixels differ from the selected treatment')
+            if comparison is None and not rounding_allowed:
+                raise BuildError('Candidate pixels differ from the selected treatment')
+            if comparison is None and references:
                 comparison = compare_reference(entry, rgba, references)
-            if comparison['max_channel_error'] > 1:
-                raise BuildError('Candidate exceeds the private numerical comparison bound')
+            if not within_bound(comparison) and source is not None:
+                comparison = admit_fingerprint(entry, rgba, source)
+            if not within_bound(comparison):
+                raise BuildError('Candidate differs from its reviewed treatment beyond numerical rounding')
     if digest_file(path) != expected_png:
         raise BuildError('Candidate changed while decoding')
     return raw, {'id': entry['id'], 'png_sha256': expected_png, 'rgba8_sha256': actual,
@@ -165,18 +174,18 @@ def prepare(args, selected, routing, plan):
         if record['schema'] != 'protector-native.private-texture-reference-index/v1':
             raise BuildError('Invalid private numerical reference index')
         references = record['entries']
-    rounded_ids = {k for s in routing['stages'] if s['family'] in ('neural', 'thumbnails') or
-        s['family'] == 'grids' and s.get('plane') == 'rgb' for k in s['entries']}
+    rounded_ids = rounding_families(routing)
     check_table(game, json.loads(LOCK.read_text())['game'])
     @lru_cache(maxsize=1)
     def package(name):
         p = decode_package(game / 'files' / name)
         return p, parse_relocation_commands(p.relocation, 'big', file_info_size=len(p.file_info))
-    evidence = []
+    evidence, sources = [], {}
     # All selected sources and candidate pixels pass before the batch is created.
     for entry in entries:
-        source_pixels(entry, *package(entry['occurrence']['package']))
-        raw, result = admitted_pixels(entry, *candidates[entry['id']], references, entry['id'] in rounded_ids)
+        sources[entry['id']] = source_pixels(entry, *package(entry['occurrence']['package']))
+        raw, result = admitted_pixels(entry, *candidates[entry['id']], references, entry['id'] in rounded_ids,
+                                      sources[entry['id']])
         evidence.append(result)
         del raw
     package.cache_clear()
@@ -207,7 +216,8 @@ def prepare(args, selected, routing, plan):
     write_json(source_path, source_record)
     output_entries = []
     for entry, admitted in zip(entries, evidence, strict=True):
-        raw, checked = admitted_pixels(entry, *candidates[entry['id']], references, entry['id'] in rounded_ids)
+        raw, checked = admitted_pixels(entry, *candidates[entry['id']], references, entry['id'] in rounded_ids,
+                                       sources[entry['id']])
         if checked != admitted:
             raise BuildError('Candidate admission changed after preflight')
         sha = admitted['rgba8_sha256']
@@ -284,8 +294,8 @@ def assemble(args, selected, routing, plan):
     check_table(game, json.loads(LOCK.read_text())['game'])
     encoder = json.loads((ROOT / 'reference/personal_tool_sources.json').read_text())['resources']['astcenc.zip']['binary_sha256']
     pairs, inputs, payload_bytes = plan['companion_pairs'], [], 0
-    allowed_rounding = {k for s in routing['stages'] if s['family'] in ('neural', 'thumbnails') or
-        s['family'] == 'grids' and s.get('plane') == 'rgb' for k in s['entries']}
+    allowed_rounding = rounding_families(routing)
+    fingerprint_contract = digest_file(FINGERPRINTS)
     selected_ids = {e['id']: e for e in selected['entries']}
     for batch, raw_path, final_path in paths:
         raw, _ = read_source_pack(raw_path, allow_straight=True)
@@ -307,9 +317,10 @@ def assemble(args, selected, routing, plan):
             comparison = evidence.get('numerical_comparison') or {}
             if comparison.get('admission') == 'listed-output-sha256' and admit_variant(selected_ids[key], actual) is None:
                 raise BuildError('Staged output is no longer an admitted numerical variant')
+            if comparison.get('admission') == ADMISSION and comparison.get('fingerprint_contract_sha256') != fingerprint_contract:
+                raise BuildError('Staged output was fingerprinted against a different contract; prepare its batch again')
             if actual != expected and (key not in allowed_rounding or evidence.get('reference_pixels_exact') is not False or
-                    not isinstance(evidence.get('numerical_comparison'), dict) or
-                    not 0 <= evidence['numerical_comparison'].get('max_channel_error', 256) <= 1):
+                    not within_bound(evidence.get('numerical_comparison'))):
                 raise BuildError('Unadmitted pixel variation in staged batch')
         final = json.loads(final_path.read_text())
         delivered = check_delivery_entries(batch, selected, final)

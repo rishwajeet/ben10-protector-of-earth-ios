@@ -20,10 +20,12 @@ sys.path.insert(0, str(ROOT))
 from protector_native.content_package import digest_file
 from tools.personal_build import BuildError, LOCK, check_table, outside_repo, write_json
 from tools.personal_textures import compare_reference, load_contract, source_pixels, validate_contract
+from tools.personal_texture_fingerprints import admit_fingerprint, within_bound
 
 CONTRACT = ROOT / 'reference/personal_texture_grids.json'
 ALGORITHMS = ['tools/personal_texture_grids.py', 'tools/personal_textures.py',
     'tools/personal_grid_variants.py', 'reference/personal_grid_variants.json',
+    'tools/personal_texture_fingerprints.py', 'reference/personal_texture_fingerprints.json',
     'tools/esrgan_tail_batches.py',
     'tools/dat_window_batches.py',
     'tools/restore_interface_grid.py', 'tools/restore_texture_batch.py',
@@ -260,7 +262,9 @@ def replay(args):
                     numerical = admit_grid(entry, actual, recipe=row, grid=grid)
                     if numerical is None and references:
                         numerical = compare_reference(entry, tile, references)
-                if numerical is None or numerical['max_channel_error'] > 1:
+                    if not within_bound(numerical):
+                        numerical = admit_fingerprint(entry, tile, pixels(entry))
+                if not within_bound(numerical):
                     raise BuildError('Grid tile differs from selected pixels: ' + row['id'])
             if not target.exists():
                 with target.open('xb') as stream:

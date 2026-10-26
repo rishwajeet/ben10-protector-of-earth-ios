@@ -19,6 +19,7 @@ from tools.personal_build import BuildError, LOCK, check_table, outside_repo, wr
 from tools.personal_geometry import identity
 from tools.personal_textures import ALGORITHMS, NEURAL, SUPPORTED, compare_reference, load_contract, source_pixels, validate_contract
 from tools.personal_texture_variants import admit as admit_variant
+from tools.personal_texture_fingerprints import admit_fingerprint, within_bound
 
 
 def host_pressure():
@@ -108,7 +109,7 @@ def cached_batch(batch, work, references, decode):
         raise BuildError('Cached texture path is a link')
     started, results = time.monotonic(), []
     for entry, path in zip(batch, paths, strict=True):
-        decode(entry)
+        source = decode(entry)
         numerical = None
         with Image.open(path) as image:
             rgba = image.convert('RGBA')
@@ -119,7 +120,9 @@ def cached_batch(batch, work, references, decode):
                 numerical = admit_variant(entry, actual)
                 if numerical is None and references and entry['operation']['kind'] in NEURAL:
                     numerical = compare_reference(entry, image, references)
-                if numerical is None or numerical['max_channel_error'] > 1:
+                if not within_bound(numerical) and entry['operation']['kind'] in NEURAL:
+                    numerical = admit_fingerprint(entry, rgba, source)
+                if not within_bound(numerical):
                     raise BuildError('Cached worker texture differs from current reference')
         results.append({'id': entry['id'], 'rgba8_sha256': actual, 'png_sha256': digest_file(path),
             'provider_this_run': None, 'reference_pixels_exact': actual == entry['reference_rgba8_sha256'],
