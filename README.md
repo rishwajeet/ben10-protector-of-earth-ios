@@ -4,17 +4,17 @@
 
 # Ben 10: Protector of Earth for iPhone
 
-I ported the 2007 Wii game *Ben 10: Protector of Earth* to the iPhone. The
+A native iPhone port of the 2007 Wii game *Ben 10: Protector of Earth*. The
 game's PowerPC code is recompiled ahead of time into ARM64 and built into a
 normal iOS app, with a small runtime standing in for the Wii's graphics, sound
-and disc drive. There's no emulator running underneath.
+and disc drive. No emulator is involved.
 
-The levels, enemies and difficulty are the original game's. What changes is how
-it looks and plays on a phone: the textures and cutscenes are rebuilt at much
-higher resolution, the camera is widescreen, and there are touch controls.
+The levels, enemies and difficulty are the original game's. The textures and
+cutscenes are rebuilt at much higher resolution, the camera is widescreen, and
+there are touch controls.
 
-There's no game in this repository. You build the app and its content from your
-own disc on your own Mac, then sideload it onto your iPhone.
+This repository contains no game. The app and its content are built from your
+own disc on your own Mac, then installed on your iPhone.
 
 <p align="center">
   <img src="docs/media/teaser.webp" alt="Gameplay on iPhone: transforming and fighting" width="100%">
@@ -59,27 +59,20 @@ The Four Arms transformation cutscene, original and restored:
 
 ## Status
 
-This is a developer preview. I've played the fort, the canyon and the final boss
-on my iPhone 18 Pro and spot-checked every other level. The full conversion has
-only ever run on one Mac (an M4 Pro with 48 GB of memory, macOS 27, Xcode 27),
-so it may well break on yours. If it does, please open a build report and
-include the receipt file the tool names.
+Developer preview. The fort, the canyon and the final boss have been played on
+an iPhone 18 Pro, and every other level spot-checked. The full conversion has
+only run on one Mac (M4 Pro, 48 GB, macOS 27, Xcode 27). If it fails on yours,
+open a build report with the receipt file the tool names.
 
 Before you start:
 
-- The conversion is slow. Restoring the cutscenes took about 12 hours on the M4
-  Pro, and the textures take many more. Leave it running overnight. If a step
-  stops, rerunning it picks up where it left off.
-- Your Mac won't reproduce my textures bit for bit, because the upscaling models
-  round slightly differently on every Mac. So each rebuilt texture is checked
-  against the original from your own disc instead, and only differences the
-  size of rounding get through. If a texture really is wrong, the step stops and
-  names it. I've tested this by rebuilding textures with different settings on
-  my Mac, but not yet on a second Mac.
-- It's iPhone only for now. I've only tested an iPhone 18 Pro; older models may
-  not keep up.
+- Conversion is slow: about 12 hours for the cutscenes on an M4 Pro, and many
+  more for the textures. Rerunning a stopped step continues where it left off.
+- Results vary slightly between Macs. Textures are checked against the originals
+  from your disc, so small rounding differences are expected and fine.
+- iPhone only. Tested on an iPhone 18 Pro; older models are untested.
 
-## How it was made
+## How I made it
 
 I built this over about twelve weeks by directing AI coding agents, mostly
 Claude and Codex. They wrote the runtime, the renderer and the tools; I set the
@@ -98,7 +91,7 @@ human-written open-source project, and disc extraction uses
   (Homebrew has it).
 - An iPhone with about **25 GB free** for the content and its import.
 - An Apple ID to sign the app for your phone. A free one works, but its
-  signature lasts 7 days, so you'll re-sign weekly. See
+  signature lasts 7 days and needs renewing weekly. See
   [Put it on your iPhone](#put-it-on-your-iphone).
 - A disc image (`.rvz` or `.iso`) of the USA release, game ID `RBNEG9`,
   revision 0.
@@ -230,9 +223,8 @@ find it.
 
 This signs in with Apple directly, so it isn't affected by the sign-in failures
 the sideloading apps are having at the moment. A free Apple ID gives a 7-day
-signature; a paid developer account ($99 a year) gives a year. I've used this
-path with a paid account; a free account's profile works the same way, but I
-haven't tried one.
+signature; a paid developer account ($99 a year) gives a year. Tested with a
+paid account; free accounts get the same kind of profile but are untested.
 
 1. In Xcode, open **Settings → Apple Accounts** and add your Apple ID.
 2. Get Xcode to make a signing profile for your bundle ID. Create a throwaway
@@ -307,7 +299,7 @@ Every tool, its checks and its receipts are described in
 ## FAQ
 
 **Can I just download the app?** No. The app contains code translated from the
-game, so I can't distribute it. Everyone builds their own from a disc they own.
+game, so it can't be distributed. Everyone builds their own from a disc they own.
 
 **Is this an emulator?** No. An emulator reads the Wii's PowerPC instructions
 while you play. Here they're translated once, ahead of time, into ARM64 code
@@ -338,5 +330,5 @@ included, and each model has its own terms.
 This is an unofficial fan project, not affiliated with or endorsed by Warner
 Bros. Discovery, Cartoon Network, the game's publisher or its developer. Ben 10
 and related names and characters are trademarks of their owners. If you hold
-rights in any of this and have a concern, open an issue or contact me through
-GitHub.
+rights in any of this and have a concern, open an issue or contact the
+maintainer through GitHub.
