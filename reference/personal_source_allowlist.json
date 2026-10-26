@@ -181,6 +181,10 @@
       "destination": "docs/PERSONAL_BUILD_KIT.md"
     },
     {
+      "source": "docs/ARCHITECTURE.md",
+      "destination": "docs/ARCHITECTURE.md"
+    },
+    {
       "source": "native/apple/action_glyphs.h",
       "destination": "native/apple/action_glyphs.h"
     },

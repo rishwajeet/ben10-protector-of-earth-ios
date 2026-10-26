@@ -57,6 +57,37 @@ The Four Arms transformation cutscene, original and restored:
   <img src="docs/media/fourarms-zoom.jpg" alt="Four Arms transformation: the original Wii cinematic against the restoration, zoomed" width="100%">
 </p>
 
+## How it works
+
+Nothing is emulated while you play. The conversion on your Mac produces two
+things: the app, with the game's code compiled into it, and a content package
+holding the game's data and the restored art.
+
+- **Recompilation.** [DolRecomp](https://github.com/ExpansionPak/DolRecomp)
+  translates the game's PowerPC executable into C, about 4.7 million lines in
+  120 files, which is compiled to ARM64 along with the rest of the app. 84 hooks
+  at fixed addresses hand control to native code for things like controllers,
+  frame pacing and visibility.
+- **Runtime.** A small C and Objective-C layer stands in for the parts of the
+  Wii the game uses: GX graphics, AX audio, the disc, controllers, timers and
+  save storage.
+- **Graphics.** The game's GX commands are translated to Metal, including its
+  TEV colour combiners and framebuffer copies. It renders at a whole multiple of
+  the Wii's resolution, close to the phone's own, with a widened camera and
+  edge-only antialiasing.
+- **60 fps.** The game still updates 30 times a second. Between updates, the
+  renderer draws an extra frame by moving each model partway between two real
+  game frames. It doesn't blend images or guess ahead.
+- **Restoration.** Upscaling models rebuild 2,221 textures and 76 cutscenes from
+  your disc, and 194 models get smoother silhouettes that the game's own
+  animation still drives. Each result is checked against the original data
+  before it's packaged.
+- **App.** A native iOS shell with touch controls, controller support, content
+  import and save backups.
+
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) has the details, including what's
+verified and what isn't.
+
 ## Status
 
 Developer preview. The fort, the canyon and the final boss have been played on
