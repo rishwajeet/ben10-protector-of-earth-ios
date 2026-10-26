@@ -233,7 +233,7 @@
         "Software licence\n"
         "The original Protector Native software is free software under the GNU General Public License, version 3 or (at your option) any later version. "
         "It comes with ABSOLUTELY NO WARRANTY. The complete source code, licence text and build instructions are published at "
-        "https://github.com/rishwajeet/protector-native-kit\n\n"
+        "https://github.com/rishwajeet/ben10-protector-of-earth-ios\n\n"
         "This licence covers the project's own software only. It grants no rights in Ben 10, the original game, its code, audio, movies, textures or models, "
         "or in content converted from your disc.\n\n"
         "Third-party notices\n"

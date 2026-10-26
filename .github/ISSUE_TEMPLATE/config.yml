@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and ideas
-    url: https://github.com/rishwajeet/protector-native-kit/discussions
+    url: https://github.com/rishwajeet/ben10-protector-of-earth-ios/discussions
     about: How it works, other devices, what's next. Ask in Discussions.
   - name: "Where's the IPA? Can I just download it?"
-    url: https://github.com/rishwajeet/protector-native-kit#faq
+    url: https://github.com/rishwajeet/ben10-protector-of-earth-ios#faq
     about: No. Everyone builds their own from a disc they own; the FAQ explains why.
